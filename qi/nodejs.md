@@ -153,7 +153,7 @@ If you cannot see them, try `/etc/init.d/mcuio enable` `/etc/init.d/mcuio start`
 
 ```
 
-![MCUIO](mcuio_irq.png)
+![MCUIO](mcuio.png)
 
 
 ###Step 6. Use NodeJS with Ideino IDE
