@@ -1,10 +1,12 @@
-#Install NodeJS on Domino Qi
+#Install NodeJS and LininoIO
 Install NodeJS on Domino Qi is very simple. 
 
+##Install NodeJS
 ###Step 1. Insert a MicroSD card
 Install one MicroSD card to the slot on Domino Qi baseboard first in order to install packages that take a lot of space and use a lot of memory.
 
 ###Step 2. Run installation script
+Just execute the installation script: `/etc/linino/nodeyun_inst_latest.sh`, you will be asked to install fdisk first.
 ```
 #sh /etc/linino/nodeyun_inst_latest.sh
 
@@ -13,7 +15,7 @@ Fdisk is not installed ! ! ! The script will install the package for you...
 Press [Enter] key to install fdisk...
 
 ```
-After install fdisk, relauch the script
+After install fdisk, relauch the script: `/etc/linino/nodeyun_inst_latest.sh`
 ```
 #sh /etc/linino/nodeyun_inst_latest.sh
 ```
@@ -31,7 +33,7 @@ Linino node.js installation menu
  
 Choose : 
 ```
-choose 1,  then you will be promted:
+choose `1`,  then you will be promted:
 ```
 WARNING : All data on your SDCard Would will be erased, are you sure ? (y/n)
 ```
@@ -50,7 +52,7 @@ Linino node.js installation menu
 Now choose 3 and reboot the system.
 
 ###Step 3. Install ideino
-Now you should already nodejs installed. Check using 'which'
+Now you should already nodejs installed. Check using `which`
 ```
 root@domino:~# which node
 /opt/usr/bin/node
@@ -67,7 +69,20 @@ In the default ideinoIO packages, there is no domino_qi layout, create it by cop
 cd /opt/usr/lib/node_modules/ideino-linino-lib/utils/layouts
 cp arduino_yun.json domino_qi.json
 ```
-###Step 4. Setup environement in openwrt
+
+##Install LininoIO - The easy way
+LinioIO is a framework that let you interact your AVR from openwrt using NodeJS. The easiest way is just execute `lininoio start`.
+
+
+You can revert back and disable LininoIO by just executing `lininoio stop`.
+
+![LininoIO Stop](lininoio-stop.png)
+
+![LininoIO Stop](lininoio-stop1.png)
+
+##Install LininoIO - The comprehensive way
+
+###Step 1. Setup environement in openwrt
 
 In order to let Linino IO start when system start, you need to set several environment variables in uboot. Type `fw_printenv` to display the uboot env variables.
 If you got the following error message, it means that the uboot env variables are not stored to flash and you need to go to Step 5.
@@ -94,7 +109,7 @@ ethact=eth0
 stdin=serial
 stdout=serial
 stderr=serial
-bootargs=console=spicons,115200 board=domino root=31:03 rootfstype=squashfs,jffs2 noinitrd mtdparts=spi0.0:256k(u-boot)ro,64k(u-boot-env),1280k(kernel),14656k(rootfs),64k(nvram),64k(art)ro,15936k@0x50000(firmware)
+bootargs=console=spicons,250000 board=domino root=31:03 rootfstype=squashfs,jffs2 noinitrd mtdparts=spi0.0:256k(u-boot)ro,64k(u-boot-env),1280k(kernel),14656k(rootfs),64k(nvram),64k(art)ro,15936k@0x50000(firmware)
 baudrate=250000
 ```
 Now use `fw_setenv` to set bootargs and baudrate and reboot your openwrt.
@@ -103,8 +118,8 @@ fw_setenv bootargs "console=spicons,115200 board=domino root=31:03 rootfstype=sq
 fw_setenv baudrate 250000
 ```
 
-###Step 5. Setup environement in uboot
-If your step 4 cannot be done because uboot env is not readable, you need to do this in uboot console. First you need to have the AVR serial installed, if not, by doing `run-avrdude /etc/linino/YunSerialTerminal.hex`
+###Step 1. - alternative. Setup environement in uboot
+If your step 1 cannot be done because uboot env is not readable, you need to do this in uboot console. First you need to have the AVR serial installed, if not, by doing `run-avrdude /etc/linino/YunSerialTerminal.hex`
 ```
 run-avrdude /etc/linino/YunSerialTerminal.hex
 ```
@@ -121,7 +136,25 @@ saveenv
 reset
 ```
 
-You will have LininoIO installed.
+###Step 2. Flash AVR
+You need to flash the correct hex to AVR: `run-avrdude /etc/linino/bathos-yun.hex`
+```
+run-avrdude /etc/linino/bathos-yun.hex
+```
+Attention: You may got error when flashing in the verification step, just ignore it. 
+
+###Step 3. Reboot 
+You need to reboot your system to let the system auto-detect the settings and run the LininoIO framework.
+Just to check if it is running succefully, do a `ps` to see if there are many processes named mcuio_irq. 
+If you cannot see them, try `/etc/init.d/mcuio enable` `/etc/init.d/mcuio start`
+```
+/etc/init.d/mcuio enable
+/etc/init.d/mcuio start
+
+```
+
+![MCUIO](mcuio_irq.png)
+
 
 ###Step 6. Use NodeJS with Ideino IDE
 

@@ -1,4 +1,4 @@
-## Domino Documentation
+##Domino Documentation
 
 Here you'll find the documentation for the Domino boards.
 
