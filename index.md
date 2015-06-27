@@ -1,3 +1,4 @@
 Gettting started
 
-#gettting started with Domino
+This page is under contructon.
+###gettting started with Domino
