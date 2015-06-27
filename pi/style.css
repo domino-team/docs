@@ -83,6 +83,167 @@ body {
   color: #505050;
   background: #fff;
 }
+.toggle-menu{
+	font-size:25px;
+	padding-top:12px;
+	cursor:pointer;
+	display:inline-block;
+	float:left;
+}
+#hamburger-icon{
+	width:25px;
+	height:17px;
+	position:relative;
+	margin-top:2px;
+	transform:rotate(0);
+	-webkit-transition:.5s ease-in-out;
+	-moz-transition:.5s ease-in-out;
+	-o-transition:.5s ease-in-out;
+	transition:.5s ease-in-out;
+	cursor:pointer
+}
+
+#hamburger-icon,#hamburger-icon span{
+	-webkit-transform:rotate(0);
+	-moz-transform:rotate(0);
+	-o-transform:rotate(0)
+}
+
+#hamburger-icon span{
+	display:block;
+	position:absolute;
+	height:2px;
+	width:100%;
+	background:#555;
+	border-radius:3px;
+	opacity:1;
+	left:0;
+	transform:rotate(0);
+	-webkit-transition:.25s ease-in-out;
+	-moz-transition:.25s ease-in-out;
+	-o-transition:.25s ease-in-out;
+	transition:.25s ease-in-out
+}
+
+#hamburger-icon span:nth-child(1){
+	top:0
+}
+
+#hamburger-icon span:nth-child(2),#hamburger-icon span:nth-child(3){
+	top:7px
+}
+
+#hamburger-icon span:nth-child(4){
+	top:14px
+}
+
+#hamburger-icon.open span:nth-child(1),#hamburger-icon.open span:nth-child(4){
+	top:7px;
+	width:0;
+	left:50%
+}
+
+#hamburger-icon.open span:nth-child(2){
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg)
+}
+
+#hamburger-icon.open span:nth-child(3){
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	transform:rotate(-45deg)
+}
+
+nav.navigation{
+	position:absolute;
+	top:0;
+	left:-320px;
+	width:260px;
+	height:100%;
+	min-height:100%;
+	background-color:#181818;
+	padding:25px 30px;
+	opacity:0;
+	pointer-events:none;
+	-webkit-overflow-scrolling:touch!important;
+	overflow:hidden;
+	-webkit-transition:opacity 0 linear;
+	-moz-transition:opacity 0 linear;
+	-o-transition:opacity 0 linear;
+	transition:opacity 0 linear;
+	z-index:0;
+	transition-duration:0.5s;
+}
+
+nav.navigation.is-open{
+	left:0px;
+	
+	z-index:999;
+}
+.pushed-right{
+	left:320px;
+}
+
+nav.navigation{
+	opacity:1;
+	pointer-events:auto
+}
+ul.navigation-list h5.nav-list-header{
+	margin-bottom:7px;
+	margin-top:0;
+	color:#d7d7d7;
+	font-weight:700
+}
+ul.navigation-list {
+    color: #FFF;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 30px;
+}
+ul.navigation-list h5.nav-list-header a{
+	color:#c7c7c7;
+	font-weight:700;
+	transition:color .2s
+}
+
+ul.navigation-list h5.nav-list-header a,ul.navigation-list li a{
+	-webkit-transition:color .2s;
+	-moz-transition:color .2s;
+	-o-transition:color .2s
+}
+
+ul.navigation-list h5.nav-list-header a:hover{
+	color:#fff
+}
+
+ul.navigation-list li{
+	line-height:22px;
+	font-size:14px
+}
+
+ul.navigation-list li a{
+	color:#bbb;
+	cursor:pointer;
+	transition:color .2s
+}
+
+ul.navigation-list li a:hover{
+	color:#fff
+}
+h5.nav-list-header {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+h5{
+	font-weight:300;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family:'Gotham A','Gotham B',proxima-nova,"Helvetica Neue",helvetica,arial,sans-serif
+}
 ol,
 ul {
   list-style: none;
@@ -268,6 +429,7 @@ a:hover {
 .content-root {
   min-height: 90%;
   position: relative;
+  transition-duration:0.5s;
 }
 .content {
   padding-top: 30px;
@@ -504,6 +666,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
 }
 @media (min-width: 1180px) {
   body:not(.no-literate) .content-root {
+  transition-duration:0.5s;
     background-color: #f3f6fb;
     -webkit-box-shadow: inset 780px 0 #fff, inset 781px 0 #dfe2e7, inset 790px 0 5px -10px rgba(0,0,0,0.1);
     box-shadow: inset 780px 0 #fff, inset 781px 0 #dfe2e7, inset 790px 0 5px -10px rgba(0,0,0,0.1);
@@ -602,6 +765,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   zoom: 1;
   line-height: 20px;
   position: relative;
+  transition-duration:0.5s;
 }
 .header:before,
 .header:after {
@@ -613,6 +777,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
 }
 .header .left {
   float: left;
+  margin-left:10px;
 }
 .header .right {
   text-align: right;
@@ -737,6 +902,7 @@ a.big.button:hover:visited {
 }
 @media (min-width: 768px) {
   .content-root {
+	transition-duration:0.5s;
     padding-left: 230px;
   }
   .menubar {

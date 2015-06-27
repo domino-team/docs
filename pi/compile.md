@@ -1,3 +1,4 @@
+#Compile the firmware
 It is not difficult for you to compile your own OpenWrt firmware for Domino. Follow these instructions step by step.
 
 Knowing Openwrt
