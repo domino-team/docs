@@ -121,7 +121,7 @@
 					var html="<ul class='navigation-list'><h5 class='nav-list-header'><a href='/docs/"+key+"/'>"+fullname+"</a></h5>";
 					for(var i=0;i<val.length;i++){
 						var obj=val[i];
-						html=html+"<li><a href='"+obj.link+"'>"+obj.name+"</a></li>";
+						html=html+"<li><a href='/docs"+obj.link+"'>"+obj.name+"</a></li>";
 					}
 					html=html+"</ul>";
 					$("#nav-menu").append(html);
