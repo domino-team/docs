@@ -242,7 +242,7 @@ h5{
 	font-weight:300;
 }
 h1,h2,h3,h4,h5,h6{
-	font-family:'Gotham A','Gotham B',proxima-nova,"Helvetica Neue",helvetica,arial,sans-serif
+	font-family:abel,proxima-nova,"Helvetica Neue",helvetica,arial,sans-serif
 }
 ol,
 ul {
@@ -274,7 +274,7 @@ body,
 td,
 textarea,
 input {
-  font-family: Helvetica Neue, Open Sans, sans-serif;
+  font-family: adamina, serif, Open Sans, sans-serif;
   line-height: 1.6;
   font-size: 14px;
   color: #111111;
