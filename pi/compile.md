@@ -7,7 +7,7 @@ Knowing Openwrt
 OpenWrt is a Linux distribution for embedded devices. You can find all the details of OpenWrt from http://openwrt.org
 To compile an OpenWrt fireware for Domino, first you need to have a Linux environment. We will use Ubuntu as as example in this guide.
 
-###Build environment
+###1. Build environment
 
 First install all the necessary packages:
 ```
@@ -16,7 +16,7 @@ First install all the necessary packages:
 libssl-dev xsltproc libxml-parser-perl mercurial bzr ecj cvs unzip 
 ```
 
-###Download OpenWrt
+###2. Download OpenWrt
 For domino-Pi, we use OpenWrt release BB1407.
 ```
 git clone git://git.openwrt.org/14.07/openwrt.git openwrt-domino
@@ -25,8 +25,8 @@ cd openwrt-domino
 ./scripts/feeds install -a
 ```
 
-###Install Quilt for patches
-Refer to http://wiki.openwrt.org/doc/devel/patches to understand how OpenWrt deal with patches. We will need to apply a patche to OpenWrt.
+###3. Install Quilt for patches
+Refer to http://wiki.openwrt.org/doc/devel/patches to understand how OpenWrt deal with patches. We will need to apply a patch to OpenWrt.
 ```
 sudo apt-get install quilt
 cat > ~/.quiltrc <<EOF
@@ -38,7 +38,7 @@ EDITOR="nano"
 EOF
 ```
 
-###Apply Domino Target Patch
+###4. Apply Domino Target Patch
 Download the Domino Target Patch from here: https://github.com/domino-team/domino-firmware/tree/master/domino-pi/openwrt-patch 
 Put them in openwrt-domino/patches.
 ```
@@ -50,7 +50,7 @@ rm ./tmp/*
 ```
 In order to make the Target appear, you may need to run `rm ./tmp/*` and `./scripts/feeds install -a`
 
-###Make menuconfig
+###5. Make menuconfig
 Now you need to configure OpenWrt by choosing the correct target.
 ```
 make menuconfig
@@ -103,7 +103,7 @@ You will find "domino-athplay", "domino-pi" and "kmod-domino-iis" in "Domino" ca
 That is all. You don't need to select any other packages because they are already selected automaticly.
 
 ###compile
-Now compile the firmware by typing
+Now compile the firmware by typing `make`
 ```
 make
 ```
