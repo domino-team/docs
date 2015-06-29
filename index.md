@@ -23,7 +23,9 @@ Go to the [Domino Pi section](pi/) for more details for how to use the Pi.
 ###Domino Qi
 Domino Qi Mini is a small board that is a fully compatible derivative of the original Arduino Yùn, crammed into a tiny form factor. It is a low-cost, compact OpenWRT-based 802.11 bgn WiFi board based on Qualcomm/Atheros AR9331 WiSoC and on the Atmel ATMega32U4 MCU. Communication between the two chips is achieved using Arduino Yùn-compatible Bridge hardware and software library.
 Plug the Domino Qi Mini board onto the Domino Qi baseboard to turn it into a board fully compatible with the ubiquitous Arduino Shield form factor and benefit from hundreds of already existing shields for rapid prototyping.
+
 Go to the [Domino Qi hardware](hardware/qi/) for more details of the hardware.
+
 Go to the [Domino Qi section](qi/) for more details for how to use the Qi.
 
 ![Domino Pi](domino-qi.png)
