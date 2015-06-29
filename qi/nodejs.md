@@ -2,10 +2,10 @@
 Install NodeJS on Domino Qi is very simple. 
 
 ##Install NodeJS
-###Step 1. Insert a MicroSD card
+###1. Insert a MicroSD card
 Install one MicroSD card to the slot on Domino Qi baseboard first in order to install packages that take a lot of space and use a lot of memory.
 
-###Step 2. Run installation script
+###2. Run installation script
 Just execute the installation script: `/etc/linino/nodeyun_inst_latest.sh`, you will be asked to install fdisk first.
 ```
 #sh /etc/linino/nodeyun_inst_latest.sh
@@ -51,7 +51,7 @@ Linino node.js installation menu
 ```
 Now choose 3 and reboot the system.
 
-###Step 3. Install ideino
+###3. Install ideino
 Now you should already nodejs installed. Check using `which`
 ```
 root@domino:~# which node
@@ -82,7 +82,7 @@ You can revert back and disable LininoIO by just executing `lininoio stop`.
 
 ##Install LininoIO - The comprehensive way
 
-###Step 1. Setup environement in openwrt
+###1. Setup environement in openwrt
 
 In order to let Linino IO start when system start, you need to set several environment variables in uboot. Type `fw_printenv` to display the uboot env variables.
 If you got the following error message, it means that the uboot env variables are not stored to flash and you need to go to Step 5.
@@ -118,7 +118,7 @@ fw_setenv bootargs "console=spicons,115200 board=domino root=31:03 rootfstype=sq
 fw_setenv baudrate 250000
 ```
 
-###Step 1. - alternative. Setup environement in uboot
+###1. - alternative. Setup environement in uboot
 If your step 1 cannot be done because uboot env is not readable, you need to do this in uboot console. First you need to have the AVR serial installed, if not, by doing `run-avrdude /etc/linino/YunSerialTerminal.hex`
 ```
 run-avrdude /etc/linino/YunSerialTerminal.hex
@@ -136,14 +136,14 @@ saveenv
 reset
 ```
 
-###Step 2. Flash AVR
+###2. Flash AVR
 You need to flash the correct hex to AVR: `run-avrdude /etc/linino/bathos-yun.hex`
 ```
 run-avrdude /etc/linino/bathos-yun.hex
 ```
 Attention: You may got error when flashing in the verification step, just ignore it. 
 
-###Step 3. Reboot 
+###3. Reboot 
 You need to reboot your system to let the system auto-detect the settings and run the LininoIO framework.
 Just to check if it is running succefully, do a `ps` to see if there are many processes named mcuio_irq. 
 If you cannot see them, try `/etc/init.d/mcuio enable` `/etc/init.d/mcuio start`
@@ -156,5 +156,5 @@ If you cannot see them, try `/etc/init.d/mcuio enable` `/etc/init.d/mcuio start`
 ![MCUIO](mcuio.png)
 
 
-###Step 6. Use NodeJS with Ideino IDE
+###4. Use NodeJS with Ideino IDE
 
