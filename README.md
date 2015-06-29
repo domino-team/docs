@@ -1,7 +1,7 @@
 Readme
-##Domino Documentation
+#Domino Documentation
 
-Here you'll find the documentation for the Domino boards.
+Domino Documentation is hosted on github. You can view this on both github and [domino.io/docs/](http://domino.io/docs/)
 
-To view this documentation, visit [our website](http://domino.io/docs/), where the documentation is hosted.
+When view on [domino.io/docs/](http://domino.io/docs/), expend the nav list on the left to go to subtopics.
 
