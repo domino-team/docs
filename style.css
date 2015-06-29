@@ -373,12 +373,14 @@ a:hover {
   background: #f3f6fb;
   padding: 1px 3px;
   font-size: 0.95em;
+  color: #c7254e;
 }
 .content pre > code {
   display: block;
   background: transparent;
   font-size: 0.85em;
   letter-spacing: 0px;
+  color: #111111;
 }
 .content blockquote :first-child {
   padding-top: 0;
