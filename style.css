@@ -380,7 +380,7 @@ a:hover {
   background: transparent;
   font-size: 0.85em;
   letter-spacing: 0px;
-  color: #111111;
+  color: #fff;
 }
 .content blockquote :first-child {
   padding-top: 0;
@@ -598,7 +598,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
 }
 @media (max-width: 1180px) {
   .content pre > code {
-    background: #f3f6fb;
+    background: #272822;
     border: solid 1px #e7eaee;
     border-top: solid 1px #dbdde2;
     border-left: solid 1px #e2e5e9;
@@ -619,7 +619,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
     background: #ddd;
     -webkit-border-radius: 8px;
     border-radius: 8px;
-    border: solid 4px #f3f6fb;
+    border: solid 4px #272822;
   }
   .content pre > code:hover::-webkit-scrollbar-thumb {
     background: #999;
@@ -670,8 +670,8 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   body:not(.no-literate) .content-root {
   transition-duration:0.5s;
     background-color: #f3f6fb;
-    -webkit-box-shadow: inset 780px 0 #fff, inset 781px 0 #dfe2e7, inset 790px 0 5px -10px rgba(0,0,0,0.1);
-    box-shadow: inset 780px 0 #fff, inset 781px 0 #dfe2e7, inset 790px 0 5px -10px rgba(0,0,0,0.1);
+    -webkit-box-shadow: inset 850px 0 #fff, inset 781px 0 #dfe2e7, inset 860px 0 5px -10px rgba(0,0,0,0.1);
+    box-shadow: inset 850px 0 #fff, inset 781px 0 #dfe2e7, inset 860px 0 5px -10px rgba(0,0,0,0.1);
   }
 }
 @media (min-width: 1180px) {
