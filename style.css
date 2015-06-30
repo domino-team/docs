@@ -669,7 +669,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
 @media (min-width: 1180px) {
   body:not(.no-literate) .content-root {
   transition-duration:0.5s;
-    background-color: #f3f6fb;
+    background-color: #272822;
     -webkit-box-shadow: inset 850px 0 #fff, inset 781px 0 #dfe2e7, inset 860px 0 5px -10px rgba(0,0,0,0.1);
     box-shadow: inset 850px 0 #fff, inset 781px 0 #dfe2e7, inset 860px 0 5px -10px rgba(0,0,0,0.1);
   }
