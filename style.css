@@ -671,7 +671,6 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
 @media (min-width: 1180px) {
   body:not(.no-literate) .content-root {
   transition-duration:0.5s;
-    background-color: #272822;
   }
 }
 @media (min-width: 1180px) {
