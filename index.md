@@ -4,7 +4,7 @@ Gettting started
 
 Thanks for using Domino. Domino is a high-performance 802.11 bgn WiFi hardware platform, with a modular design architecture, unlimited extension capabilities and Arduino compatibility. It is suitable for mass production, enhanced with full life-cycle services for makers.
 
-![Domono family](tree.png)
+![Domono family](tree.jpg)
 
 The Domino Family has now 11 boards and more extensions will be developed. The tree structure of the boards is as below.
 
