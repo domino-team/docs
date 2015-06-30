@@ -672,8 +672,6 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   body:not(.no-literate) .content-root {
   transition-duration:0.5s;
     background-color: #272822;
-    -webkit-box-shadow: inset 850px 0 #fff, inset 781px 0 #dfe2e7, inset 860px 0 5px -10px rgba(0,0,0,0.1);
-    box-shadow: inset 850px 0 #fff, inset 781px 0 #dfe2e7, inset 860px 0 5px -10px rgba(0,0,0,0.1);
   }
 }
 @media (min-width: 1180px) {
@@ -682,6 +680,8 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
     padding-right: 0;
     width: 100%;
     max-width: none;
+	z-index:10;
+	position:relative;
   }
   body:not(.no-literate) .content > p,
   body:not(.no-literate) .content > ul,
@@ -1053,12 +1053,12 @@ code .comment {
   z-index: 1;
 }
 .code-samples {
-    background: #5B5C57;
+    background: #272822;
     margin-left: 780px;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    width: 52%;
+    width: 55%;
     z-index: 0;
   }
