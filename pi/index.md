@@ -29,6 +29,9 @@ Press the title board firmly to the Domino Pi board.
 
 Connect your Domino with an Ethernet cable to your router. Then connect power to the MicroUSB connecto on Domino Pi board and your board will be powered up!
 
+
+![Connection](pi-connection.jpg)
+
 #Using Domino Pi
 
-When you see LEDS (WAN, WLAN) lights up, you Domino has been boot up. Now using a browser (use Firefox or Chrome) to visit [http://domino.local/](http://domino.local/), you will be able to get access the WebUi of Domino.
+When you see LEDS (WAN, WLAN) lights up, your Domino has been boot up. Now using a browser (use Firefox or Chrome) to visit [http://domino.local/](http://domino.local/), you will be able to get access the WebUi of Domino.
