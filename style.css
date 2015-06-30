@@ -94,7 +94,7 @@ body {
 	width:25px;
 	height:17px;
 	position:relative;
-	margin-top:2px;
+	margin-top:6px;
 	transform:rotate(0);
 	-webkit-transition:.5s ease-in-out;
 	-moz-transition:.5s ease-in-out;
@@ -678,7 +678,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   body:not(.no-literate) .content {
     padding-left: 0;
     padding-right: 0;
-    width: 930px;
+    width: 100%;
     max-width: none;
   }
   body:not(.no-literate) .content > p,
@@ -692,7 +692,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   body:not(.no-literate) .content > h6,
   body:not(.no-literate) .content > pre,
   body:not(.no-literate) .content > blockquote {
-    width: 550px;
+    width: 45%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -707,7 +707,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   }
   body:not(.no-literate) .content > pre,
   body:not(.no-literate) .content > blockquote {
-    width: 380px;
+    width: 55%;
     padding-left: 20px;
     padding-right: 20px;
     float: right;
