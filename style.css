@@ -766,8 +766,12 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   padding: 15px 15px 15px 30px;
   zoom: 1;
   line-height: 20px;
-  position: relative;
+  position: fixed;
   transition-duration:0.5s;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index:99;
 }
 .header:before,
 .header:after {
@@ -906,6 +910,7 @@ a.big.button:hover:visited {
   .content-root {
 	transition-duration:0.5s;
     padding-left: 230px;
+	margin-top:66px;
   }
   .menubar {
     position: absolute;
