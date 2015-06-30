@@ -759,6 +759,16 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
     padding-left: 0;
     padding-right: 0;
   }
+  .code-samples {
+    background: #272822;
+    margin-left: 780px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    z-index: 0;
+  }
 }
 .header {
   background: #f3f6fb;
@@ -1051,13 +1061,4 @@ code .comment {
   position: relative;
   z-index: 1;
 }
-.code-samples {
-    background: #272822;
-    margin-left: 780px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 55%;
-    z-index: 0;
-  }
+
