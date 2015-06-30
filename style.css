@@ -382,6 +382,7 @@ a:hover {
   font-size: 0.85em;
   letter-spacing: 0px;
   color: #fff;
+  word-break:break-word;
 }
 .content blockquote :first-child {
   padding-top: 0;
