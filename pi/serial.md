@@ -28,7 +28,7 @@ Launch PuTTY and input `COM36` as the "Serial line", `115200` as speed, check th
 
 ![USB-UART](serial/putty.jpg)
 
-The press `Enter` you will enter OpenWrt.
+Then press `Enter` you will enter OpenWrt.
 
 ![USB-UART](serial/putty1.jpg)
 
@@ -38,9 +38,9 @@ You can also connect to `COM4` using the same way.
 
 At the same time, you can also connect to the serial using Connector 2. Execute realterm, fill the currect Baudrate `115200`, port number `36` and click `Open`. 
 
-**ATTENTION** Only one term can connect to one serial device at the same time.
-
 ![USB-UART](serial/realterm.jpg)
+
+**ATTENTION** Only one term can connect to one serial device at the same time.
 
 ###Working with two serials
 
