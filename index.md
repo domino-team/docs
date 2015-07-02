@@ -2,11 +2,13 @@ Gettting started
 
 ##gettting started with Domino
 
-Thanks for using Domino. Domino is a high-performance 802.11 bgn WiFi hardware platform, with a modular design architecture, unlimited extension capabilities and Arduino compatibility. It is suitable for mass production, enhanced with full life-cycle services for makers.
+Thanks for using Domino. Domino is a high-performance 802.11 bgn WiFi hardware platform, with a modular design architecture, unlimited extension capabilities and Arduino compatibility.
 
 ![Domono family](tree.jpg)
 
-The Domino Family has now 11 boards and more extensions will be developed. The tree structure of the boards is as below.
+The Domino Family has now 11 boards and more extensions will be developed. The tree structure of the boards is as illustrated.
+
+At the heart is Domino Core, which can then be extended into Domino Pi and Domino Qi. Domino Pi is a DEV platform for wifi and openwrt, it can be extended with various tile boards. Domino Qi is designed for Arduino compatible. Plug the Domino Qi Mini board onto the Domino Qi baseboard to turn it into a board fully compatible the ubiquitous Arduino Shield form factor.
 
 
 ###Domino Core
@@ -41,7 +43,7 @@ Go to the [Domino Qi section](qi/) for more details for how to use the Qi.
 
 ##Where to get help
 
-First you need to read this documents. We will try our best to make the documentation complete and detailed. 
+First you need to read this documentation. We will try our best to make the documentation complete and detailed. 
 
 Second, we will have our own forum open later, when you will be ask questions there.
 
