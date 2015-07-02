@@ -43,13 +43,13 @@ You will also have pie chart displaying your flash usuage.
 
 #Network settings
 
-##Connect to the Internet
+###Connect to the Internet
 
 The default protocol for WAN is `DHCP`, but you can change it according to your needs. You have 5 choices, including `DHCP, Static, PPPoE, 3G, Tethering and WiFi`. The `3g` protocol let you connect domino to the Internet via a USB 3g/4g modem. The `Tethering` protocol let you connect Domino to the Internet via an Android phone. The `WiFi` choice let you connect your Domino to an AP (e.g. router) wirelessly.
 
 ![Network](network.jpg)
 
-##Change Wifi and LAN settings
+###Change Wifi and LAN settings
 
 In the same page, you can also change WiFi and LAN settings. You can `enable/disable` Wifi, change the ssid, security or password. 
 
@@ -70,11 +70,23 @@ If you connect a USB webcam, you will have a live video streaming charge in your
 
 #Code editor
 
+By clicking the "Editor" link on or clicking directly the flash or USB devices on the homepage, you will be able to list the contents of flash or USB storage and edit the content of the file.
+
 ![Code editor](editor.jpg)
+
+You can view or edit individual files directly. 
+
+**ATTENTION** When editing files, your data is not encrypted.
+
+**ATTENTION** Your Domino board have to be connected to the Internet in order to use the web editor, because the browser needs to load some big scripts to make a nice view of the code!
 
 #LUCI
 
+By clicking the Luci link on homepage, you will go to the LUCI webui, which is the default webui of openwrt. The webui is for advanced users and we will not explain in detail here.
+
 ![LUCI](luci.jpg)
+
+At the right bottom corner of the LUCI webui, you will find a link "Domino Web Panel", click it and go back to the Domino UI.
 
 #Securities
 
