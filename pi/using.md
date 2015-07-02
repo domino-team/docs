@@ -11,6 +11,10 @@ Besides the WLAN LEDs there is a button which connects to `GPIO 11`. The functio
 1. With a short press, it will toggle the status of wifi, i.e. it will turn on/off the wifi; 
 2. With a long press (10 seconds), it will revert the system to factory status.
 
+The ethernet boards has more LEDs. For example, in the photo illustrated, the WAN led and WLAN LED is on.
+
+![LED & Buttons](pi-powerup.jpg)
+
 #First time use
 
 When Domino power up for the first time, it will connect to the Internet using DHCP and emit a wifi single with ssid: `Domino-xxx`, where `xxx` is the last three alphabet/digital of your MAC address. 
