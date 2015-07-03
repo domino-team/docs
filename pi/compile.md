@@ -56,7 +56,7 @@ Now you need to configure OpenWrt by choosing the correct target.
 make menuconfig
 ```
 
-![Menuconfig](menuconfig.png)
+![Menuconfig](src/menuconfig.png)
 
 Select "Domino Wifi for things" in the "Target Profile". Exit and save the config file. Now you are ready to build the firmware.
 ```
@@ -86,17 +86,17 @@ If you want to build exactly the same firmware as pre-installed in Domino Pi, re
 Download domino package from github: https://github.com/domino-team/domino-firmware/tree/master/domino-pi, including athplay, domino-pi, iis, mpg123
 Put these packages in openwrt-domino/package/domino
 
-![Domino packages](packages.png)
+![Domino packages](src/packages.png)
 
 Put the files in root-files to "files" folder of openwrt. This is a quick and easy to compile your default config to openwrt.
 
-![Domino root files](rootfiles.png)
+![Domino root files](src/rootfiles.png)
 
 ###Make menuconfig
 
 Type `make menuconfig` and select domino specific packages.
 
-![Domino packages](menuconfig-domino.png)
+![Domino packages](src/menuconfig-domino.png)
 
 You will find "domino-athplay", "domino-pi" and "kmod-domino-iis" in "Domino" category. Select them all by pressing space key until it shows a * before the package. If you don't want audio, remove "domino-athplay" and "kmod-domino-iis" from the selction. Also select "Utilities->mpg123" if you want to play music. 
 

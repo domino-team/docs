@@ -4,7 +4,7 @@ Gettting started
 
 Domino Pi will always has a Domino Core mounted, when you first got your Pi, you need to understand its headers.
 
-![headers](pi-headers.jpg)
+![headers](src/pi-headers.jpg)
 
 When placed as the picture shown, you can divide the header to left part and right part. The left part contains 18pins on each North and South connectors and the right part contains 10 pins from both North and Sourth connectors. 
 
@@ -12,17 +12,17 @@ The left part can be used to mount Ethernet boards (including Single Ethernet an
 
 To give a more detailed marking of the headers, refer to this diagram.
 
-![headers detailed](pi-headers1.jpg)
+![headers detailed](src/pi-headers1.jpg)
 
 #Assembly
 
 Put the Ethernet and USB tile boards aligned with Domino Pi as shown, then plug the tile boards to the headers. 
 
-![Assembly](assembly.jpg)
+![Assembly](src/assembly.jpg)
 
 Press the title board firmly to the Domino Pi board.
 
-![Assembly1](assembly1.jpg)
+![Assembly1](src/assembly1.jpg)
 
 
 #Connections
@@ -30,7 +30,7 @@ Press the title board firmly to the Domino Pi board.
 Connect your Domino with an Ethernet cable to your router. Then connect power to the MicroUSB connecto on Domino Pi board and your board will be powered up!
 
 
-![Connection](pi-connection.jpg)
+![Connection](src/pi-connection.jpg)
 
 #Using Domino Pi
 

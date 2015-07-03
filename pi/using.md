@@ -4,7 +4,7 @@ Using Domino Pi
 
 Domino Pi board has two LEDs. The <font color='red'>red LED</font> is for Power, which should be always on when powered. The <font color='blue'>blue LED</font> is for wireless (or WLAN), which will indicate the status of wireless. But it can be configured to indicate any other status of the system. 
 
-![LED & Buttons](pi-led-button.jpg)
+![LED & Buttons](src/pi-led-button.jpg)
 
 Besides the WLAN LEDs there is a button which connects to `GPIO 11`. The function of this button can be configured by scripts. The default action is: 
 
@@ -13,7 +13,7 @@ Besides the WLAN LEDs there is a button which connects to `GPIO 11`. The functio
 
 The ethernet boards has more LEDs. For example, in the photo illustrated, the WAN led and WLAN LED is on.
 
-![LED & Buttons](pi-powerup.jpg)
+![LED & Buttons](src/pi-powerup.jpg)
 
 #First time use
 
@@ -23,13 +23,13 @@ The default password for wifi is: `goodlife`.
 
 The first time you use Domino, it is suggested that you connect to it directly using wifi or connect it to your router. Then using a browser (firefox or chrome) to visit `http://domino.local` to get access to it.
 
-![Bonjour](bonjour.jpg)
+![Bonjour](src/bonjour.jpg)
 
 If you cannot find `domino.local` in your windows, you need to install `Bounjor` from Apple. Download it from https://support.apple.com/kb/DL999?locale=en_US 
 
 The first time you use your Domino, it will ask you to setup the name and a password. Then reboot your device.
 
-![Setup](first_time.jpg)
+![Setup](src/first_time.jpg)
 
 **ATTENTION**: The password is only for the embedded Linux system, not your wifi. If you want to change your wifi password, logon the system and change it later.
 
@@ -43,7 +43,7 @@ After login, you will have a clean homepage, displaying the status of network an
 
 You will also have pie chart displaying your flash usuage.
 
-![Homepage](homepage.jpg)
+![Homepage](src/homepage.jpg)
 
 #Network settings
 
@@ -51,7 +51,7 @@ You will also have pie chart displaying your flash usuage.
 
 The default protocol for WAN is `DHCP`, but you can change it according to your needs. You have 5 choices, including `DHCP, Static, PPPoE, 3G, Tethering and WiFi`. The `3g` protocol let you connect domino to the Internet via a USB 3g/4g modem. The `Tethering` protocol let you connect Domino to the Internet via an Android phone. The `WiFi` choice let you connect your Domino to an AP (e.g. router) wirelessly.
 
-![Network](network.jpg)
+![Network](src/network.jpg)
 
 ###Change Wifi and LAN settings
 
@@ -66,7 +66,7 @@ In the same page, you can also change WiFi and LAN settings. You can `enable/dis
 
 You can connect USB devices to Domino via the USB tiles. 
 
-![USB](usb-disk.jpg)
+![USB](src/usb-disk.jpg)
 
 If you connect a USB disk, you will find a pie chart showing its storage usage. By clicking the pi chart, you will be able to list the content of storage.
 
@@ -76,7 +76,7 @@ If you connect a USB webcam, you will have a live video streaming charge in your
 
 By clicking the "Editor" link on or clicking directly the flash or USB devices on the homepage, you will be able to list the contents of flash or USB storage and edit the content of the file.
 
-![Code editor](editor.jpg)
+![Code editor](src/editor.jpg)
 
 You can view or edit individual files directly. 
 
@@ -88,7 +88,7 @@ You can view or edit individual files directly.
 
 By clicking the Luci link on homepage, you will go to the LUCI webui, which is the default webui of openwrt. The webui is for advanced users and we will not explain in detail here.
 
-![LUCI](luci.jpg)
+![LUCI](src/luci.jpg)
 
 At the right bottom corner of the LUCI webui, you will find a link "Domino Web Panel", click it and go back to the Domino UI.
 
