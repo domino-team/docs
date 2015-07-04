@@ -50,6 +50,49 @@ In the above instructions, we used two terms connect to two serial ports, PuTTY 
 
 You can enable input in PuTTY by clear `RTS` in RealTerm. Go to the "Pins" page and click "Clear" in RTS section, you will be able to input in PuTTY but not in RealTerm. To enable input in RealTerm again, click "Set" in RTS section.
 
-#In Linux
+#In Linux (Ubuntu)
 
-(comming later)
+We only test in Ubuntu. For other distro, if you have any questions, pls discuss in community.
+
+In Ubuntu, when connecting Domino Pi to your computer's USB directly, it will be identified as `/dev/ttyUSB*`, e.g. `/dev/ttyUSB0` if you only have USB serial device.
+
+###ckermit
+Download ckermit from http://www.columbia.edu/~kermit/ckermit.html#download or use `sudo apt-get install ckermit` to install it.
+
+```
+$ sudo apt-get install ckermit
+```
+
+make a file with name `.kermrc` in your home directory. The content is as following:
+```
+set line /dev/ttyUSB0
+set speed 115200
+set carrier-watch off
+set handshake none
+set flow-control none
+robust
+set file type bin
+set file name lit
+set rec pack 1000
+set send pack 1000
+set window 5
+``` 
+
+Now execute kermit `sudo kermit -c` to get access to the console of your Domino Pi.
+```
+sudo kermit -c
+```
+
+If you have multiple serial devices, create one configure file for each device, and then put the file name as parameters. For example, for ttyUSB1, use `sudo kermit ~/.kermrc_ttyUSB1 -c`. 
+```
+sudo kermit ~/.kermrc_ttyUSB1 -c
+```
+
+The escape key for kermit is `Ctrl`+`\` followed by `c`.
+
+###Other tools
+
+You can also use `screen` or `cu` to access the serial.
+
+
+
