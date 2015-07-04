@@ -1,4 +1,4 @@
-#Install NodeJS and LininoIO
+#Using NodeJS and LininoIO
 Install NodeJS on Domino Qi is very simple. 
 
 ##Install NodeJS
@@ -76,9 +76,9 @@ LinioIO is a framework that let you interact your AVR from openwrt using NodeJS.
 
 You can revert back and disable LininoIO by just executing `lininoio stop`.
 
-![LininoIO Stop](lininoio-stop.png)
+![LininoIO Stop](src/lininoio-stop.png)
 
-![LininoIO Stop](lininoio-stop1.png)
+![LininoIO Stop](src/lininoio-stop1.png)
 
 ##Install LininoIO - The comprehensive way
 
@@ -153,7 +153,7 @@ If you cannot see them, try `/etc/init.d/mcuio enable` `/etc/init.d/mcuio start`
 
 ```
 
-![MCUIO](mcuio.png)
+![MCUIO](src/mcuio.png)
 
 
 ###4. Use NodeJS with Ideino IDE
