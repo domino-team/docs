@@ -72,11 +72,13 @@ If you have a `Bad CRC` message, don't do this, as this will cause your board no
 You can also use the Linino firmware for Arduino Yun. Linino has two branch, one is master, one is LininoIO.
 
 For master branch, download from http://download.linino.org/linino_distro/master/latest/, the file names are:
+
 - openwrt-ar71xx-generic-linino-yun-16M-250k-kernel.bin
 - openwrt-ar71xx-generic-linino-yun-16M-250k-rootfs-squashfs.bin
 - openwrt-ar71xx-generic-linino-yun-16M-250k-squashfs-sysupgrade.bin
 
 For LininoIO branch, download from http://download.linino.org/linino_distro/lininoIO/latest/, the file names are:
+
 - lininoIO-generic-linino-yun-kernel.bin
 - lininoIO-generic-linino-yun-rootfs-squashfs.bin
 - lininoIO-generic-linino-yun-squashfs-sysupgrade.bin
