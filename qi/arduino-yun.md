@@ -72,14 +72,14 @@ If you have a `Bad CRC` message, don't do this, as this will cause your board no
 You can also use the Linino firmware for Arduino Yun. Linino has two branch, one is master, one is LininoIO.
 
 For master branch, download from http://download.linino.org/linino_distro/master/latest/, the file names are:
-openwrt-ar71xx-generic-linino-yun-16M-250k-kernel.bin
-openwrt-ar71xx-generic-linino-yun-16M-250k-rootfs-squashfs.bin
-openwrt-ar71xx-generic-linino-yun-16M-250k-squashfs-sysupgrade.bin
+- openwrt-ar71xx-generic-linino-yun-16M-250k-kernel.bin
+- openwrt-ar71xx-generic-linino-yun-16M-250k-rootfs-squashfs.bin
+- openwrt-ar71xx-generic-linino-yun-16M-250k-squashfs-sysupgrade.bin
 
 For LininoIO branch, download from http://download.linino.org/linino_distro/lininoIO/latest/, the file names are:
-lininoIO-generic-linino-yun-kernel.bin
-lininoIO-generic-linino-yun-rootfs-squashfs.bin
-lininoIO-generic-linino-yun-squashfs-sysupgrade.bin
+- lininoIO-generic-linino-yun-kernel.bin
+- lininoIO-generic-linino-yun-rootfs-squashfs.bin
+- lininoIO-generic-linino-yun-squashfs-sysupgrade.bin
 
 	
 ###Method 1: Doing this in uboot console
@@ -96,6 +96,25 @@ saveenv
 ```
 
 Setup your tftp server and download the kernel, rootfs to your Domino Qi.
+
+For Linino firmware
+
+**Kernel**
+```
+tftp 0x80060000 openwrt-ar71xx-generic-linino-yun-16M-250k-kernel.bin;
+erase 0x9fea0000 +0x140000;
+cp.b $fileaddr 0x9fea0000 $filesize;
+
+```
+
+**rootfs**
+```
+tftp 0x80060000 openwrt-ar71xx-generic-linino-yun-16M-250k-rootfs-squashfs.bin;
+erase 0x9f050000 +0xE50000;
+cp.b $fileaddr 0x9f050000 $filesize;
+```
+
+For LininoIO firmware
 
 **Kernel**
 ```
@@ -119,7 +138,7 @@ Finally use `reset` to reset your board and boot the firmware.
 
 If you have already boot the Domino Qi system, check if you can access the environment variables using `fw_printenv`.
 
-If you get the following error message, you have use uboot console to flash the firmware.
+If you get the following error message, you have to use uboot console to flash the firmware.
 ```
 root@domino:/# fw_printenv 
 Warning: Bad CRC, using default environment
