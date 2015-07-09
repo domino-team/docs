@@ -2,5 +2,34 @@ Playing music
 
 #The hardware Setup
 
+I2S tile board connects to the left part of of Domino Pi. Thus you cannot connect Ethernet tiles without stackable headers. You can also connect to the Internet via WiFi without Ethernet. 
+
+
+
 #The software
 
+The audio module is built in Domino Pi firmware but not loaded automatically, to load the module, use `insmod glzt_i2s`.
+
+```
+insmod glzt_i2s
+```
+
+To enable auto-load of the audio module, built a entry in `/etc/modules.d/`
+
+```
+echo glzt_i2s > /etc/modules.d/glzt_i2s
+```
+
+To play music, you can use `mpg123`.
+
+E.g. to play music in your usb mounted on `/mnt/sda1`, just do:
+
+```
+mpg123 /mnt/sda1/my_music.mp3
+```  
+
+To play Internet radio, you can use the same way:
+
+```
+mpg123 http://internet-radio.com/music
+```
