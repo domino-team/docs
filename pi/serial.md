@@ -12,6 +12,10 @@ Just connect Domino Pi to your computer, it will be powered up and at the same t
 
 Sometime you need to connect directly to the Domino Core UART, and you will need one USB-UART adapter.
 
+**ATTENTION**: If you are connecting with an external USB-UART adapter, be sure correct to the correct pins:
+
+![Serial Connections](src/serial-connection.jpg)
+
 #In Windows
 
 If you want to use connector 1, you windows will automatically detect the USB to UART Bridge and install drivers. 
@@ -65,6 +69,8 @@ $ sudo apt-get install ckermit
 
 make a file with name `.kermrc` in your home directory. The content is as following:
 ```
+#cat ~/.kermrc
+
 set line /dev/ttyUSB0
 set speed 115200
 set carrier-watch off
