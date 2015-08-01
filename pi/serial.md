@@ -12,6 +12,7 @@ Just connect Domino Pi to your computer, it will be powered up and at the same t
 
 Sometime you need to connect directly to the Domino Core UART, and you will need one USB-UART adapter.
 
+
 **ATTENTION**: If you are connecting with an external USB-UART adapter, be sure correct to the correct pins:
 
 ![Serial Connections](src/serial-connection.jpg)
