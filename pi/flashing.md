@@ -105,5 +105,4 @@ cp.b 0x81000000 0x9f000000 0x40000
 
 #Debrick using SPI tile board
 
-If you accidently have problem with uboot and it cannot boot up totally, the only way is to using the SPI/JTAG tile board. Refer to the following link for info.
-https://www.kickstarter.com/projects/706167548/dominoio-an-open-hardware-wifi-platform-for-things/posts/1200391
+Please refer to [JTAG/SPI tile board](spi.html) for debricking.
