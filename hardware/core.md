@@ -15,6 +15,7 @@ Domino Di is a bare PCB for playing with Domino Core. You can solder the Domino 
 
 The design of Domino Di in github: https://github.com/domino-team/domino-hardware. Please check out the schematic, layout and BOM. 
 
+
 To make it work, here is the components that you should solder onto the Di board:
 
 ![Domino Di](src/di.png)
