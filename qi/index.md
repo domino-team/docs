@@ -56,13 +56,17 @@ The first time you use your Domino, it will ask you to setup the name and a pass
 
 ![Setup](src/firsttime.jpg)
 
-ATTENTION: The password is only for the embedded Linux system, not your wifi. If you want to change your wifi password, logon the system and change it later.ATTENTION: If you change your boards name, for example to “myboard”, after reboot, you will need to use http://myboard.local to find it.Hint: If you don’t want to have a reboot, just go to luci (the url is: http://domino.local/cgi-bin/luci) and set up a password, you will be able to prompt with a login page.
+ATTENTION: The password is only for the embedded Linux system, not your wifi. If you want to change your wifi password, logon the system and change it later.ATTENTION: If you change your boards name, for example to “myboard”, after reboot, you will need to use http://myboard.local to find it.
+
+**Hint**: If you don’t want to have a reboot, just go to luci (the url is: http://domino.local/cgi-bin/luci) and set up a password, you will be able to prompt with a login page.
 
 ###The homepage
 
-After login, you will have a clean homepage, displaying the status of network and USB devices. You have links on the left side to vairous pages of Domino WebUI.You will also have pie chart displaying your flash usuage. On the bottom, you can upload your sketch to your AVR. 
+After login, you will have a clean homepage, displaying the status of network and USB devices. You have links on the left side to vairous pages of Domino WebUI.
 
 ![Homepage](src/homepage.jpg)
+
+You will also have pie chart displaying your flash usuage. On the bottom, you can upload your sketch to your AVR. 
 
 
 ###Network settings
@@ -76,7 +80,11 @@ The default protocol for WAN is DHCP, but you can change it according to your ne
 
 **Change Wifi and LAN settings**
 
-In the same page, you can also change WiFi and LAN settings. You can `enable/disable` Wifi, change the ssid, security or password. ATTENTION Turning on WiFi (AP) only affect Domino’s ap signal without affecting its connection to your router as client.ATTENTION The default LAN IP of Domino Pi is `192.168.240.1`. If this is your router’s IP as well, please change it to another submit e.g. 192.168.44.1 in order that it can connect to the Internet succefully.
+In the same page, you can also change WiFi and LAN settings. You can `enable/disable` Wifi, change the ssid, security or password. 
+
+**ATTENTION**: Turning on WiFi (AP) only affect Domino’s ap signal without affecting its connection to your router as client.
+
+**ATTENTION**: The default LAN IP of Domino Pi is `192.168.240.1`. If this is your router’s IP as well, please change it to another submit e.g. 192.168.44.1 in order that it can connect to the Internet succefully.
 
 ###Working with USB devices
 
@@ -121,6 +129,8 @@ At the right bottom corner of the LUCI webui, you will find a link "Domino Web P
 Domino Qi uses code from Arduino, so it identify itself as Arduino Yun. When connected the MicroUSB to your computer, you will find the device in your system.
 
 ![Qi device](src/qi-device.jpg)
+
+.
 
 When you use Arduino IDE, you can also find your Domino board automatically. You will find two devices, one is via USB, i.e. COM37. Another is via WiFi. You can select either one and download sketch to your Domino Directly.
 
