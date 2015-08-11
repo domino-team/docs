@@ -21,5 +21,12 @@ On Qi Mini, there are three buttons:
 - **MCU Reset**: when pressed, it will reset the AVR MCU immediately.
 - **User Button**: This button is configured using script. The default actions are: when pressed for 5 seconds and more, it will reset WiFi mode, encryption, password, LAN IP to factory status; when pressed for 30 seconds and more, it will reset the whole system to factory default. e.g. all your change will be erased.
 
+#Qi Assembly
 
+The Qi Mini board use short headers. Put it onto Qi baseboard and press them firmly. On Qi baseboard, the MicroUSB is only for power and we didn't mount it by default. You can just power the kit up using the connector on Qi Mino.
 
+![Qi assembly ](src/qi-assembly.jpg)
+
+To disassemble the kit, you need a little force, as the headers are too tight. Use a pencil or plastic pen, inser into the gap between Qi Mini and the baseboard, apply a little force to lever it up. Don't be too brutal to damage the boards. Don't use a metal tools. 
+
+![Qi assembly ](src/qi-disassembly.jpg)
