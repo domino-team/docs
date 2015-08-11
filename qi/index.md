@@ -3,6 +3,7 @@ Gettting started
 #Qi Mini Interfaces
 
 The heart of Domino Qi is Qi Mini board, which integrates Domino Core and Atmega32U4 MCU. The functions of Qi Mini is compatible with Arduino Yun.
+
 ![Qi Mini Top](src/qi_mini_top.jpg)
 
 
@@ -14,6 +15,7 @@ On Qi Mini, there are four LEDs:
 - <font color=orange>**Yellow LED for WAN** </font>: it will light up when Ethernet cable is connected.
 
 Here is the bottom view:
+
 ![Qi Mini Top](src/qi_mini_back.jpg)
 
 On Qi Mini, there are three buttons:
