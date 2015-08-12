@@ -26,6 +26,8 @@ Press the title board firmly to the Domino Pi board. You can do this same for Du
 
 ![Assembly1](src/assembly1.jpg)
 
+
+
 For the LED board, just plug the LED board as in this picture. Please make sure the LED board plug to the correct position by checking the header markings on the bottom of Domino Pi.
 
 ![LED](src/led.jpg)
