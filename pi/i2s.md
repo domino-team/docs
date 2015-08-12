@@ -2,13 +2,16 @@ Playing music
 
 #The hardware Setup
 
-I2S tile board connects to the left part of of Domino Pi. Thus you cannot connect Ethernet tiles without stackable headers. You can also connect to the Internet via WiFi without Ethernet. 
+I2S tile board connects to the left part of of Domino Pi. Thus you cannot connect Ethernet tiles without stackable headers. You can also connect to the Internet via WiFi without Ethernet.
 
-
+![I2S assembly](src/i2s-assembly.jpg)
 
 #The software
 
 The audio module is built in Domino Pi firmware but not loaded automatically, to load the module, use `insmod glzt_i2s`.
+
+
+![mpg123](src/mpg123.jpg)
 
 ```
 insmod glzt_i2s
@@ -31,5 +34,5 @@ mpg123 /mnt/sda1/my_music.mp3
 To play Internet radio, you can use the same way:
 
 ```
-mpg123 http://internet-radio.com/music
+mpg123 http://your-internet-radio.com/your-stream
 ```
