@@ -14,16 +14,21 @@ To give a more detailed marking of the headers, refer to this diagram.
 
 ![headers detailed](src/pi-headers1.jpg)
 
+![Pi back](src/pi-back.jpg)
+
 #Assembly
 
 Put the Ethernet and USB tile boards aligned with Domino Pi as shown, then plug the tile boards to the headers. 
 
 ![Assembly](src/assembly.jpg)
 
-Press the title board firmly to the Domino Pi board.
+Press the title board firmly to the Domino Pi board. You can do this same for Due Ethernet board and 3xUSB+MicroSD board.
 
 ![Assembly1](src/assembly1.jpg)
 
+For the LED board, just plug the LED board as in this picture. Please make sure the LED board plug to the correct position by checking the header markings on the bottom of Domino Pi.
+
+![LED](src/led.jpg)
 
 #Connections
 
