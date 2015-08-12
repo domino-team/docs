@@ -11,8 +11,6 @@ I2S tile board connects to the left part of of Domino Pi. Thus you cannot connec
 The audio module is built in Domino Pi firmware but not loaded automatically, to load the module, use `insmod glzt_i2s`.
 
 
-![mpg123](src/mpg123.jpg)
-
 ```
 insmod glzt_i2s
 ```
@@ -36,3 +34,5 @@ To play Internet radio, you can use the same way:
 ```
 mpg123 http://your-internet-radio.com/your-stream
 ```
+
+![mpg123](src/mpg123.jpg)
