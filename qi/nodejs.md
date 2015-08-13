@@ -173,5 +173,3 @@ If you cannot see them, try `/etc/init.d/mcuio enable` `/etc/init.d/mcuio start`
 ![MCUIO](src/mcuio.png)
 
 
-###4. Use NodeJS with Ideino IDE
-
