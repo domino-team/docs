@@ -97,7 +97,12 @@ You can revert back and disable LininoIO by just executing `lininoio stop`.
 ###1. Setup environement in openwrt
 
 In order to let Linino IO start when system start, you need to set several environment variables in uboot. Type `fw_printenv` to display the uboot env variables.
-If you got the following error message, it means that the uboot env variables are not stored to flash and you need to go to Step 5.
+
+If you got the following error message, it means that the uboot env variables are not stored to flash and you need to go to Step 1. - alternative.
+
+![CRC error](src/crc.jpg)
+
+
 If you saw correct output as shown below, now set the two variables.
 ```
 root@domino:~# fw_printenv 
