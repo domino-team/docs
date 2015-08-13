@@ -16,7 +16,7 @@ Domino Core is the heart of Domino.IO. It is designed for makers to easily build
 
 ![Domino Core](src/core.png)
 
-Go to the [Domino Core hardware](hardware/core/) for more details of the hardware.
+Go to the [Domino Core hardware](hardware/core.html) for more details of the hardware.
 
 
 ###Domino Pi
@@ -24,7 +24,6 @@ Domino Pi is designed both as a Domino Core development board and as an extensio
 
 ![Domino Pi](src/domino-pi.png)
 
-Go to the [Domino Pi hardware](hardware/pi/) for more details of the hardware.
 
 Go to the [Domino Pi section](pi/) for more details for how to use the Pi.
 
@@ -36,7 +35,6 @@ Plug the Domino Qi Mini board onto the Domino Qi baseboard to turn it into a boa
 
 ![Domino Pi](src/domino-qi.png)
 
-Go to the [Domino Qi hardware](hardware/qi/) for more details of the hardware.
 
 Go to the [Domino Qi section](qi/) for more details for how to use the Qi.
 
