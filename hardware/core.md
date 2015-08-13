@@ -23,6 +23,8 @@ To make it work, here is the components that you should solder onto the Di board
 
 The minimum requirements is to solder the `AMS1117` for power and zero ohm `R6`.
 
+![AMS1117](src/ams1117.jpg)
+
 It is better to solder `C3` and `C7` to make it works better.
 
 To make the PCB antenna work, solder 0ohm `R8` and `R10`. Otherwise, connect a uFL antenna.
