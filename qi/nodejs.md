@@ -71,8 +71,18 @@ cp arduino_yun.json domino_qi.json
 ```
 
 ##Install LininoIO - The easy way
-LinioIO is a framework that let you interact your AVR from openwrt using NodeJS. The easiest way is just execute `lininoio start`.
 
+LinioIO is a framework that let you interact your AVR from openwrt using NodeJS. 
+
+Before you use LininoIO, you need to check uboot environments first. In OpenWrt, do `fw_printenv`. If you see the following output, it means that uboot env is not saved. DON'T continue before you save uboot env.
+
+![CRC error](src/crc.jpg)
+
+Now enter uboot and save envirment vairables. You need to use do this using serial as intructed [here](serial.html).
+
+![Save env](src/saveenv.jpg)
+
+Then you can reset your board and boot the Linux system. Simply execute `lininoio start`.
 
 You can revert back and disable LininoIO by just executing `lininoio stop`.
 
