@@ -3,7 +3,7 @@
 Domino Pi is designed for you to play with OpenWrt and embedded system. Before you continue to change your firmware, read [Working with serial](serial.html) section first.
 
 
-##Firmware compabilities
+##Firmware compatibilities
 
 Domino is compatible with some common OpenWrt firmware for Atheros 9331 SoC, including the firmware for GL-AR150, Carambola2 and Dragino. Due to size and configuration of bootloader, Domino cannot boot firmware for TP-Link 703n, 720n without change the bootloader.
 
@@ -67,9 +67,9 @@ Type `printenv` to display the environment variables. Don't modify these variabl
 
 ###Set up a tftp server
 
-You need to set up a tftp server. In windows, we recommend tftpd32 or tftpd64 according to your system architecture. Download them from [junin.net](http://www.jounin.net/tftpd32_download.html).
+You need to set up a tftp server. In windows, we recommend `tftpd3`2 or `tftpd64 according to your system architecture. Download them from [junin.net](http://www.jounin.net/tftpd32_download.html).
 
-In Linux, we recommend tftpd-hpa, search for a guidance in google. 
+In Linux, we recommend `tftpd-hpa`, search for a guidance in google. 
 
 ###Update using the stored procedure
 
