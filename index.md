@@ -1,5 +1,11 @@
 Gettting started
 
+#FAQ
+1. What is the WiFi password?
+
+	it is "goodlife".
+
+
 ##gettting started with Domino
 
 Thanks for using Domino. Domino is a high-performance 802.11 bgn WiFi hardware platform, with a modular design architecture, unlimited extension capabilities and Arduino compatibility.
