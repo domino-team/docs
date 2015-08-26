@@ -3,11 +3,15 @@ Gettting started
 #FAQ
 1. What is the WiFi password?
 
+```
 	It is "goodlife".
+```
 
 2. What cannot I connect to http://domino.local?
 
+```
 	You need bounjor service. Download it from https://support.apple.com/kb/DL999?locale=en_US for windows.
+```
 
 ##gettting started with Domino
 
