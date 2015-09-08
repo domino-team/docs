@@ -54,6 +54,8 @@ bootcmd=bootp; setenv bootargs root=/dev/nfs nfsroot=${serverip}:${rootpath} ip=
 bootdelay=5
 baudrate=115200
 
+<font color=red>Don't continue if you get the above message.</font>
+
 ```
 
 If you don't have a `Bad CRC` message, continue with the following:
