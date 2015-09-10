@@ -1,11 +1,11 @@
 #Flashing and debricking
 
-Domino Pi is designed for you to play with OpenWrt and embedded system. Before you continue to change your firmware, read [Working with serial](serial.html) section first.
+Domino Pi is designed for you to play with OpenWrt and embedded systems. Before you continue to change your firmware, read the [Working with serial](serial.html) section first.
 
 
 ##Firmware compatibilities
 
-Domino is compatible with some common OpenWrt firmware for Atheros 9331 SoC, including the firmware for GL-AR150, Carambola2 and Dragino. Due to size and configuration of bootloader, Domino cannot boot firmware for TP-Link 703n, 720n without change the bootloader.
+Domino is compatible with some common OpenWrt firmwares for the Atheros 9331 SoC, including the firmware for GL-AR150, Carambola2 and Dragino. Due to size and configuration of the bootloader, Domino cannot boot firmware for TP-Link 703n, 720n without changing the bootloader.
 
 
 ##Flashing firmware using the WebUI
@@ -13,7 +13,7 @@ Domino is compatible with some common OpenWrt firmware for Atheros 9331 SoC, inc
 We encourage you to flash your firmware using the WebUI provided. When viewing in "System" page, you will see the UI for you to upgrade/flash your firmware. 
 ![System](src/system.jpg)
 
-If you want to upload your firmware in your disk, just click "Choose File" and upload the firmware. After upload you will be prompted with option to "keep settings" or not. Then click "UPGRADE" to upgrade your firmware. You can also upgrade your firmware by click the "Download" button next to "Newest version". 
+If you want to upload your firmware in your disk, just click "Choose File" and upload the firmware. After upload you will be prompted with an option to "keep settings" or not. Then click "UPGRADE" to upgrade your firmware. You can also upgrade your firmware by clicking the "Download" button next to "Newest version". 
 
 ![System](src/upgrade.jpg)
 
@@ -32,17 +32,17 @@ Connect an Ethernet cable from your computer to Domino directly. Set your comput
 
 ###Step 2: Activate the uboot WebUI
 
-Press and hole the reset button while powering on your Domino. You will see the <font color=blue>Blue LED</font> for Wireless flashing. After it flashes for 5 times, the WAN led will light up. Now release your finger. The WAN LED will flash quite quickly for some times.
+Press and hold the reset button while powering on your Domino. You will see the <font color=blue>Blue LED</font> for Wireless flashing. After it flashes 5 times, the WAN led will light up. Now release your finger. The WAN LED will flash quite quickly for some times.
 
 ###Step 3: Flash firmware
 
-Now use a web broser and go to http://192.168.1.1, you will then have the uboot WebUI as below.
+Now use a web broser and go to http://192.168.1.1. You will then have the uboot WebUI as below.
 
 ![uboot](src/uboot.jpg)
 
-Now choose your firmware and click "Update firmware". Wait about 3 minutes so that your board reset and boot.
+Now choose your firmware and click "Update firmware". Wait about 3 minutes to allow your board to reset and boot.
 
-**ATTENTION**: DON'T turn off power uding this process.
+**ATTENTION**: DON'T turn off the power during this process.
 
 **ATTENTION**: Uboot wont check the validity of the firmware. Even if you flashed a wrong firmware, it will still write it to flash.
 
@@ -51,7 +51,7 @@ Now choose your firmware and click "Update firmware". Wait about 3 minutes so th
 
 If your firmware still cannot boot up, try this advanced option. To use uboot console, please refer to [Working with serial](serial.html) first. 
 
-**ATTENTION**: It is better to use a separate USB-UART adapter to use the uboot console. uboot boot very quickly so you might not have time to enter the uboot console if you are using integrated USB-UART bridge. System especially windows is slow in loading the correct driver for you.
+**ATTENTION**: It is better to use a separate USB-UART adapter to use the uboot console. uboot boots very quickly, so you might not have time to enter the uboot console if you are using an integrated USB-UART bridge. Some systems, especially Windows, are slow to load the correct driver for you.
 
 ###Enter the uboot console
 
@@ -67,9 +67,9 @@ Type `printenv` to display the environment variables. Don't modify these variabl
 
 ###Set up a tftp server
 
-You need to set up a tftp server. In windows, we recommend `tftpd3`2 or `tftpd64 according to your system architecture. Download them from [junin.net](http://www.jounin.net/tftpd32_download.html).
+You need to set up a tftp server. In Windows, we recommend `tftpd32` or `tftpd64` according to your system architecture. Download them from [junin.net](http://www.jounin.net/tftpd32_download.html).
 
-In Linux, we recommend `tftpd-hpa`, search for a guidance in google. 
+In Linux, we recommend `tftpd-hpa`. Just search google for a guide to use this tool. 
 
 ###Update using the stored procedure
 

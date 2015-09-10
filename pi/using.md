@@ -2,40 +2,40 @@ Using Domino Pi
 
 #LED and buttons
 
-Domino Pi board has two LEDs. The <font color='red'>red LED</font> is for Power, which should be always on when powered. The <font color='blue'>blue LED</font> is for wireless (or WLAN), which will indicate the status of wireless. But it can be configured to indicate any other status of the system. 
+Domino Pi board has two LEDs. The <font color='red'>red LED</font> is for Power, which should be always on when powered. The <font color='blue'>blue LED</font> is for wireless (or WLAN), which will indicate the status of the wireless connection by default, but it can be configured to indicate any other status of the system. 
 
 ![LED & Buttons](src/pi-led-button.jpg)
 
-Besides the WLAN LEDs there is a button which connects to `GPIO 11`. The function of this button can be configured by scripts. The default action is: 
+Beside the WLAN LED, there is a button which connects to `GPIO 11`. This button can be reconfigured by scripts, but the default action is: 
 
-1. With a short press, it will toggle the status of wifi, i.e. it will turn on/off the wifi; 
+1. With a short press, it will toggle the status of WiFi, i.e. it will turn on/off the WiFi; 
 2. With a long press (10 seconds), it will revert the system to factory status.
 
-The ethernet boards has more LEDs. For example, in the photo illustrated, the WAN led and WLAN LED is on.
+The ethernet boards have more LEDs. For example, as shown in the photo below, the WAN led and WLAN LED is on.
 
 ![LED & Buttons](src/pi-powerup.jpg)
 
 #First time use
 
-When Domino power up for the first time, it will connect to the Internet using DHCP and emit a wifi single with ssid: `Domino-xxx`, where `xxx` is the last three alphabet/digital of your MAC address. 
+When Domino power up for the first time, it will connect to the Internet using DHCP and emit a wifi single with ssid: `Domino-xxx`, where `xxx` is the last three characters of your MAC address. 
 
-The default password for wifi is: `goodlife`.
+The default WiFi password is: `goodlife`.
 
-The first time you use Domino, it is suggested that you connect to it directly using wifi or connect it to your router. Then using a browser (firefox or chrome) to visit `http://domino.local` to get access to it.
+The first time you use Domino, it is suggested that you connect to it directly using WiFi or connect it directly to your router. Then using a browser (firefox or chrome) to visit `http://domino.local` to get access to it.
 
 ![Bonjour](src/bonjour.jpg)
 
-If you cannot find `domino.local` in your windows, you need to install `Bounjor` from Apple. Download it from https://support.apple.com/kb/DL999?locale=en_US 
+If you are using Windows and cannot find `domino.local`, you may need to install `Bounjor` from Apple. Download it from https://support.apple.com/kb/DL999?locale=en_US 
 
 The first time you use your Domino, it will ask you to setup the name and a password. Then reboot your device.
 
 ![Setup](src/first_time.jpg)
 
-**ATTENTION**: The password is only for the embedded Linux system, not your wifi. If you want to change your wifi password, logon the system and change it later.
+**ATTENTION**: The password is only for the embedded Linux system, not your WiFi. If you want to change your wifi password, you can logon to the system and change it later.
 
-**ATTENTION**: If you change your boards name, for example to "myboard", after reboot, you will need to use http://myboard.local to find it.
+**ATTENTION**: If you change your board's name, for example to "myboard", after reboot you will need to use http://myboard.local to find it.
 
-**Hint**: If you don't want to have a reboot, just go to luci (the url is: http://domino.local/cgi-bin/luci) and set up a password, you will be able to prompt with a login page.
+**Hint**: If you don't want to have a reboot, just go to luci (the url is: http://domino.local/cgi-bin/luci) and set up a password. You will be prompted with a login page.
 
 #The Homepage
 
@@ -49,7 +49,7 @@ You will also have pie chart displaying your flash usuage.
 
 ###Connect to the Internet
 
-The default protocol for WAN is `DHCP`, but you can change it according to your needs. You have 5 choices, including `DHCP, Static, PPPoE, 3G, Tethering and WiFi`. The `3g` protocol let you connect domino to the Internet via a USB 3g/4g modem. The `Tethering` protocol let you connect Domino to the Internet via an Android phone. The `WiFi` choice let you connect your Domino to an AP (e.g. router) wirelessly.
+The default protocol for WAN is `DHCP`, but you can change it according to your needs. You have 5 choices, including `DHCP, Static, PPPoE, 3G, Tethering and WiFi`. The `3g` protocol lets you connect Domino to the internet via a USB 3g/4g modem. The `Tethering` protocol lets you connect Domino to the internet via an Android phone. The `WiFi` choice lets you connect your Domino to an AP (e.g. router) wirelessly.
 
 ![Network](src/network.jpg)
 
@@ -57,24 +57,24 @@ The default protocol for WAN is `DHCP`, but you can change it according to your 
 
 In the same page, you can also change WiFi and LAN settings. You can `enable/disable` Wifi, change the ssid, security or password. 
 
-**ATTENTION** Turning on WiFi (AP) only affect Domino's ap signal without affecting its connection to your router as client.
+**ATTENTION** Turning on WiFi (AP) only affects Domino's AP signal without affecting its connection to your router as a client.
 
-**ATTENTION** The default LAN IP of Domino Pi is `192.168.1.1`. If this is your router's IP as well, please change it to another submit e.g. `192.168.240.1` in order that it can connect to the Internet succefully.
+**ATTENTION** The default LAN IP of Domino Pi is `192.168.1.1`. If this is your router's IP as well, please change it to another addres, e.g. `192.168.240.1`, in order that it can connect to the internet succefully.
 
 
 #Working with USB devices
 
-You can connect USB devices to Domino via the USB tiles. 
+You can connect USB devices to Domino with the USB tiles. 
 
 ![USB](src/usb-disk.jpg)
 
-If you connect a USB disk, you will find a pie chart showing its storage usage. By clicking the pi chart, you will be able to list the content of storage.
+If you connect a USB disk, you will find a pie chart showing its storage usage. By clicking the pi chart, you will be able to list the contents of the storage device.
 
 If you connect a USB webcam, you will have a live video streaming charge in your homepage. Please consult the "Live video streaming" page for more details.
 
 #Code editor
 
-By clicking the "Editor" link on or clicking directly the flash or USB devices on the homepage, you will be able to list the contents of flash or USB storage and edit the content of the file.
+By clicking the "Editor" link on the homepage or clicking directly on the flash or USB devices on the homepage, you will be able to list the contents of flash or USB storage and edit the contents of their files.
 
 ![Code editor](src/editor.jpg)
 
@@ -82,7 +82,7 @@ You can view or edit individual files directly.
 
 **ATTENTION** When editing files, your data is not encrypted.
 
-**ATTENTION** Your Domino board have to be connected to the Internet in order to use the web editor, because the browser needs to load some big scripts to make a nice view of the code!
+**ATTENTION** Your Domino board has to be connected to the internet in order to use the web editor, because the browser needs to load some big scripts to display the code nicely!
 
 #LUCI
 
@@ -90,13 +90,13 @@ By clicking the Luci link on homepage, you will go to the LUCI webui, which is t
 
 ![LUCI](src/luci.jpg)
 
-At the right bottom corner of the LUCI webui, you will find a link "Domino Web Panel", click it and go back to the Domino UI.
+At the bottom right corner of the LUCI webui, you will find a link "Domino Web Panel". Click it to go back to the Domino UI.
 
 #Securities
 
-1. When you change your password, settings etc. your data is encrypted when trasfer on the network.
+1. When you change your password, settings, etc, your data is encrypted when trasfered over the network.
 
-2. Wen you view or modify files using the code editor, data are NOT encrypted. 
+2. Wen you view or modify files using the code editor, the data is NOT encrypted. 
 
-3. When you use webcam, the default setting does NOT have a password, i.e. it is OPEN TO THE INTERNET. Everyone will be able to see you if there is no firewall. Please refer to the "Live video streaming" are for more info.
+3. When you use a webcam, the default setting does NOT have a password, i.e. it is OPEN TO THE INTERNET. Everyone will be able to see you if there is no firewall. Please refer to the "Live video streaming" are for more info.
 

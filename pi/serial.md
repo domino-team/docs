@@ -1,31 +1,31 @@
 #Working with serial
 
-It is important to have a USB-UART adapter and work with serial if you want to play with Domino. With serial, you will be able to access the console and have full controller of the OpenWrt system and bootloader.
+It is important to have a USB-UART adapter and work with serial if you want to play with Domino. With serial, you will be able to access the console and have full control of the OpenWrt system and bootloader.
 
 #USB-UART adapter
 
-Domino Pi has a build in USB-UART bridge. So you have two serial connectors, on is on the MicroUSB power connector and another is on Ethernet board, which is directly to Domino Core. 
+Domino Pi has a built-in USB-UART bridge. So you have two serial connectors, one is on the MicroUSB power connector and the other is on the Ethernet board, which is connected to the Domino Core. 
 
 ![USB-UART](src/adapter.jpg)
 
-Just connect Domino Pi to your computer, it will be powered up and at the same time you will have access to the serial.
+Just connect Domino Pi to your computer. It will be powered up and at the same time you will have access to the serial.
 
-Sometime you need to connect directly to the Domino Core UART, and you will need one USB-UART adapter.
+Sometime you need to connect directly to the Domino Core UART, and you will need a USB-UART adapter.
 
 
-**ATTENTION**: If you are connecting with an external USB-UART adapter, be sure correct to the correct pins:
+**ATTENTION**: If you are connecting with an external USB-UART adapter, be sure connect to the correct pins:
 
 ![Serial Connections](src/serial-connection.jpg)
 
 #In Windows
 
-If you want to use connector 1, you windows will automatically detect the USB to UART Bridge and install drivers. 
+If you want to use connector 1, Windows will automatically detect the USB to UART Bridge and install drivers. 
 
 ![USB-UART](src/driver.jpg)
 
-Find its com number, which is `COM36` in my case. 
+Find its com number. (Which is `COM36` in my case.) 
 
-If you use your own USB UART adapter, you will have an com number too, which is `COM4` in my case.
+If you use your own USB UART adapter, you will have a com number also. (Which is `COM4` in my case.)
 
 You need a serial term, we recommend [PuTTY](http://http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) and [RealTerm](http://realterm.sourceforge.net/). Download them for free.
 
@@ -49,15 +49,15 @@ At the same time, you can also connect to the serial using Connector 2. Execute 
 
 ###Working with two serials
 
-In the above instructions, we used two terms connect to two serial ports, PuTTY connecting to Connector 2 (original uart of Domino Core) and RealTerm connecting to Connector 1 (the build in USB-UART bridge). Once you connect RealTerm, you will find that in PuTTY you cannot input anything, but you can input from RealTerm. 
+In the above instructions, we used two terms connected to two serial ports: PuTTY connecting to Connector 2 (original uart of Domino Core) and RealTerm connecting to Connector 1 (the build in USB-UART bridge). Once you connect RealTerm, you will find that in PuTTY you cannot input anything, but you can input from RealTerm. 
 
 ![USB-UART](src/realterm1.jpg)
 
-You can enable input in PuTTY by clear `RTS` in RealTerm. Go to the "Pins" page and click "Clear" in RTS section, you will be able to input in PuTTY but not in RealTerm. To enable input in RealTerm again, click "Set" in RTS section.
+You can enable input in PuTTY by clearing `RTS` in RealTerm. Go to the "Pins" page and click "Clear" in RTS section. Now you will be able to input in PuTTY, but not in RealTerm. To enable input in RealTerm again, click "Set" in RTS section.
 
 #In Linux (Ubuntu)
 
-We only test in Ubuntu. For other distro, if you have any questions, pls discuss in community.
+We only test in Ubuntu. For any other distro, if you have any questions, pls discuss in the community.
 
 In Ubuntu, when connecting Domino Pi to your computer's USB directly, it will be identified as `/dev/ttyUSB*`, e.g. `/dev/ttyUSB0` if you only have USB serial device.
 
