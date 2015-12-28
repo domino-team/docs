@@ -31,7 +31,7 @@ cd openwrt-domino
 
 ###3. Install Quilt for patches
 
-Refer to http://wiki.openwrt.org/doc/devel/patches to understand how OpenWrt deals with patches. We will need to apply a patch to OpenWrt.
+Check the instructions from openwrt http://wiki.openwrt.org/doc/devel/patches to understand how OpenWrt deals with patches. We will need to apply a patch to OpenWrt.
 
 ```
 cat > ~/.quiltrc <<EOF
