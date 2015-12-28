@@ -18,8 +18,9 @@ libssl-dev xsltproc libxml-parser-perl mercurial bzr ecj cvs unzip
 
 
 ###2. Configure quilt
-Refer to http://wiki.openwrt.org/doc/devel/patches to understand how OpenWrt deal with patches. We will need to apply a patch to OpenWrt.
-=======
+
+Please check http://wiki.openwrt.org/doc/devel/patches to understand how OpenWrt deal with patches. We will need to apply a patch to OpenWrt.
+
 ###2. Download OpenWrt
 For Domino-Pi, we use OpenWrt release BB1407.
 ```
