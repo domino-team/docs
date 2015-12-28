@@ -30,6 +30,7 @@ cd openwrt-domino
 ```
 
 ###3. Install Quilt for patches
+
 Refer to http://wiki.openwrt.org/doc/devel/patches to understand how OpenWrt deals with patches. We will need to apply a patch to OpenWrt.
 
 ```
@@ -51,7 +52,7 @@ cd openwrt-domino
 ./scripts/feeds install -a
 ```
 
-###3-alternative. Download OpenWrt CC1505
+###3 (alternative). Download OpenWrt CC1505
 We upgrade the code to CC1505.
 ```
 https://github.com/domino-team/openwrt-cc.git
