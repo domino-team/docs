@@ -16,7 +16,7 @@ sudo apt-get install subversion build-essential git-core libncurses5-dev zlib1g-
 libssl-dev xsltproc libxml-parser-perl mercurial bzr ecj cvs unzip 
 ```
 
-<<<<<<< HEAD
+
 ###2. Configure quilt
 Refer to http://wiki.openwrt.org/doc/devel/patches to understand how OpenWrt deal with patches. We will need to apply a patch to OpenWrt.
 =======
@@ -31,7 +31,7 @@ cd openwrt-domino
 
 ###3. Install Quilt for patches
 Refer to http://wiki.openwrt.org/doc/devel/patches to understand how OpenWrt deals with patches. We will need to apply a patch to OpenWrt.
->>>>>>> origin/master
+
 ```
 cat > ~/.quiltrc <<EOF
 QUILT_DIFF_ARGS="--no-timestamps --no-index -p ab --color=auto"
@@ -135,7 +135,7 @@ Type `make menuconfig`, select 'domino' on the main menu (midway down), then sel
 
 ![Domino packages](src/menuconfig-domino.png)
 
-<<<<<<< HEAD
+
 Select the packages by pressing the space key until it shows a '*' before the package name.
 
 =======
