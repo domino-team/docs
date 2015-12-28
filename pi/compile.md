@@ -16,23 +16,9 @@ sudo apt-get install subversion build-essential git-core libncurses5-dev zlib1g-
 libssl-dev xsltproc libxml-parser-perl mercurial bzr ecj cvs unzip 
 ```
 
-
 ###2. Configure quilt
 
 Please check http://wiki.openwrt.org/doc/devel/patches to understand how OpenWrt deal with patches. We will need to apply a patch to OpenWrt.
-
-###2. Download OpenWrt
-For Domino-Pi, we use OpenWrt release BB1407.
-```
-git clone git://git.openwrt.org/14.07/openwrt.git openwrt-domino
-cd openwrt-domino
-./scripts/feeds update -a
-./scripts/feeds install -a
-```
-
-###3. Install Quilt for patches
-
-Check the instructions from openwrt: http://wiki.openwrt.org/doc/devel/patches to understand how OpenWrt deals with patches. We will need to apply a patch to OpenWrt.
 
 ```
 cat > ~/.quiltrc <<EOF
@@ -140,9 +126,9 @@ Type `make menuconfig`, select 'domino' on the main menu (midway down), then sel
 
 Select the packages by pressing the space key until it shows a '*' before the package name.
 
-=======
+
 You will find "domino-athplay", "domino-pi" and "kmod-domino-iis" in "Domino" category. Select them all by pressing space key until it shows a * before the package. If you don't want audio, remove "domino-athplay" and "kmod-domino-iis" from the selction. If you want to play music, you also need to select "Utilities->mpg123". 
->>>>>>> origin/master
+
 
 That is all. You don't need to select any other packages because they are already selected automaticly.
 
