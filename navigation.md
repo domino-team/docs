@@ -86,4 +86,4 @@
 [Shop](http://www.gl-inet.com/shop/)
 
 #[gimmick:themechooser](Choose theme)
-[gimmick:forkmeongithub(color: 'red', position: 'left')](https://github.com/domino-team/docs/)
+[gimmick:forkmeongithub(color: 'red', position: 'right')](https://github.com/domino-team/docs/)
