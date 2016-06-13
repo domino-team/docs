@@ -1,7 +1,6 @@
-Readme
 #Domino Documentation
 
-Domino Documentation is hosted on github. You can view this on both github and [domino.io/docs/](http://domino.io/docs/)
+This is the docs of all GLI products. You can view on http://www.gl-inet.com/docs/ 
 
-When view on [domino.io/docs/](http://domino.io/docs/), expend the nav list on the left to go to subtopics.
+
 
