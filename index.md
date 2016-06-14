@@ -11,7 +11,7 @@ Contents available
 
 [Mini Router Reset WISP Repeater](#!mini/repeater.md)
 
-[Mini Router firmware upgrade](#!mini/firmwares.md)
+[Mini Router firmware upgrade](#!mini/firmware.md)
 
 [Using RTC on GL-AR150](#!mini/ar150rtc.md)
 
