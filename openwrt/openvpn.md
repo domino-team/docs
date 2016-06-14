@@ -1,11 +1,14 @@
 Using OpenVPN in GLi routers
 ========================
 
-This is the guide to use OpenVPN in GL-AR150 with 2.17-openvpn firmware. OpenVPN will be compiled for all GLi routers later.
+OpenVPN client is pre-installed in GLI mini routers GL-AR150, GL-AR300M, GL-MT300N, GL-MT300A from firmware v2.19.
 
-Download the firmware here: [http://www.gl-inet.com/firmware/ar150/v1/](http://www.gl-inet.com/firmware/ar150/v1/)
+Download the firmware for each devices: http://www.gl-inet.com/firmware/
 
-This assumes you have a .ovpn file. If not, read the bottom part of this page and buy one account.
+The newest firmware maybe put in testing folder: http://www.gl-inet.com/firmware/testing/
+
+
+Note: This assumes you have a .ovpn file. If not, read the bottom part of this page and buy one account.
 
 
 This guide assumes that you have set up the router properly.
@@ -58,7 +61,7 @@ The router will display the progress of connection. When connected, you will be 
 
 ##Manage ovpn files
 
-From firmware v2.20, there is a simple ovpn manager where you can check the current list of ovpn files. You can purge all the files and start to use another vpn service.
+From firmware `v2.20`, there is a simple ovpn manager where you can check the current list of ovpn files. You can purge all the files and start to use another vpn service.
 
 We would like to add more functions in the ovpn manager, you can send us a wish list via email or in the forum. Some proposed functions (this doesn't mean this feature will come in the near future) include:
 

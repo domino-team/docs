@@ -54,6 +54,7 @@
   * [Internet Settings, MAC clone, DNS](mini/internet.md)
   * [LAN IP](mini/lan.md)
   * [Wifi Settings](mini/wifi.md)
+  * [Reset WISP Repeater](mini/repeater.md)
   * # Using USB WebCam
   * # Using USB Storage
   * # DDNS and Access
@@ -86,4 +87,3 @@
 [Shop](http://www.gl-inet.com/shop/)
 
 #[gimmick:themechooser](Choose theme)
-[gimmick:forkmeongithub(color: 'red', position: 'right')](https://github.com/domino-team/docs/)
