@@ -60,6 +60,7 @@
   * # DDNS and Access
   * [Firmware upgrading](mini/firmware.md)
   - - - -
+  * [GL-AR300M](mini/ar300m.md)
   * # GL-AR150
   * # GL-iNet6416
   * # GL-MT300N
