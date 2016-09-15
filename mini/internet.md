@@ -38,6 +38,8 @@ Fill your `username` and `password` then click `Submit`.
 
 ## Repeater (WISP)
 
+Note: **Please check the [Repeater Manager function](../mini/repeater_manager.md)**
+
 Using GLi mini routers, you don't need to have an Ethernet cable to surf the Internet, you can user it as repeater. The most common one is WISP (Wireless Internet Service Provider). 
 
 In WISP mode, the mini router act as a firewall and protect you from outside. If you are using a public wifi, you need to use this mode. 

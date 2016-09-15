@@ -54,7 +54,7 @@
   * [Internet Settings, MAC clone, DNS](mini/internet.md)
   * [LAN IP](mini/lan.md)
   * [Wifi Settings](mini/wifi.md)
-  * [Reset WISP Repeater](mini/repeater.md)
+  * [Repeater Manager](mini/repeater_manager.md)
   * # Using USB WebCam
   * # Using USB Storage
   * # DDNS and Access
