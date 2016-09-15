@@ -9,7 +9,7 @@ Contents available
 
 [Mini Router WiFi Settings](#!mini/wifi.md)
 
-[Mini Router Reset WISP Repeater](#!mini/repeater.md)
+[Mini Router **Repeater Manager**](#!mini/repeater_manager.md)
 
 [Mini Router firmware upgrade](#!mini/firmware.md)
 
