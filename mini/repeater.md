@@ -1,4 +1,8 @@
 
+*The following content has been depreciated because we have developed repeater manager function which is available in Firmware v2.22 and newer.*
+
+*Check how to use repeater (station) manager [here](repeater_manager.md)*
+
 ## One-Radio device problem in Repeater mode
 
 The mini routers is One-Radio device, which caused a problem in repeater mode. When your repeater cannot connect, its own ap will not boot.
