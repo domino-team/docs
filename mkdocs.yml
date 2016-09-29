@@ -20,8 +20,7 @@ pages:
 - OpenWrt:
     - 'OpenVPN' : 'openwrt/openvpn.md'
 
-- Domino Kit:
-  
+- 'Domino Kit' :
   - 'Getting Started' : 'domino/index.md'
   - 'Domore Core' : 'domino/hardware/core.md'
   - 'Domino Pi Baseboard': 'domino/pi/pi.md'
@@ -34,28 +33,23 @@ pages:
   - 'Domino Pi - LED': 'domino/pi/led.md'
   - 'Domino Qi Mini' : 'domino/qi/mini.md'
   - 'Domino Qi baseboard': 'domino/qi/base.md'
-  - 'Domino Pi Instructions':
-  - 'Using the firmware': 'domino/pi/using.md'
-  - 'Compile firmware': 'domino/pi/compile.md'
-  - 'Flashing and debricking': 'domino/pi/flashing.md'
-  - 'Playing Music': 'domino/pi/audio.md'
-  - 'Working with Serial': 'domino/pi/serial.md'
-  - 'Debricking using SPI/JTAG board': 'domino/pi/spi.md'
-  - 'Domino Qi Instructions':
-  - 'Getting Started': 'domino/qi/index.md'
-  - 'Using Arduino or Linino Firmware': 'domino/qi/arduino-yun.md'
-  - 'Using NodeJS and LininoIO': 'domino/qi/nodejs.md'
-  - 'Using Serial': 'domino/qi/serial.md'
+  - 'Pi: Using the firmware': 'domino/pi/using.md'
+  - 'Pi: Compile firmware': 'domino/pi/compile.md'
+  - 'Pi: Flashing and debricking': 'domino/pi/flashing.md'
+  - 'Pi: Playing Music': 'domino/pi/audio.md'
+  - 'Pi: Working with Serial': 'domino/pi/serial.md'
+  - 'Pi: Debricking using SPI/JTAG board': 'domino/pi/spi.md'
+  - 'Qi: Getting Started': 'domino/qi/index.md'
+  - 'Qi: Using Arduino or Linino Firmware': 'domino/qi/arduino-yun.md'
+  - 'Qi: Using NodeJS and LininoIO': 'domino/qi/nodejs.md'
+  - 'Qi: Using Serial': 'domino/qi/serial.md'
 
-- 'Mini routers':
-
-  - 'Quick Start' :'mini/index.md'
+- 'Mini routers' :
+  - 'Quick Start' : 'mini/index.md'
   - 'Internet Settings, MAC clone, DNS' : 'mini/internet.md'
   - 'LAN IP' : 'mini/lan.md'
   - 'Wifi Settings (AP)': 'mini/wifi.md'
   - 'Repeater Manager' : 'mini/repeater_manager.md'
-  - 'Firmware upgrading' :'mini/firmware.md'
-  - 'GL-AR300M' :'mini/ar300m.md'
-  - 'RTC for AR150' :'mini/ar150rtc.md'
-
-
+  - 'Firmware upgrading' : 'mini/firmware.md'
+  - 'GL-AR300M' : 'mini/ar300m.md'
+  - 'RTC for AR150' : 'mini/ar150rtc.md'
