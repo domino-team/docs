@@ -5,7 +5,7 @@ Overview
 -------------
 When connected to the Domino Pi board, the Domino I2S Tile adds audio capabilities and ports:
 
-* Wolfson WM8978 Stereo CODEC with Speaker Driver (Datasheet), faturing:
+  * Wolfson WM8978 Stereo CODEC with Speaker Driver (Datasheet), faturing:
   * DAC SNR 98dB, THD -84dB ('A' weighted @ 48kHz)
   * ADC SNR 95dB, THD -84dB ('A' weighted @ 48kHz)
   * On-chip Headphone Driver with 'capless' option
@@ -28,11 +28,11 @@ When connected to the Domino Pi board, the Domino I2S Tile adds audio capabiliti
   * Support for 8, 11.025, 12, 16, 22.05, 24, 32, 44.1 and 48kHz sample rates
   * Low power, low voltage - 2.5V to 3.6V (digital: 1.71V to 3.6V)
   * 5x5mm 32-lead QFN package
-* ? 3.5 mm Stereo Audio Jack (Tip: Left / Ring: Right / Sleeve: Ground): LINE OUT / HEADPHONE OUT
-* SPDIF Optical Transmitter: DIGITAL AUDIO OUT
-* On 2x edge header pins: Stereo SPEAKER OUT
-( Integrated ? 4.5 mm Mono Electret Microphone, also available on edge header pins
-( On 2x Pin Header: Stereo AUX IN
+  *  3.5 mm Stereo Audio Jack (Tip: Left / Ring: Right / Sleeve: Ground): LINE OUT / HEADPHONE OUT
+  * SPDIF Optical Transmitter: DIGITAL AUDIO OUT
+  * On 2x edge header pins: Stereo SPEAKER OUT
+  * Integrated ? 4.5 mm Mono Electret Microphone, also available on edge header pins
+  * On 2x Pin Header: Stereo AUX IN
 
 The Domino Dual Ethernet Tile connects as a West-side Tile.
 
