@@ -4,26 +4,26 @@ Available documentations
 
 ---
 
-[Mini Router Quick Setup](#!mini/index.md)
+[Mini Router Quick Setup](/docs/mini/)
 
-[Mini Router Internet Setup](#!mini/internet.md)
+[Mini Router Internet Setup](/docs/mini/internet)
 
-[Mini Router LAN IP](#!mini/lan.md)
+[Mini Router LAN IP](/docs/mini/lan)
 
-[Mini Router WiFi Settings](#!mini/wifi.md)
+[Mini Router WiFi Settings](/docs/mini/wifi)
 
-[Mini Router **Repeater Manager**](#!mini/repeater_manager.md)
+[Mini Router **Repeater Manager**](/docs/mini/repeater_manager)
 
-[Mini Router firmware upgrade](#!mini/firmware.md)
+[Mini Router firmware upgrade](/docs/mini/firmware)
 
-[Using RTC on GL-AR150](#!mini/ar150rtc.md)
+[Using RTC on GL-AR150](/docs/mini/ar150rtc)
 
-[Using **OpenVPN** on Mini routers](#!openwrt/openvpn.md)
+[Using **OpenVPN** on Mini routers](/docs/openwrt/openvpn)
 
-[Working with UART & serial](#!diy/serial.md)
+[Working with UART & serial](/docs/diy/serial)
 
-[Working with Uboot](#!diy/uboot.md)
+[Working with Uboot](/docs/diy/uboot)
 
-[Domino Hardware and instructions](#!domino/index.md)
+[Domino Hardware and instructions](/docs/domino/index)
 
 
