@@ -1,4 +1,4 @@
-Domino LED Tile Board
+ï»¿Domino LED Tile Board
 ===================
 
 Overview
@@ -14,7 +14,7 @@ When connected to the Domino Pi board, the Domino LED Tile adds the following LE
 * 1x Yellow LEd: WPS (LED8)
 * The Domino LED Tile connects as a West-side Tile.
 
-It is only compatible with the Domino Pi board, as the Domino Qi Mini does not feature LED GPIOs, but instead integrates the standard Arduino Y¨´n<sup>TM</sup> LEDs.
+It is only compatible with the Domino Pi board, as the Domino Qi Mini does not feature LED GPIOs, but instead integrates the standard Arduino Yun<sup>TM</sup> LEDs.
 
 ![LED board](src/led1.jpg)
 ![LED board](src/led2.jpg)
