@@ -23,7 +23,6 @@ pages:
 - Domino Kit:
   
   - 'Getting Started' : 'domino/index.md'
-  - - - - 
   - 'Domore Core' : 'domino/hardware/core.md'
   - 'Domino Pi Baseboard': 'domino/pi/pi.md'
     - 'Domino Pi - Single Eth board': 'domino/pi/single_eth.md'
