@@ -1,5 +1,6 @@
-Using OpenVPN in GLi routers
-========================
+# Using OpenVPN in GLi routers
+
+---
 
 OpenVPN client is pre-installed in GLI mini routers GL-AR150, GL-AR300M, GL-MT300N, GL-MT300A from firmware v2.19.
 
@@ -13,13 +14,13 @@ Note: This assumes you have a .ovpn file. If not, read the bottom part of this p
 
 This guide assumes that you have set up the router properly.
 
-##Go to OpenVPN page
+## Go to OpenVPN page
 
 Click the OpenVPN icon on the toolbar. It will ask you to upload ovpn files.
 
 ![Basic UI](src/openvpn/1.jpg)
 
-##Upload your .ovpn
+## Upload your .ovpn
 
 Drap and drop your ovpn file to the white rect, it will be uploaded. The router will start to check the file automatically. If the file needs a separate username and password, it will prompt you and pop up a window.
 

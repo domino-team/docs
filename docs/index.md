@@ -1,5 +1,8 @@
-Contents available
-===================
+# Contents available
+
+Available documentations
+
+---
 
 [Mini Router Quick Setup](#!mini/index.md)
 

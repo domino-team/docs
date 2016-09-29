@@ -1,0 +1,21 @@
+site_name: GLI Docs
+repo_url: https://github.com/domino-team/docs/
+site_description: This is the docs for GLI mini router, OpenWrt, OpenVPN
+site_favicon: null
+copyright: null
+google_analytics: null
+site_dir: 'site'
+docs_dir: 'docs'
+theme: 'mkdocs'
+
+
+pages:
+- Index: 'index.md'
+- Home:
+    - 'About Us' : 'about.md'
+    - 'Services' : 'service.md'
+- DIY:
+    - 'Working with UART serial' : 'diy/serial.md'
+    - 'working with uboot' : 'diy/uboot.md'
+- OpenWrt:
+    - 'OpenVPN' : 'openwrt/openvpn.md'
