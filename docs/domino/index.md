@@ -1,4 +1,4 @@
-Gettting started with Domino Kits
+Getting started with Domino Kits
 ===================
 
 FAQ
@@ -20,7 +20,7 @@ FAQ
 **(2) Why cannot I connect to http://domino.local?**
 
 ```
-	You need bounjor service. Download it from https://support.apple.com/kb/DL999?locale=en_US for windows.
+	You need bonjour service. Download it from https://support.apple.com/kb/DL999?locale=en_US for windows.
 ```
 
 **(3) Is it open hardware? **
