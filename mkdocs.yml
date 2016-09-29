@@ -1,17 +1,18 @@
 site_name: GLI Docs
 repo_url: https://github.com/domino-team/docs/
 site_description: This is the docs for GLI mini router, OpenWrt, OpenVPN
-site_favicon: null
+site_favicon: favicon.png
 copyright: null
 google_analytics: null
-site_dir: 'site'
+site_dir: '../docs'
 docs_dir: 'docs'
 theme: 'mkdocs'
+include_next_prev: false
 
 
 pages:
-- Index: 'index.md'
-- Home:
+- Home: 
+    - 'Home' : 'index.md'
     - 'About Us' : 'about.md'
     - 'Services' : 'service.md'
 - DIY:
