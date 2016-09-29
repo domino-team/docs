@@ -1,4 +1,4 @@
-Gettting started
+Getting started
 
 #Domino Pi headers
 

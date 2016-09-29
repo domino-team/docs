@@ -1,4 +1,4 @@
-Gettting started with Domino Qi
+Getting started with Domino Qi
 ==============================
 
 Qi Mini Interfaces
