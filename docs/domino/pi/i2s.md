@@ -9,8 +9,8 @@ When connected to the Domino Pi board, the Domino I2S Tile adds audio capabiliti
   * DAC SNR 98dB, THD -84dB ('A' weighted @ 48kHz)
   * ADC SNR 95dB, THD -84dB ('A' weighted @ 48kHz)
   * On-chip Headphone Driver with 'capless' option
-  * 40mW per channel into 16¦¸ / 3.3V SPKVDD
-  * 1W output power into 8¦¸ BTL speaker / 5V SPKVDD
+  * 40mW per channel into 16ohm / 3.3V SPKVDD
+  * 1W output power into 8ohm BTL speaker / 5V SPKVDD
   * Capable of driving piezo speakers
   * Stereo speaker drive configuration
   * Stereo Differential or mono microphone Interfaces
@@ -28,7 +28,7 @@ When connected to the Domino Pi board, the Domino I2S Tile adds audio capabiliti
   * Support for 8, 11.025, 12, 16, 22.05, 24, 32, 44.1 and 48kHz sample rates
   * Low power, low voltage - 2.5V to 3.6V (digital: 1.71V to 3.6V)
   * 5x5mm 32-lead QFN package
-  *  3.5 mm Stereo Audio Jack (Tip: Left / Ring: Right / Sleeve: Ground): LINE OUT / HEADPHONE OUT
+  * 3.5 mm Stereo Audio Jack (Tip: Left / Ring: Right / Sleeve: Ground): LINE OUT / HEADPHONE OUT
   * SPDIF Optical Transmitter: DIGITAL AUDIO OUT
   * On 2x edge header pins: Stereo SPEAKER OUT
   * Integrated ? 4.5 mm Mono Electret Microphone, also available on edge header pins
