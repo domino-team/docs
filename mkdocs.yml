@@ -46,3 +46,16 @@ pages:
   - 'Using Arduino or Linino Firmware': 'domino/qi/arduino-yun.md'
   - 'Using NodeJS and LininoIO': 'domino/qi/nodejs.md'
   - 'Using Serial': 'domino/qi/serial.md'
+
+- 'Mini routers':
+
+  - 'Quick Start' :'mini/index.md'
+  - 'Internet Settings, MAC clone, DNS' : 'mini/internet.md'
+  - 'LAN IP' : 'mini/lan.md'
+  - 'Wifi Settings (AP)': 'mini/wifi.md'
+  - 'Repeater Manager' : 'mini/repeater_manager.md'
+  - 'Firmware upgrading' :'mini/firmware.md'
+  - 'GL-AR300M' :'mini/ar300m.md'
+  - 'RTC for AR150' :'mini/ar150rtc.md'
+
+
