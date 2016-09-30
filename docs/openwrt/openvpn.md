@@ -1,5 +1,7 @@
 # Using OpenVPN in GLi routers
 
+This docs only related to OpenVPN client.
+
 ---
 
 OpenVPN client is pre-installed in GLI mini routers GL-AR150, GL-AR300M, GL-MT300N, GL-MT300A from firmware v2.19.
