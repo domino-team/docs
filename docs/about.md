@@ -1,6 +1,8 @@
 About Us
 =========
 
+
+
 GLi has offices in Shenzhen and Hong Kong. 
 
 At GLi, our vision is to make the life simpler and easier. We are the world-class smart home solution provider, offering quality products and services empowered with the state-of-the-art AI algorithms.
