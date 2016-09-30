@@ -73,7 +73,7 @@ We would like to add more functions in the ovpn manager, you can send us a wish 
 * Delete, order and ranking servers. Now we don't have a algorithms to rank the servers, as you will not know the speed unless you try. We can record the speed if you have tried.
 * Manage multiple VPN services. While most people just use one service, we don't know if this is necessary.
 
-![ovpn manager](src/openvpn/7.png)
+![ovpn manager](src/openvpn/7.jpg)
 
 
 ##Where to get ovpn Files
