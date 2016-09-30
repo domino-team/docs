@@ -7,7 +7,7 @@ About uboot
 -----------
 Uboot (universial bootloader) is the bootloader we used on our boards and routers to start OpenWrt Linux. The bootloader is heavly depends on the hardware so almost each hardware requires one boot loader.
 
-To use the bootloader, you have to use <a href='http://domino.io/#!diy/serial.md'>connect a UART serial connector</a>. 
+To use the bootloader, you have to use <a href='http://domino.io/#!diy/serial.md'>connect a UART serial connector</a>.
 
 Taking our Atheros 9331 boards for example, when powered up, the uboot will output the following text:
 ```
@@ -58,7 +58,7 @@ ethact=eth0
 
 Environment size: 937 bytes
 
-uboot> 
+uboot>
 ```
 `md` displays data in flash or memory. The following command displays the data in flash from beginning, which is the binary of uboot itself.
 ```
@@ -116,4 +116,4 @@ make gl-inet
 ```
 It should be very quick and finish in minutes. Then you will find `uboot_for_gl-inet.bin` in `bin/`.
 
-
+## Discussions

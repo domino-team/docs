@@ -5,14 +5,14 @@ The firmware is under continuous development, to include new features, fix bugs 
 
 1. You will be displayed a `New` Icon when there is a new firmware available.
 2. Click the "Firmware" icon, you will be displayed options to upgrade the firmware. The current version is displayed.
-3. You can enable "auto update" option to let the router upgrade automatically if it detects a new version. This option is disabled by default. 
+3. You can enable "auto update" option to let the router upgrade automatically if it detects a new version. This option is disabled by default.
 4. You will have a `Download` button if there is a new version. Click it to start download.
 
 ![Lan IP](src/firmware.png)
 
 ## Download online
 
-Click the `Download` button to start downloading. It will takes some seconds depending on the network. 
+Click the `Download` button to start downloading. It will takes some seconds depending on the network.
 
 ![Lan IP](src/firmware1.png)
 
@@ -31,7 +31,7 @@ Before we release a new firmware, we may put them online for testing first. The 
 You may compile your own firmware, you can also upload to the router.
 
 1. Click "Upload Firmware" button and you will have a rect to for uploading purpose.
-2. Click the rect to select file or just drag and drop your firmware to the rect. The firmware will upload and be verified. 
+2. Click the rect to select file or just drag and drop your firmware to the rect. The firmware will upload and be verified.
 
 Warning: Don't rely on the verification status from the UI. You are responsible to upload a compatible firmware.
 
@@ -49,7 +49,7 @@ After you download/upload a new firmware and it is verified, you an upgrade now.
 
 ## Revert to factory status
 
-If you have problems in settings (for example repeater) or firmware upgrading, you can try to revert to factory status. 
+If you have problems in settings (for example repeater) or firmware upgrading, you can try to revert to factory status.
 
 **factory status** means erasing all your settings, but not the original firmware if you upgrade it. If you just upgrade from v2.17 to v2.19, revert to factory default status will give a a clean v2.19.
 
@@ -60,9 +60,9 @@ If you have problems in settings (for example repeater) or firmware upgrading, y
 
 ### Using the Reset button to revert
 
-**After the firmware boot**, you can press and hold the `Reset` button for 8 seconds to revert to firmware back to factory status. The LEDs will flash in a pattern, indicating it is working. 
+**After the firmware boot**, you can press and hold the `Reset` button for 8 seconds to revert to firmware back to factory status. The LEDs will flash in a pattern, indicating it is working.
 
-This function only in our stock firmware. If you compiled your own firmware, it may not work. 
+This function only in our stock firmware. If you compiled your own firmware, it may not work.
 
 ## Debricking using Uboot
 
@@ -70,7 +70,7 @@ Sometimes you can brick your device, especially if you have your own firmware or
 
 All the mini routers have uboot web UI so that you de-brick your device using a workable firmware.
 
-The orignal post is here: http://www.gl-inet.com/how-to-enter-the-uboot-web-ui/ 
+The orignal post is here: http://www.gl-inet.com/how-to-enter-the-uboot-web-ui/
 
 1. Connect `only one` cable to your router, and leave the other LAN port unconnected.
 2. First press and hold the Reset button firmly; then power on your device. (Obey the first and then procedure)
@@ -92,3 +92,5 @@ MT300N and MT300A
 GL.iNet6416 and complete upgrading prcess
 
 [](https://youtu.be/-E8EvDnJq0c)
+
+# Discussions

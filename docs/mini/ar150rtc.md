@@ -53,4 +53,4 @@ To write mini router's time to RTC module
 ```
 hwclock -w
 ```
-
+# Discussions

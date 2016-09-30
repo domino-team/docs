@@ -85,40 +85,40 @@ You probably have .ovpn files already. If not, you can buy from a trusted vpn se
 
 Astrill provides 7-day trial if you sign up.
 
-After logging in your accout, go to "VPN Services" then click "OpenVPN certifictes". 
+After logging in your accout, go to "VPN Services" then click "OpenVPN certifictes".
 
-![astrill](src/astrill_openvpn1.jpg) 
+![astrill](src/astrill_openvpn1.jpg)
 
 You need to type description and choose Type. Don't choose "split routing for China". It is only for China users and don't work well with our current firmware. Then click "Add to my certifcates". You will find the zip file on the list below. Click "Download" to get the zip file, which contains more than 100 files.
 
-![astrill](src/astrill_openvpn2.jpg) 
+![astrill](src/astrill_openvpn2.jpg)
 
 
 ##Using FinchVPN
 
-FinchVPN provide free account so you can have a try before you buy. 
+FinchVPN provide free account so you can have a try before you buy.
 
 I tried the first link.
 
-![FinchVPN](src/openvpn_finch1.jpg) 
+![FinchVPN](src/openvpn_finch1.jpg)
 
 You can choose to download each file for free servers or download as a zip.
 
 The API key here is your password.
 
-![FinchVPN](src/openvpn_finch2.jpg) 
+![FinchVPN](src/openvpn_finch2.jpg)
 
 ##Using StrongVPN
 
 For StrongVPN, first go to "VPN Accounts->VPN Accounts Summary", then you can download the ovpn config for the choosen server.
 
-![StrongVPN](src/strongvpn.jpg) 
+![StrongVPN](src/strongvpn.jpg)
 
-##Using Hidemyass VPN 
+##Using Hidemyass VPN
 
 Hide My Ass VPN's ovpn files can be downloaded from their server directly: https://www.hidemyass.com/vpn-config
 
-![Hidemyass](src/hidemyass.jpg) 
+![Hidemyass](src/hidemyass.jpg)
 
 ##Using ProXPN
 
@@ -143,37 +143,37 @@ miami.proxpn.com - Miami
 ```
 Finally you can zip them into one file and upload to the router.
 
-![ProXPN](src/proxpn.png) 
+![ProXPN](src/proxpn.png)
 
 
 ##VPN Compatibilities
 
 We have checked a number of public vpn service providers and tested the compatibilities. What you need to do is purchase a subscription from them and download the ovpn files.
 
-Here is a list of compatible services (v2.20). 
+Here is a list of compatible services (v2.20).
 
 __Note: We don't have any affiliation with these vpn service providers. For service issues, please contact them directly.__
 
-1. Astrill, https://www.astrill.com 
+1. Astrill, https://www.astrill.com
 2. FinchVPN, https://www.finchvpn.com/
 3. Free Vpn Software, http://freevpnsoftware.net/
-4. VPNBook, http://www.vpnbook.com/ 
+4. VPNBook, http://www.vpnbook.com/
 5. VPNGate, http://www.vpngate.net/
 6. VPN Area, https://vpnarea.com
-7. NordVPN, https://nordvpn.com/ 
-8. PIA, https://www.privateinternetaccess.com/ 
-9. PureVPN, https://www.purevpn.com/ 
-10. TotalVPN, https://www.totalvpn.com 
+7. NordVPN, https://nordvpn.com/
+8. PIA, https://www.privateinternetaccess.com/
+9. PureVPN, https://www.purevpn.com/
+10. TotalVPN, https://www.totalvpn.com
 11. Strong VPN, http://strongvpn.com/
 12. HideMyAss, https://www.hidemyass.com
-13. Proxy.sh, https://proxy.sh/ 
-14. TCPVPN.com, https://www.tcpvpn.com 
+13. Proxy.sh, https://proxy.sh/
+14. TCPVPN.com, https://www.tcpvpn.com
 15. TorGuard, https://torguard.net/
 16. Vpn.AC, https://www.vpn.ac/
 17. Proxpn, https://www.proxpn.com
-18. NordVPN, https://nordvpn.com/ 
+18. NordVPN, https://nordvpn.com/
 19. ExpressVPN, https://www.expressvpn.com/
 20. Airvpn, https://airvpn.org/
-21. CactusVpn, https://www.cactusvpn.com/ 
+21. CactusVpn, https://www.cactusvpn.com/
 
-[gimmick:Disqus](glinet)
+# Discussions

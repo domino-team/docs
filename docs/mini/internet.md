@@ -40,9 +40,9 @@ Fill your `username` and `password` then click `Submit`.
 
 Note: **Please check the [Repeater Manager function](../mini/repeater_manager.md)**
 
-Using GLi mini routers, you don't need to have an Ethernet cable to surf the Internet, you can user it as repeater. The most common one is WISP (Wireless Internet Service Provider). 
+Using GLi mini routers, you don't need to have an Ethernet cable to surf the Internet, you can user it as repeater. The most common one is WISP (Wireless Internet Service Provider).
 
-In WISP mode, the mini router act as a firewall and protect you from outside. If you are using a public wifi, you need to use this mode. 
+In WISP mode, the mini router act as a firewall and protect you from outside. If you are using a public wifi, you need to use this mode.
 
 In the following diagram, your main router has an IP 192.168.1.1. Suppose its netmask is 255.255.255.0, your mini router will have two IP address:
 
@@ -54,13 +54,13 @@ So all your devices connected to the mini router will be protected by the firewa
 
 ![Connections](src/wisp1.png)
 
-First Click `Repeater` tab in `Internet Settings`, the router will search for the available SSIDs around automatically. Then choose the one your want to repeat and type your password. The `Mode` should be `WISP`, then click `Submit`. 
+First Click `Repeater` tab in `Internet Settings`, the router will search for the available SSIDs around automatically. Then choose the one your want to repeat and type your password. The `Mode` should be `WISP`, then click `Submit`.
 
 ![Connections](src/wisp.png)
 
 ## Repeater Bridge (WDS)
 
-In other circumstances, you want to connect to your own router which you trust. You don't need a separate network, you can use Repeater Bridge mode. The most common one is called `WDS`. To use this mode, **your main router has to support WDS**. Consult your main router's manual to check if it has this options. 
+In other circumstances, you want to connect to your own router which you trust. You don't need a separate network, you can use Repeater Bridge mode. The most common one is called `WDS`. To use this mode, **your main router has to support WDS**. Consult your main router's manual to check if it has this options.
 
 In WDS mode, the mini router only boost your main router's signal area, not creating a seprate network. There is no firewall between the mini router and the main router.
 
@@ -68,7 +68,7 @@ In WDS mode, the mini router only boost your main router's signal area, not crea
 
 ![Connections](src/wds.png)
 
-To use WDS repeater, **ensure your main router support WDS**, then choose `WDS` from mode list. You will have an option to input a static IP, which will be used to access this mini router. 
+To use WDS repeater, **ensure your main router support WDS**, then choose `WDS` from mode list. You will have an option to input a static IP, which will be used to access this mini router.
 
 If you know the subnet of your main router, for example in this case it is `192.168.1.x`, you can input a static IP, e.g. `192.168.1.99`. This static IP should not conflict with any other devices' IP address. Then later you should access this UI at `http://192.168.1.99`
 
@@ -80,7 +80,7 @@ If you are not sure, just keep the IP address blank so that it will get a IP add
 
 In case you are having an old router and it doesn't support WDS, you can use WISP mode then setup a relayd overlay.
 
-Here is [detailed instructions](src/relayd.pdf) of how to do it. 
+Here is [detailed instructions](src/relayd.pdf) of how to do it.
 
 **OpenVPN client function of the mini router will not work in bridge mode**
 
@@ -100,7 +100,7 @@ You need to choose the appropriate `Service Type`. Consult your ISP for this.
 
 Most importantly you need to type the `APN`, in my case it is 3gnet.
 
-Now click `Submit`. 
+Now click `Submit`.
 
 **If you used the wrong ttyUSB device, you need to try another one. Some modems needs you to unplug it first and plug in again**
 
@@ -126,13 +126,13 @@ Here is a list of supported modems we tested:
 | Huawei E3372   | 4G    | Yes    | anonymous       |          |
 |                |       |        |                 |          |
 
-You can also refer to [http://ofmodemsandmen.com/supported.html](http://ofmodemsandmen.com/supported.html) for a well supported modem list. 
+You can also refer to [http://ofmodemsandmen.com/supported.html](http://ofmodemsandmen.com/supported.html) for a well supported modem list.
 
 Modems can be Regular USB or Host-less versions. If it is host-less, it will work as tethering.
 
 ## Phone (modem) Tethering
 
-You can also tether your smartphone's data to the router. Some new 3G/4G modems work as this mode as well. Plug your phone to the mini router's USB port. 
+You can also tether your smartphone's data to the router. Some new 3G/4G modems work as this mode as well. Plug your phone to the mini router's USB port.
 
 ![Connections](src/tethering1.png)
 
@@ -163,3 +163,5 @@ Click `DNS` button you will be able to input custom dns. You can input max two d
 A separate article will be written about DNS.
 
 ![Connections](src/dns.png)
+
+# Discussions

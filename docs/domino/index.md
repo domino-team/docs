@@ -61,7 +61,7 @@ Domino Pi
 
 Domino Pi is designed both as a Domino Core development board and as an extension. You can develop your own board based on the Domino Pi. See the pinout diagram below. We have seven useful tile boards available, providing easy to use building blocks, enabling you to extend the Pi board as you wish.
 
-Domino Pi is with newest `OpenWrt` BB1407 and CC1505 firmware. 
+Domino Pi is with newest `OpenWrt` BB1407 and CC1505 firmware.
 
 ![Domino Pi](src/domino-pi.png)
 
@@ -84,8 +84,11 @@ Go to the [Domino Qi section](#!domino/qi/index.md) for more details for how to 
 Where to get help
 ------------------
 
-First you need to read this documentation. We will try our best to make the documentation complete and detailed. 
+First you need to read this documentation. We will try our best to make the documentation complete and detailed.
 
 Second, we will have our own forum open later, when you will be ask questions there.
 
 Third, go the existing community of [OpenWrt](http://www.openwrt.org) if you want to explore the embedded Linux system, and go to [Arduino](http://arduino.cc) if you want to explore the features related to Arduino.
+
+
+# Discussions

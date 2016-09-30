@@ -16,7 +16,7 @@ To set up repeate for the first time, just click "Internet" area in Settings pag
 
 ![wan status](src/wan_status.jpg)
 
-Choose Repeater Tab, the router will search for available stations automatically. Choose your ssid and type your wifi key. 
+Choose Repeater Tab, the router will search for available stations automatically. Choose your ssid and type your wifi key.
 
 There are two modes for repeater.
 
@@ -29,7 +29,7 @@ Click "Submit" and wait a while to let the router connected as repeater.
 
 ## Control the repeater
 
-When repeater is connected, you will see the wifi connection in your Internet status. 
+When repeater is connected, you will see the wifi connection in your Internet status.
 
 Here is two actions you can do to control your repeater connections.
 
@@ -45,16 +45,16 @@ Click the "Saved stations" button and you can manage your saved stations.
 
 ![wan status](src/repeater_manager.png)
 
-The current connection will be **bold**. 
+The current connection will be **bold**.
 
 You can delete or choose which station to connect. If you choose to connect a station but it fails, the "auto reconnection" daemon may connect you to another network.
 
-You can also disable "auto-connect" for a choose station. 
+You can also disable "auto-connect" for a choose station.
 
 
 ## FAQ
 
-###1.Can I set priority of stations? 
+###1.Can I set priority of stations?
 
 No. Not now.
 
@@ -62,3 +62,4 @@ No. Not now.
 
 Sometimes, when the router cannot connect to a station for many times, it will blacklist it. You have to reboot your router to clear the blacklist.
 
+# Discussions
