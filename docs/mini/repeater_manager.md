@@ -43,7 +43,7 @@ Here is two actions you can do to control your repeater connections.
 
 Click the "Saved stations" button and you can manage your saved stations.
 
-![wan status](src/repeater_manager.jpg)
+![wan status](src/repeater_manager.png)
 
 The current connection will be **bold**.
 

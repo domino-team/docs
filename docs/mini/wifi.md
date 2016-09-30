@@ -4,7 +4,7 @@
 
 You can turn on or off the radio from the main UI by the switch. It takes effect immediately.
 
-![Lan IP](src/wifi_onoff.jpg)
+![Lan IP](src/wifi_onoff.png)
 
 ## Wireless status
 
@@ -64,7 +64,7 @@ If you have multiple SSIDs, you can configure another LED to indicate the status
 
 Go to Advanced settings (Luci) -> System -> LEDs, add one settings. The following sample is for GL-MT300A. Other mini routers may have different LEDs names.
 
-![Lan IP](src/wifi_leds.jpg)
+![Lan IP](src/wifi_leds.png)
 
 ## WDS AP Interface
 
@@ -72,11 +72,11 @@ To enable WDS support on the virtual interfaces, you need to go to advanced sett
 
 Then click `Network->wifi`, choose the interface and click edit.
 
-![Lan IP](src/wifi_advanced.jpg)
+![Lan IP](src/wifi_advanced.png)
 
 You need to choose `Access Point (WDS)` other than the default `Access Point` mode.
 
 
-![Lan IP](src/wifi_advanced1.jpg)
+![Lan IP](src/wifi_advanced1.png)
 
 # Discussions

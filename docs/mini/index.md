@@ -14,12 +14,12 @@ Please wait around 1 mintues until the router start up.
 
 You can connect the mini router's WAN port to your main router or modem using an Ethernet cable.
 
-![Connections](src/connections.jpg)
+![Connections](src/connections.png)
 
 Now connect your PC to the LAN port or connect via wifi.
 
-![Connections](src/connections3.jpg)
-![Connections](src/connections4.jpg)
+![Connections](src/connections3.png)
+![Connections](src/connections4.png)
 
 The SSID of the mini router should be printed on the bottom of the router. It should be one of the following format, according to your device models:
 ```
@@ -69,7 +69,7 @@ You can use the Reset button to turn wifi on/off.
 
 The default function of the switch is to hide (right side) or show (left side) the SSID.
 
-![Connections](src/buttons.jpg)
+![Connections](src/buttons.png)
 
 The left LED is used for power indication. It should be always on.
 
@@ -77,7 +77,7 @@ The middle LED doesn't have functions by default. You can configure it according
 
 The right LED indicate the current status of WiFi. If WiFi is on it should light up. If you have data transmission, it should flash.
 
-![Connections](src/leds.jpg)
+![Connections](src/leds.png)
 
 ## Change your ssid and key
 
