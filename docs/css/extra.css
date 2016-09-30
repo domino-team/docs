@@ -22,3 +22,6 @@ code.no-highlight {
 body{
 #    padding-top:70px !important;
 }
+footer p:not(:first-child){
+	display: none;
+}
