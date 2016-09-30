@@ -5,8 +5,10 @@ site_favicon: favicon.png
 copyright: <a href='https://gl-inet.com/'> GL Innovations</a> 2016
 google_analytics: null
 site_dir: '../docs'
+#site_dir: 'site'
 docs_dir: 'docs'
-theme: 'mkdocs'
+theme_dir: 'gl_theme'
+#theme: 'mkdocs'
 include_next_prev: false
 
 pages:
