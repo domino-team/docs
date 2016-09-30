@@ -1,7 +1,7 @@
 About Us
 =========
 
-
+GL Innovations
 
 GLi has offices in Shenzhen and Hong Kong. 
 
