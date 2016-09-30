@@ -4,7 +4,7 @@
 
 You can turn on or off the radio from the main UI by the switch. It takes effect immediately.
 
-![Lan IP](src/wifi_onoff.png)
+![Lan IP](src/wifi_onoff.jpg)
 
 ## Wireless status
 
@@ -16,7 +16,7 @@ One router may have one of more Radio devices and one device can have multiple V
 
 In this example, the channel is `1` and tx power is `20`. We have one AP interface with SSID `GL-MT300A-030`.
 
-![Lan IP](src/wifi_status.png)
+![Lan IP](src/wifi_status.jpg)
 
 ## Wireless Settings
 
@@ -38,7 +38,7 @@ You can change the
 
 **We suggest you change your password immediately when you use the mini router.**
 
-![Lan IP](src/wifi_setting.png)
+![Lan IP](src/wifi_setting.jpg)
 
 ## Multiple Interfaces (SSID)
 
@@ -48,13 +48,13 @@ However the current UI can display after you create the interface.
 
 If you have multiple SSIDs, the main UI will display the status. You can turn on off any one or both. The status page will display the information of these interfaces as well.
 
-![Lan IP](src/wifi_multi_ssid1.png)
+![Lan IP](src/wifi_multi_ssid1.jpg)
 
 When you want to change the settings, you will have multiple TABs.
 
 **Multiple AP Interfaces share the same radio configuration (mode and channel). You cannot set different values for each Interface**
 
-![Lan IP](src/wifi_multi_ssid.png)
+![Lan IP](src/wifi_multi_ssid.jpg)
 
 ## LED indication
 
@@ -64,7 +64,7 @@ If you have multiple SSIDs, you can configure another LED to indicate the status
 
 Go to Advanced settings (Luci) -> System -> LEDs, add one settings. The following sample is for GL-MT300A. Other mini routers may have different LEDs names.
 
-![Lan IP](src/wifi_leds.png)
+![Lan IP](src/wifi_leds.jpg)
 
 ## WDS AP Interface
 
@@ -72,11 +72,11 @@ To enable WDS support on the virtual interfaces, you need to go to advanced sett
 
 Then click `Network->wifi`, choose the interface and click edit.
 
-![Lan IP](src/wifi_advanced.png)
+![Lan IP](src/wifi_advanced.jpg)
 
 You need to choose `Access Point (WDS)` other than the default `Access Point` mode.
 
 
-![Lan IP](src/wifi_advanced1.png)
+![Lan IP](src/wifi_advanced1.jpg)
 
 # Discussions

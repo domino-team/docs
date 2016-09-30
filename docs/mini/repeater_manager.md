@@ -25,7 +25,7 @@ There are two modes for repeater.
 
 Click "Submit" and wait a while to let the router connected as repeater.
 
-![wan status](src/repeater.png)
+![wan status](src/repeater.jpg)
 
 ## Control the repeater
 
@@ -37,13 +37,13 @@ Here is two actions you can do to control your repeater connections.
 * Disconnect: You can disconnect current connected station. When you click, you will be asked if you want to disable the "auto scan & reconnect" function. You can choose "OK" (means YES) or "Cancel" (means NO). If you choose NO, the auconnect feature may reactive this connection which you just disconnected.
 
 
-![wan status](src/repeater_connected.png)
+![wan status](src/repeater_connected.jpg)
 
 ## Manage saved stations
 
 Click the "Saved stations" button and you can manage your saved stations.
 
-![wan status](src/repeater_manager.png)
+![wan status](src/repeater_manager.jpg)
 
 The current connection will be **bold**.
 

@@ -49,10 +49,10 @@ Excute putty, then input IP `192.168.8.1`, Port `22` and choose connection type 
 
 You will be shown a black window. Type username `root` and then your password. You are in.
 
-![Putty SSH](src/putty_ssh1.png)
+![Putty SSH](src/putty_ssh1.jpg)
 
 Then you need to execute the above command one by one.
 
-![Putty SSH](src/putty_ssh2.png)
+![Putty SSH](src/putty_ssh2.jpg)
 
 # Discussions

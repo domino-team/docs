@@ -9,6 +9,6 @@ You can find the IP address of your main router from its own admin UI or just ch
 
 In the following example, the WAN IP of the mini router is `192.168.9.243` (assume the netmask is `/24`), and we are ok to keep `192.168.8.1` as the LAN IP.
 
-![Lan IP](src/lan_ip.png)
+![Lan IP](src/lan_ip.jpg)
 
 # Discussions

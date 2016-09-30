@@ -8,13 +8,13 @@ The firmware is under continuous development, to include new features, fix bugs 
 3. You can enable "auto update" option to let the router upgrade automatically if it detects a new version. This option is disabled by default.
 4. You will have a `Download` button if there is a new version. Click it to start download.
 
-![Lan IP](src/firmware.png)
+![Lan IP](src/firmware.jpg)
 
 ## Download online
 
 Click the `Download` button to start downloading. It will takes some seconds depending on the network.
 
-![Lan IP](src/firmware1.png)
+![Lan IP](src/firmware1.jpg)
 
 After download, the device will verify if the firmware is usable. If verified, you will have a `upgrade` button to start upgrade the firmware.
 
@@ -22,7 +22,7 @@ After download, the device will verify if the firmware is usable. If verified, y
 
 **If you kept settings and encount problems after install, please reset the device by pressing and hold the `RESET` button for more than 8 seconds.**
 
-![Lan IP](src/firmware2.png)
+![Lan IP](src/firmware2.jpg)
 
 ## Upload your firmware
 
@@ -35,7 +35,7 @@ You may compile your own firmware, you can also upload to the router.
 
 Warning: Don't rely on the verification status from the UI. You are responsible to upload a compatible firmware.
 
-![Lan IP](src/firmware3.png)
+![Lan IP](src/firmware3.jpg)
 
 ## Start upgrading
 
@@ -45,7 +45,7 @@ After you download/upload a new firmware and it is verified, you an upgrade now.
 2. **Don't turn off the power.** If you do so, your device maybe bricked.
 3. You may need to reconnect to the device after upgrade. For example, your ssid and key maybe changed back to default one.
 
-![Lan IP](src/firmware4.png)
+![Lan IP](src/firmware4.jpg)
 
 ## Revert to factory status
 
@@ -56,7 +56,7 @@ If you have problems in settings (for example repeater) or firmware upgrading, y
 1. Clieck the "Revert to Factory Default" button.
 2. Read the warnings and click "Revert" now. It takes 1 or 2 mintures.
 
-![Lan IP](src/firmware5.png)
+![Lan IP](src/firmware5.jpg)
 
 ### Using the Reset button to revert
 

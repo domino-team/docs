@@ -4,7 +4,7 @@ The main UI shows the Internet status, mainly the IP address and protol in the s
 
 You can click the `Internet part` in the Settings bar, you will have tools to change Internet settings.
 
-![Connections](src/internet_status1.png)
+![Connections](src/internet_status1.jpg)
 
 You can now click "Setting" button or the Internet Icon to pop up Internet settings page.
 
@@ -16,7 +16,7 @@ Your main router or ISP should be able to provide such option.
 
 DHCP is the default and most common method to connect to the Internet. You just need to choose `DHCP` and click `Submit`.
 
-![Connections](src/dhcp1.png)
+![Connections](src/dhcp1.jpg)
 
 ## Static
 
@@ -26,7 +26,7 @@ DHCP is the default and most common method to connect to the Internet. You just 
 
 The current settings will be automactically filled in the filed. Change it according to your needs, then click `Submit`.
 
-![Connections](src/static.png)
+![Connections](src/static.jpg)
 
 ## PPPoE
 
@@ -34,7 +34,7 @@ The current settings will be automactically filled in the filed. Change it accor
 
 Fill your `username` and `password` then click `Submit`.
 
-![Connections](src/pppoe.png)
+![Connections](src/pppoe.jpg)
 
 ## Repeater (WISP)
 
@@ -52,11 +52,11 @@ In the following diagram, your main router has an IP 192.168.1.1. Suppose its ne
 
 So all your devices connected to the mini router will be protected by the firewall.
 
-![Connections](src/wisp1.png)
+![Connections](src/wisp1.jpg)
 
 First Click `Repeater` tab in `Internet Settings`, the router will search for the available SSIDs around automatically. Then choose the one your want to repeat and type your password. The `Mode` should be `WISP`, then click `Submit`.
 
-![Connections](src/wisp.png)
+![Connections](src/wisp.jpg)
 
 ## Repeater Bridge (WDS)
 
@@ -66,7 +66,7 @@ In WDS mode, the mini router only boost your main router's signal area, not crea
 
 **OpenVPN client function of the mini router will not work in bridge mode**
 
-![Connections](src/wds.png)
+![Connections](src/wds.jpg)
 
 To use WDS repeater, **ensure your main router support WDS**, then choose `WDS` from mode list. You will have an option to input a static IP, which will be used to access this mini router.
 
@@ -74,7 +74,7 @@ If you know the subnet of your main router, for example in this case it is `192.
 
 If you are not sure, just keep the IP address blank so that it will get a IP address from your main router automatically. But you need to find out this IP in your main router's admin UI if you want to access this UI again.
 
-![Connections](src/wds1.png)
+![Connections](src/wds1.jpg)
 
 ## Repeater Bridge (relayd)
 
@@ -90,7 +90,7 @@ Using the mini router, you can connect to the Internet using 3G or 4G modems. Cl
 
 The basic mode we only have limted data. We recommend you to use the advanced method by clicking the `Advanced Setup >>>`.
 
-![Connections](src/3g_1.png)
+![Connections](src/3g_1.jpg)
 
 After you plug in your modem, you will see the device in Modem Device list. There maybe several devices and you need to try different devices. Most devices are ttyUSB2. In my case it is ttyUSB1.
 
@@ -104,7 +104,7 @@ Now click `Submit`.
 
 **If you used the wrong ttyUSB device, you need to try another one. Some modems needs you to unplug it first and plug in again**
 
-![Connections](src/3g_2.png)
+![Connections](src/3g_2.jpg)
 
 ###Compatible 3G, 4G LTE modem List
 
@@ -134,11 +134,11 @@ Modems can be Regular USB or Host-less versions. If it is host-less, it will wor
 
 You can also tether your smartphone's data to the router. Some new 3G/4G modems work as this mode as well. Plug your phone to the mini router's USB port.
 
-![Connections](src/tethering1.png)
+![Connections](src/tethering1.jpg)
 
 Then click `Tethering` tab. Your smartphone will appear as a network devices, with names: `eth1 eth2 usb0` etc. depends on the model.
 
-![Connections](src/tethering.png)
+![Connections](src/tethering.jpg)
 
 ## Clone MAC
 
@@ -146,7 +146,7 @@ Clone MAC is used especially in hotels, hotspot etc when the server checks your 
 
 Clieck the `Clone Mac` button and you will have the following interface.
 
-![Connections](src/macclone.png)
+![Connections](src/macclone.jpg)
 
 Your current mac address will be displayed in `WAN MAC Address`. You can click `Clone` to copy your device's mac address or click `Restore` to restore the factory set mac.
 
@@ -162,6 +162,6 @@ Click `DNS` button you will be able to input custom dns. You can input max two d
 
 A separate article will be written about DNS.
 
-![Connections](src/dns.png)
+![Connections](src/dns.jpg)
 
 # Discussions
