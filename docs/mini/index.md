@@ -1,4 +1,11 @@
+# Getting started with GLi Mini routers
+
+connection, first-time setup, button and leds
+
+-----------
+
 ## Connections
+
 You need to power the mini router up using a USB 5V/1A power adapter. The power adapters for smartphones are perfect for this.
 
 Please wait around 1 mintues until the router start up.
