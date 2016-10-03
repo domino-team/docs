@@ -8,6 +8,7 @@ connection, first-time setup, button and leds
 
 You need to power the mini router up using a USB 5V/1A power adapter. The power adapters for smartphones are perfect for this.
 
+
 Please wait around 1 mintues until the router start up.
 
 ![Connections](src/connections1.jpg)
@@ -18,8 +19,8 @@ You can connect the mini router's WAN port to your main router or modem using an
 
 Now connect your PC to the LAN port or connect via wifi.
 
-![Connections](src/connections3.png)
-![Connections](src/connections4.png)
+![Connect PC](src/connections3.png)
+![Connect Smartphone](src/connections4.png)
 
 The SSID of the mini router should be printed on the bottom of the router. It should be one of the following format, according to your device models:
 ```
@@ -34,6 +35,8 @@ The default wifi password is `goodlife`
 ## First time Set Up
 
 Now open a browser (we recommend Chrome, firefox) and visit [http://192.168.8.1](http://192.168.8.1)
+
+Note: If your browser always redirect to Luci (http://192.168.8.1/cgi-bin/luci), you can add index.html to the path, like: [http://192.168.8.1/index.html](http://192.168.8.1/index.html)
 
 You will have the welcome page. First you need to select your language. We now only have `Chinese` and `English`.
 
@@ -65,6 +68,7 @@ You can click the `Internet` icon to display the current method of connecting to
 
 ## Buttons and LEDs
 
+### Firmware V2.20 
 You can use the Reset button to turn wifi on/off.
 
 The default function of the switch is to hide (right side) or show (left side) the SSID.
@@ -78,6 +82,17 @@ The middle LED doesn't have functions by default. You can configure it according
 The right LED indicate the current status of WiFi. If WiFi is on it should light up. If you have data transmission, it should flash.
 
 ![Connections](src/leds.png)
+
+### Firmware V2.22 and later 
+
+![Button and LEDs](src/button_leds.jpg)
+
+From firmware v2.22 and later, the behavior of reset button is changed. It is not used to toggle wifi on/off again.
+
+When you press down the reset button, the middle LEDs start to flash once per second. 
+
+* After 3 seconds when the middle LED flashes quicker, twice per second, release your finger and the router will reset its network, including: revert WAN to dhcp, turn off repeater, turn on AP, turn on dhcp server. This ensures that you can connect to the router and configure it again.
+* After 10 seconds, when the middle LED flashes more quicker, 4 times per second, release your finger and the router will erase all data and revert to factory default settings.
 
 ## Change your ssid and key
 
