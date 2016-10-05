@@ -81,7 +81,7 @@ uboot> md 0x9f000000
 9F0000F0: 10000156 00000000 10000154 00000000    ...V.......T....
 ```
 
-## Setting up tftp
+## Setting up tftp server
 
 ### Ubuntu Linux
 In Ubuntu, you can install tftp using apt
@@ -94,6 +94,11 @@ TFTP_USERNAME="TFTP"
 TFTP_DIRECTORY="/tftpboot"
 TFTP_ADDRESS="[::]:69"
 TFTP_OPTIONS="--secure"
+```
+
+Sometime the service cannot be started because network is not available when it starts. Start the service manually.
+```
+sudo service tftpd-hpa restart
 ```
 
 ### Windows
@@ -128,7 +133,9 @@ To compile the source, you need to have a cross complier toolchain. I am using o
 export BUILD_TOPDIR=$(PWD)
 export STAGING_DIR=$(BUILD_TOPDIR)/tmp
 
+# **Replace the following line with your real path**
 export TOOLPATH=$(BUILD_TOPDIR)/../openwrt/staging_dir/toolchain-mips_34kc_gcc-4.8-linaro_uClibc-0.9.33.2/
+
 export PATH:=$(TOOLPATH)/bin:${PATH}
 
 export MAKECMD=make --silent --no-print-directory ARCH=mips CROSS_COMPILE=mips-openwrt-linux-uclibc-

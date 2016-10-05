@@ -1,3 +1,9 @@
+# Connect the mini router to the Internet
+
+Cable, Repeater, Modem and Tethering
+
+Note: Most of the pictures in this instructions are for firmware v2.20. Firmware v2.22 may has slightly different interfaces.
+
 ## Status
 
 The main UI shows the Internet status, mainly the IP address and protol in the setting area. The data will refresh every several seconds.
@@ -133,6 +139,10 @@ Modems can be Regular USB or Host-less versions. If it is host-less, it will wor
 ## Phone (modem) Tethering
 
 You can also tether your smartphone's data to the router. Some new 3G/4G modems work as this mode as well. Plug your phone to the mini router's USB port.
+
+Note: The stock firmware support iPhone and most Android phones. You have to enable "Tethering" or Sharing in your phone.
+
+Note: For iPhone, the first time you connect your phone to the router, you phone will ask if you would like to `Trust` the computer it connected to. Please click `Trust`.
 
 ![Connections](src/tethering1.jpg)
 
