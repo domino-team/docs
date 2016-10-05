@@ -1,6 +1,6 @@
 # Repeater Manager for GLi Mini routers
 
-From firmware v2.20 
+From firmware v2.22
 
 ## What is repeater (station) manager
 
