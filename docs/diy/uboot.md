@@ -7,7 +7,7 @@ About uboot
 -----------
 Uboot (universial bootloader) is the bootloader we used on our boards and routers to start OpenWrt Linux. The bootloader is heavly depends on the hardware so almost each hardware requires one boot loader.
 
-To use the bootloader, you have to use <a href='http://domino.io/#!diy/serial.md'>connect a UART serial connector</a>.
+To use the bootloader, you have to use <a href='http://www.gl-inet.com/docs/diy/serial/'>connect a UART serial connector</a>.
 
 Taking our Atheros 9331 boards for example, when powered up, the uboot will output the following text:
 ```
@@ -27,7 +27,7 @@ Hit any key to stop autobooting:  0
 ```
 Press any key quicly to stop booting.
 
-Using uboot
+Uboot console
 -------------
 Uboot is very useful to save your router. Here is some useful command in uboot.
 
@@ -81,14 +81,43 @@ uboot> md 0x9f000000
 9F0000F0: 10000156 00000000 10000154 00000000    ...V.......T....
 ```
 
-'tftp' is used to download the firmware to the board.
+## Setting up tftp
 
-[to do]
+### Ubuntu Linux
+In Ubuntu, you can install tftp using apt
+```
+sudo apt-get install tftpd-hpa
+```
+The configuration file is `/etc/default/tftpd-hpa`. Modify its content and change the TFTP_DIRECTORY to your folder which will contains your files.
+```vim
+TFTP_USERNAME="TFTP"
+TFTP_DIRECTORY="/tftpboot"
+TFTP_ADDRESS="[::]:69"
+TFTP_OPTIONS="--secure"
+```
+
+### Windows
+
+Download service edition of tftpd from http://tftpd32.jounin.net/tftpd32_download.html, then install it.
+
+![tftp install](src/tftpd-install.png) 
+
+Turn off windows firewall, which is the main reason causing tftpd failed to connect.
+
+![tftp install](src/firewall.png) 
+
+Run tftpd64_SE Admin, choose your tftpd root (in this example D:\tftp), choose the "Server interface" 192.168.1.2 When clients are connecting to this server, you can see them in the status window.
+
+![tftp install](src/tftpd-status.png) 
 
 Compiling uboot
 ---------------
 
-We are using [Pepe2k's](https://github.com/pepe2k/u-boot_mod) uboot, you can download the source from github.
+Each device has a different uboot because it is hardware related.
+
+### GL-AR150, GL.iNet646, GL-AR300, GL-AR300M
+
+For these models you can use [Pepe2k's](https://github.com/pepe2k/u-boot_mod) uboot, you can download the source from github.
 ```
 $ git clone https://github.com/pepe2k/u-boot_mod.git
 $ cd u-boot_mod
@@ -114,6 +143,93 @@ Now start to compile the source. For example, for GL.iNet 6416, you can use:
 make gl-inet
 
 ```
+For GL-AR150, you can do this:
+```
+make 8devices_carambola2
+```
+
+For GL-AR300 and GL-AR300M, we modified the code a lot so please consult us for details.
+
 It should be very quick and finish in minutes. Then you will find `uboot_for_gl-inet.bin` in `bin/`.
+
+### GL-AR150 uboot modify as IoT devices
+
+If you connect IoT addon to AR150's UART, which talks to AR150 using serial. When the IoT addon send some data during uboot boot, it may stop the booting process so you never have the router alive. You need to modify the uboot a little bit so that it can succesffuly boot. 
+
+Use this code from github [https://github.com/domino-team/uboot-domino](https://github.com/domino-team/uboot-domino)
+
+In this uboot, you need to type `gl` quickly during uboot boot to enter uboot console.
+
+### MT300A, MT300N, MT750
+
+MT series routers use a different uboot and different code. Consult us if you need.
+
+## Using uboot
+
+You can use `printenv` to display the environment variables in uboot. here are some quick guide of how to use uboot.
+
+First you need to set up tftp server as above and put your files in tftp root folder.
+
+### basic uboot command
+**Download file to router** (AR150, Domino, 6416 as example)
+```
+tftp 0x81000000 file.bin
+```
+**Erase some part of flash**
+```
+erase 0x9f050000 +0x10000
+```
+**Write file to flash**
+```
+cp.b 0x81000000 0x9f050000 0x10000
+```
+
+### predefined script
+Actually it is not easy to use basic uboot command to do everyting. It is quite risky. Fortunately we have some pre-defined scripts that simplifeis the work.
+
+Plase do check using `printenv` to find out the correct filename that the script trying to download. 
+For example, if you want to update uboot for AR150, the uboot file should be named as `uboot_for_gl-ar150.bin` and put in your tftp root folder.
+
+**Replace uboot**
+```
+run lu
+```
+**Update firmware**
+```
+run lf
+```
+**Update mac address etc**
+```
+run lc
+```
+
+**Erase uboot env variables**
+Be sure to use the right command for the right model
+For AR150, Domino AR300, AR300M
+```
+erase 0x9f040000 +0x10000
+reset
+```
+For 6416
+```
+erase 0x9f010000 +0x10000
+reset
+```
+
+### Uboot Web UI
+
+Uboot has a webUI so that you can save your device without entering uboot console.
+
+![Uboot Web UI](src/uboot_failsafe.png)
+
+Check [this section](../mini/firmware/#debricking-using-uboot)  for how to enter uboot web UI using the reset button.
+
+If you are in uboot console, you can start the WebUI the following command. This only works for AR series, not MT series.
+```
+httpd
+```
+
+### AR300M Specific
+AR300M uses dual flash so in uboot there are a lot of things to deal with dual flash. Please refer to [AR300M](../mini/ar300m/) for more details.
 
 ## Discussions
