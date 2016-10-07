@@ -18,6 +18,10 @@ Available documentations
 
 [Using RTC on GL-AR150](/mini/ar150rtc)
 
+[GL-AR300M](/mini/ar300m)
+
+[GL-MiFi](/mini/mifi)
+
 [Using **OpenVPN** on Mini routers](/openwrt/openvpn)
 
 [Working with UART & serial](/diy/serial)
