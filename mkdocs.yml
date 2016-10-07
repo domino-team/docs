@@ -54,4 +54,5 @@ pages:
   - 'Repeater Manager' : 'mini/repeater_manager.md'
   - 'Firmware upgrading' : 'mini/firmware.md'
   - 'GL-AR300M' : 'mini/ar300m.md'
+  - 'GL-MiFi' : 'mini/mifi.md'
   - 'RTC for AR150' : 'mini/ar150rtc.md'
