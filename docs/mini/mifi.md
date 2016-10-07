@@ -71,7 +71,27 @@ MiFi expose all the spare GPIOs of AR9331 so it is good for IoT projects. Please
 
 ## Setting up Internet
 
-Comming later
+If you want to connect to the Internet using 3G/4G,
+1. Click "Internet" area
+2. Click "New connections" 
+3. Click "3G" tab
+4. First, choose region and then choose service provider. The UI will fill the gray field automatically.
+5. Please choose the correct device. Consult the above sections for details.
+6. Please choose correct service type, UMTS or EVDO
+7. If the gray field contains wrong information, e.g. wrong apn, please edit the field and report to us.
+8. Click "Submit" button
+
+![MiFi setup](src/mifi_connection.jpg)
+
+In Internet status windows it will show the status of 3G/4G connection.
+
+There are two buttons what you can use in case you have problems with the device.
+
+* Reset: This will hard reset the modem, which means the modem (not the device) will power off and on again. This takes 40 seconds to 1 minutes. Be patient and wait for the modem to get connected. You need to reset the modem in case the modem encounter problems or your insert the SIM card after the device boot or change SIM card.
+* Disconnect: This will just disconnect the modem network, but it will not diconnect the modem power.
+
+![MiFi setup](src/mifi_connection_status.jpg)
+
 
 ## AT commands
 
@@ -307,7 +327,7 @@ echo -e "AT+QRST=1,0\r\n" > /dev/ttyUSB2
 
 ## Compile your firmware
 
-[comming later]
+coming later
 
 # Troubleshooting
 
