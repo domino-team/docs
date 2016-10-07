@@ -71,6 +71,7 @@ MiFi expose all the spare GPIOs of AR9331 so it is good for IoT projects. Please
 
 ## Setting up Internet
 
+Comming later
 
 ## AT commands
 
@@ -93,9 +94,11 @@ Signal Quality: 14,99
 
 ### Request International Mobile Equipment Identity
 ```
-Command: [echo -e "AT+GSN\r\n" > /dev/ttyUSB2]
-See the result: [cat /dev/ttyUSB2]
+echo -e "AT+GSN\r\n" > /dev/ttyUSB2
+cat /dev/ttyUSB2
+```
 Correct result: 
+```
 AT+GSN
 861075021617089
 OK
@@ -109,9 +112,11 @@ ERROR
 
 ### Request SIM’S CCID
 ```
-Command: [echo -e "AT+QCCID\r\n" > /dev/ttyUSB2]
-See the result: [cat /dev/ttyUSB2]
+echo -e "AT+QCCID\r\n" > /dev/ttyUSB2
+cat /dev/ttyUSB2
+```
 Correct result:
+```
 AT+QCCID
 +QCCID: 89860115851079757018
 OK
@@ -125,9 +130,11 @@ ERROR
 
 ### Request IMSI
 ```
-Command: [echo -e "AT+CIMI\r\n" > /dev/ttyUSB2]
-See the result: [cat /dev/ttyUSB2]
+echo -e "AT+CIMI\r\n" > /dev/ttyUSB2
+cat /dev/ttyUSB2
+```
 Correct result:
+```
 AT+CIMI 
 460010529708870
 OK
@@ -140,46 +147,55 @@ ERROR
 
 ### Check Network Registration
 ```
-Command: [echo -e "AT+CREG?\r\n" > /dev/ttyUSB2]
-See the result: [cat /dev/ttyUSB2]
+echo -e "AT+CREG?\r\n" > /dev/ttyUSB2
+cat /dev/ttyUSB2
+```
 Correct result:
+```
 AT+CREG?
 +CREG: 0,1
 OK 
 ```
 If you get the similar result, it means that your SIM-card has registered in telecom operators
-```
+
 Wrong result:
+```
 AT+CREG? 
 ERROR
 ```
 ### Signal Quality Report
 ```
-Command: [echo -e "AT+CSQ \r\n" > /dev/ttyUSB2]
-See the result: [cat /dev/ttyUSB2]
+echo -e "AT+CSQ \r\n" > /dev/ttyUSB2
+cat /dev/ttyUSB2
+```
 Correct result:
+```
  +CSQ: 21,99
 OK 
 ```
 This first number—“21” is the result. We usually get the value number is 18~23.
-```
+
 Wrong result:
+```
 AT+CSQ 
 ERROR
 ```
 
 ### Query The Currently Selected Network Operator
 ```
-Command: [echo -e "AT+COPS?\r\n" > /dev/ttyUSB2]
-See the result: [cat /dev/ttyUSB2]
-Correct result: 
+echo -e "AT+COPS?\r\n" > /dev/ttyUSB2
+cat /dev/ttyUSB2
+```
+Correct result:
+```
 AT+COPS?
 +COPS: 0,0,"CHN-UNICOM",6
 OK
 ```
 The currently network operator is ChinaUnicom
-```
+
 Wrong result:
+```
 AT+COPS? 
 ERROR
 ```
@@ -291,7 +307,7 @@ echo -e "AT+QRST=1,0\r\n" > /dev/ttyUSB2
 
 ## Compile your firmware
 
-[comming late]
+[comming later]
 
 # Troubleshooting
 
