@@ -60,7 +60,12 @@ If you have problems in settings (for example repeater) or firmware upgrading, y
 
 ### Using the Reset button to revert
 
-**After the firmware boot**, you can press and hold the `Reset` button for 8 seconds to revert to firmware back to factory status. The LEDs will flash in a pattern, indicating it is working.
+**After the firmware boot**, you can press and hold the `Reset` button for 10 seconds to revert to firmware back to factory status. The LEDs will flash in a pattern (from left to right one by one), indicating it is working.
+
+**Note: From firmware v2.2, when you press down the reset button, the middle LED start to flash once per second.**
+
+After 3 seconds the middle LED will flash quickly, twice per second, when you release your finger the router will only reset the network (disable repeater, enable ap and dhcp). 
+After 10 seconds the middle LED will falsh 4 times per seconds, release your finger now and it will clear all user data and reboot.
 
 This function only in our stock firmware. If you compiled your own firmware, it may not work.
 
