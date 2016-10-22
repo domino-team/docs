@@ -254,7 +254,7 @@ If you want to know more, please refer Quectel_UC20_AT_Commands_Manual_V1.5.pdf 
 
 ## Working with QMI mode
 
-Note: this section is not working in the current firmware.
+Note: QMI mode is supprted from firmware v2.23-6.
 
 If the firmware is commpiled with QMI driver, you will find  `/dev/cdc-wdm0` in the Linux system.
 
@@ -262,15 +262,17 @@ For unknown reason, UC20 seems not work in this mode.
 
 ### Settings 
 
-For QMI mode, you need to change the network settings to dhcp and set the ifname to wwan0.
+From firmware V2.23-6, EC20 is always using QMI mode when you config it in the UI. If you want to configure manually, check `/etc/config/network`
+
 ```
-config interface 'wwan'
-	option proto 'dhcp'
+config interface 'modem'
+	option proto 'wwan'
 	option ifname 'wwan0'
+    ...
 ```
 You need to do a network restart 
 ```
-/etc/init.d/networe retart
+/etc/init.d/network retart
 ```
 ### Tools
 
