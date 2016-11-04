@@ -21,6 +21,7 @@ pages:
     - 'working with uboot' : 'diy/uboot.md'
 - OpenWrt:
     - 'OpenVPN' : 'openwrt/openvpn.md'
+    - 'Tor' : 'openwrt/tor.md'
 
 - 'Domino Kit' :
   - 'Getting Started' : 'domino/index.md'
