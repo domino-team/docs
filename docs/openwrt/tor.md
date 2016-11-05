@@ -36,13 +36,13 @@ You need to refer to [https://www.gl-inet.com/docs/mini/firmware/](https://www.g
 | Model 	| Tor firmware path 	| Newest Version 	| Note 	|
 |-------------	|----------------------------------------------------------------------------------------	|----------------	|--------------------------------------------------------------	|
 | GL.iNet6416 	| [http://www.gl-inet.com/firmware/6416/tor/](http://www.gl-inet.com/firmware/6416/tor/) 	| 1.3 	|  	|
-| AR150 	| http://www.gl-inet.com/firmware/ar150/tor/ 	| 1.4 	|  	|
-| AR300M 	| http://www.gl-inet.com/firmware/ar300m/nand/tor/ 	| 1.4 	| .rar is for web upgrade .img is for uboot upgrade 	|
-| AR300M-Nor 	| http://www.gl-inet.com/firmware/ar300m/tor/ 	| 1.4 	|  	|
-| MT300N 	| http://www.gl-inet.com/firmware/mt300n/tor/ 	| 1.4 	|  	|
-| MT300A 	| http://www.gl-inet.com/firmware/mt300a/tor/ 	| 1.4 	|  	|
-| GL-MiFi 	| http://www.gl-inet.com/firmware/ar150/tor/ 	| 1.3 	| MiFi don't have a Tor firmware itself. Use AR150 1.3 instead 	|
-| GL-AR300 	| http://www.gl-inet.com/firmware/ar300/tor/ 	| 1.3 	|  	|
+| AR150 	| [http://www.gl-inet.com/firmware/ar150/tor/](http://www.gl-inet.com/firmware/ar150/tor/) 	| 1.4 	|  	|
+| AR300M 	| [http://www.gl-inet.com/firmware/ar300m/nand/tor/](http://www.gl-inet.com/firmware/ar300m/nand/tor) 	| 1.4 	| .rar is for web upgrade .img is for uboot upgrade 	|
+| AR300M-Nor 	| [http://www.gl-inet.com/firmware/ar300m/tor/](http://www.gl-inet.com/firmware/ar300m/tor/) 	| 1.4 	|  	|
+| MT300N 	| [http://www.gl-inet.com/firmware/mt300n/tor/](http://www.gl-inet.com/firmware/mt300n/tor/) 	| 1.4 	|  	|
+| MT300A 	| [http://www.gl-inet.com/firmware/mt300a/tor/](http://www.gl-inet.com/firmware/mt300a/tor/) 	| 1.4 	|  	|
+| GL-MiFi 	| [http://www.gl-inet.com/firmware/ar150/tor/](http://www.gl-inet.com/firmware/ar150/tor/) 	| 1.3 	| MiFi don't have a Tor firmware itself. Use AR150 1.3 instead 	|
+| GL-AR300 	| [http://www.gl-inet.com/firmware/ar300/tor/](http://www.gl-inet.com/firmware/ar300/tor/) 	| 1.3 	|  	|
 | GL-MT750 	| Not supported yet 	|  	|  	|
 
 ##Using the firmware UI
