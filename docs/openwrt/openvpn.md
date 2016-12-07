@@ -171,9 +171,8 @@ __Note: We don't have any affiliation with these vpn service providers. For serv
 15. TorGuard, https://torguard.net/
 16. Vpn.AC, https://www.vpn.ac/
 17. Proxpn, https://www.proxpn.com
-18. NordVPN, https://nordvpn.com/
-19. ExpressVPN, https://www.expressvpn.com/
-20. Airvpn, https://airvpn.org/
-21. CactusVpn, https://www.cactusvpn.com/
+18. ExpressVPN, https://www.expressvpn.com/
+19. Airvpn, https://airvpn.org/
+20. CactusVpn, https://www.cactusvpn.com/
 
 # Discussions
