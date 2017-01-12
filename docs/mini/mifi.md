@@ -220,6 +220,17 @@ AT+COPS?
 ERROR
 ```
 
+### Choose network mode
+
+set modem to only LTE 
+```
+echo -e "AT+QCFG=\"nwscanmode\",3,1" > /dev/ttyUSB2 
+```
+set back to auto
+```
+echo -e "AT+QCFG=\"nwscanmode\",0,1" > /dev/ttyUSB2
+```
+
 ### Reset
 You can reset the modem using AT command. The modem will be disconnected and connected again.
 ```
