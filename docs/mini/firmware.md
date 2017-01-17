@@ -65,7 +65,7 @@ If you have problems in settings (for example repeater) or firmware upgrading, y
 **Note: From firmware v2.2, when you press down the reset button, the middle LED start to flash once per second.**
 
 After 3 seconds the middle LED will flash quickly, twice per second, when you release your finger the router will only reset the network (disable repeater, enable ap and dhcp). 
-After 10 seconds the middle LED will falsh 4 times per seconds, release your finger now and it will clear all user data and reboot.
+After 10 seconds the middle LED will flash 4 times per seconds, release your finger now and it will clear all user data and reboot.
 
 This function only in our stock firmware. If you compiled your own firmware, it may not work.
 

@@ -1,15 +1,15 @@
 Working with uboot
 =================
 
-Fimilar with uboot is a must skill that you should master in order to play with the routers.
+Familiarity with uboot is a skill that you should master in order to play with the routers.
 
 About uboot
 -----------
-Uboot (universial bootloader) is the bootloader we used on our boards and routers to start OpenWrt Linux. The bootloader is heavly depends on the hardware so almost each hardware requires one boot loader.
+Uboot (universial bootloader) is the bootloader we used on our boards and routers to start OpenWrt Linux. The bootloader heavily depends on the hardware so almost every device requires a different bootloader.
 
-To use the bootloader, you have to use <a href='http://www.gl-inet.com/docs/diy/serial/'>connect a UART serial connector</a>.
+To use the bootloader, you have to <a href='http://www.gl-inet.com/docs/diy/serial/'>connect a UART serial connector</a> to your device.
 
-Taking our Atheros 9331 boards for example, when powered up, the uboot will output the following text:
+Taking our Atheros 9331 boards for example, when powered up, uboot will output the following text:
 ```
 *********************************************
 *   U-Boot 1.1.4  (Sep  9 2014, 09:20:16)   *
@@ -25,13 +25,13 @@ LED on during eth initialization...
 
 Hit any key to stop autobooting:  0
 ```
-Press any key quicly to stop booting.
+Quickly press any key to stop booting.
 
 Uboot console
 -------------
 Uboot is very useful to save your router. Here is some useful command in uboot.
 
-`printenv` print out the environment variables
+`printenv` prints out the environment variables
 
 ```
 uboot> printenv
