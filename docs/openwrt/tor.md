@@ -130,7 +130,7 @@ Reset button and switch is assigned special functions.
 
 ###Reset
 
-1. When you press down the reset button, the middle LED will start to flash, once per second. After 3 seconds, it will falsh quicker, twice per second. Now release your finger your network will reset, including disable repeater, set lanip back to 192.168.8.1 and enable dhcp. **Use this function if your repeater cannot connect which causes your wifi down**
+1. When you press down the reset button, the middle LED will start to flash, once per second. After 3 seconds, it will flash quicker, twice per second. Now release your finger your network will reset, including disable repeater, set lanip back to 192.168.8.1 and enable dhcp. **Use this function if your repeater cannot connect which causes your wifi down**
 2. When you keep holding the reset button for 8 seconds, the middle LED will start to flash even quicker, 4 times per seconds. Release your finger now, your firmware will revert to factory status and reboot.
 
 ###Switch
