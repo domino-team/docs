@@ -12,6 +12,10 @@ Contents available
 
 [Mini Router Internet Setup](docs/mini/internet.md)
 
+[Mini Router AR300M](docs/mini/ar300m.md)
+
+[Mini Router MiFi](docs/mini/mifi.md)
+
 [Mini Router LAN IP](docs/mini/lan.md)
 
 [Mini Router WiFi Settings](docs/mini/wifi.md)
@@ -23,6 +27,8 @@ Contents available
 [Using RTC on GL-AR150](docs/mini/ar150rtc.md)
 
 [Using **OpenVPN** on Mini routers](docs/openwrt/openvpn.md)
+
+[Using **Tor** on Mini routers](docs/openwrt/tor.md)
 
 [Working with UART & serial](docs/diy/serial.md)
 
