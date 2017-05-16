@@ -151,6 +151,16 @@ Express VPN is easy
 
 ![ExpressXPN](src/expressvpn.jpg)
 
+##Using TorGuard
+
+If you are using TorGuard, you need to login the control panel and generate the ovpn file from the "Tools" menu. Please select "All", using udp or tcp and select Cipher. Then press `Generate Config` and the zip file will be downloaded automatically.
+
+![Generate ovpn](src/torguard.jpg)
+
+The username and password for openvpn connection is different from your control panel login. You can change the service username and password in Security manual. You can generate a random login username and password.
+
+![Set password](src/torguard1.jpg)
+
 ##VPN Compatibilities
 
 We have checked a number of public vpn service providers and tested the compatibilities. What you need to do is purchase a subscription from them and download the ovpn files.
@@ -159,21 +169,21 @@ Here is a list of compatible services (v2.20).
 
 __Note: We don't have any affiliation with these vpn service providers. For service issues, please contact them directly.__
 
-1. Astrill, https://www.astrill.com
-2. FinchVPN, https://www.finchvpn.com/
-3. Free Vpn Software, http://freevpnsoftware.net/
-4. VPNBook, http://www.vpnbook.com/
-5. VPNGate, http://www.vpngate.net/
-6. VPN Area, https://vpnarea.com
-7. NordVPN, https://nordvpn.com/
-8. PIA, https://www.privateinternetaccess.com/
-9. PureVPN, https://www.purevpn.com/
-10. TotalVPN, https://www.totalvpn.com
-11. Strong VPN, http://strongvpn.com/
-12. HideMyAss, https://www.hidemyass.com
-13. Proxy.sh, https://proxy.sh/
-14. TCPVPN.com, https://www.tcpvpn.com
-15. TorGuard, https://torguard.net/
+1. TorGuard, [https://torguard.net/](https://torguard.net/aff.php?aff=3040)
+2. Astrill, https://www.astrill.com
+3. FinchVPN, https://www.finchvpn.com/
+4. Free Vpn Software, http://freevpnsoftware.net/
+5. VPNBook, http://www.vpnbook.com/
+6. VPNGate, http://www.vpngate.net/
+7. VPN Area, https://vpnarea.com
+8. NordVPN, https://nordvpn.com/
+9. PIA, https://www.privateinternetaccess.com/
+10. PureVPN, https://www.purevpn.com/
+11. TotalVPN, https://www.totalvpn.com
+12. Strong VPN, http://strongvpn.com/
+13. HideMyAss, https://www.hidemyass.com
+14. Proxy.sh, https://proxy.sh/
+15. TCPVPN.com, https://www.tcpvpn.com
 16. Vpn.AC, https://www.vpn.ac/
 17. Proxpn, https://www.proxpn.com
 18. ExpressVPN, https://www.expressvpn.com/
