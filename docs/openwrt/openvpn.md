@@ -167,7 +167,7 @@ We have checked a number of public vpn service providers and tested the compatib
 
 Here is a list of compatible services (v2.20).
 
-__Note: We don't have any affiliation with these vpn service providers. For service issues, please contact them directly.__
+__Note: For service issues, please contact the service provider directly.__
 
 1. TorGuard, [https://torguard.net/](https://torguard.net/aff.php?aff=3040)
 2. Astrill, https://www.astrill.com
