@@ -22,6 +22,7 @@ pages:
 - OpenWrt:
     - 'OpenVPN' : 'openwrt/openvpn.md'
     - 'Tor' : 'openwrt/tor.md'
+    - 'EasyTether' : 'openwrt/tether.md'
 
 - 'Domino Kit' :
   - 'Getting Started' : 'domino/index.md'
