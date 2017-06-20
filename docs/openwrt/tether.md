@@ -135,7 +135,7 @@ EOF
 
 ***i.*** Go to Setting -> About Device -> Software info. Hitting the build number several times and it will announce that you have turn on the Developer Options.
 
-![Build number](http://www.gl-inet.com/wordpress/wp-content/uploads/2017/06/Screenshot_20170614-165609-2.jpg)
+![Build number](http://www.gl-inet.com/wordpress/wp-content/uploads/2017/06/XXXXXXX.jpg)
 
 ***ii.*** Go to Setting -> Developer Options, turn on the Developer Options and also the USB debugging.
 
