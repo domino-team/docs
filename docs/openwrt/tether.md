@@ -38,6 +38,10 @@ We will use Android OS and GL mini router to demonstrate the procedure.
 
 ![EasyTether Driver](http://www.gl-inet.com/wordpress/wp-content/uploads/2017/06/Q2.png)
 
+​         *Note: For MT300N-V2, please choose LEDE.*
+
+![LEDE for MT300N-V2](https://www.gl-inet.com/wordpress/wp-content/uploads/2017/11/14.jpg)
+
 4)     EasyTether Android App (Search in Google Play Store)
 
 
