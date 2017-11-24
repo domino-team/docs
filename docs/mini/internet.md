@@ -2,6 +2,8 @@
 
 Cable, Repeater, Modem and Tethering
 
+Note: This doc is update on 2017-11-24 and you need to use firmware v2.264.
+
 Note: Most of the pictures in this instructions are for firmware v2.20. Firmware v2.22 may has slightly different interfaces.
 
 ## Status
@@ -90,65 +92,9 @@ Here is [detailed instructions](src/relayd.pdf) of how to do it.
 
 **OpenVPN client function of the mini router will not work in bridge mode**
 
-## 3G/4G Modem
+## 3G/4G Modem and phone tethering
 
-Using the mini router, you can connect to the Internet using 3G or 4G modems. Click the `3G` tab to enter the UI.
 
-The basic mode we only have limted data. We recommend you to use the advanced method by clicking the `Advanced Setup >>>`.
-
-![Connections](src/3g_1.png)
-
-After you plug in your modem, you will see the device in Modem Device list. There maybe several devices and you need to try different devices. Most devices are ttyUSB2. In my case it is ttyUSB1.
-
-**Some new modem models works like Ethernet devices and you need to use Tethering.** Please check next section for this.
-
-You need to choose the appropriate `Service Type`. Consult your ISP for this.
-
-Most importantly you need to type the `APN`, in my case it is 3gnet.
-
-Now click `Submit`.
-
-**If you used the wrong ttyUSB device, you need to try another one. Some modems needs you to unplug it first and plug in again**
-
-![Connections](src/3g_2.png)
-
-###Compatible 3G, 4G LTE modem List
-
-With Standard OpenWrt CC1505 distribution installed, the mini router support hundreds of 3G 4G dongles on the market. However we cannot test all these models.
-
-Here is a list of supported modems we tested:
-
-| Model          | 3G/4G | Tested | Tested by       | Comments |
-|----------------|-------|--------|-----------------|----------|
-| Quectel EC20-E | 4G    | Yes    | GLi             |          |
-| Quectel EC20-C | 4G    | Yes    | GLi             |          |
-| Quectel UC20-E | 3G    | Yes    | GLi             |          |
-| ZTE ME909s-821 | 4G    | Yes    | GLi             |          |
-| Huawei E1550   | 3G    | Yes    | GLi             |          |
-| Huanwei E3276  | 4G    | Yes    | GLi             |          |
-| TP-Link MA260  | 3G    | Yes    | GLi             |          |
-| ZTE M823       | 4G    | Yes    | Arnas Risqianto |          |
-| ZTE MF190      | 3G    | Yes    | Arnas Risqianto |          |
-| Huawei E3372   | 4G    | Yes    | anonymous       |          |
-|                |       |        |                 |          |
-
-You can also refer to [http://ofmodemsandmen.com/supported.html](http://ofmodemsandmen.com/supported.html) for a well supported modem list.
-
-Modems can be Regular USB or Host-less versions. If it is host-less, it will work as tethering.
-
-## Phone (modem) Tethering
-
-You can also tether your smartphone's data to the router. Some new 3G/4G modems work as this mode as well. Plug your phone to the mini router's USB port.
-
-Note: The stock firmware support iPhone and most Android phones. You have to enable "Tethering" or Sharing in your phone.
-
-Note: For iPhone, the first time you connect your phone to the router, you phone will ask if you would like to `Trust` the computer it connected to. Please click `Trust`.
-
-![Connections](src/tethering1.jpg)
-
-Then click `Tethering` tab. Your smartphone will appear as a network devices, with names: `eth1 eth2 usb0` etc. depends on the model.
-
-![Connections](src/tethering.png)
 
 ## Clone MAC
 

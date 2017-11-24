@@ -2,19 +2,23 @@
 
 Industrial grade mobile Wifi
 
+This docs is for the firmware v2.264 and new.
+
 ## Choosing the correct configuration
 
-GL-MiFi is designed for flexbility so when you [buy from our shop](https://www.gl-inet.com/product/gl-mifi/) you can choose configurations.  
+GL-MiFi is designed for flexbility so when you [buy from our shop](https://store.gl-inet.com/collections/travel-routers/products/gl-mifi-4g-smart-router) you can choose configurations.  
 
 The most important is that you choose the correct 3G/4G modules that works in your country. 
 
-Generally for American, Europe and Asia the modules and bands are different. If you are not in these areas please consult your service provider for more details.
+Generally for American, Europe, Australia and Asia the modules and bands are different. If you are not in these areas please consult your service provider for more details.
 
 ## Power it on
 
 When you get the mifi device, You can insert your SIM card. You can also insert a MicroSD card if you want to share its content.
 
-please connect power and press and hold the power button for 3 seconds to power the device on.
+Please connect power and it will turn on automatically. If it is powered off you can also ress and hold the power button for 3 seconds to power the device on.
+
+**Note:** It will power on every time you plug in USB power cable.
 
 You can connect to the MiFi using an Ethernet cable or using WiFi. The default password is `goodlife`.
 
@@ -28,10 +32,10 @@ The User interface is the same as our other mini routers. You can consult other 
 
 ## Compatible 3g/4g modules
 
-GL-Mifi is compatible with most PCIe 3G/4G modules. We have three modules tested.
+GL-Mifi is compatible with most PCIe 3G/4G modules. We have several modules tested.
 
-* 3G: 	Quectel UC20, 
-* 4G: 	Quectel EC20, HUAWEI ME909s-821
+ *3G: 	Quectel UC20, 
+* 4G: Quectel EC20, EC25, HUAWEI ME909s-821
 
 To Check if the modules are recognized by the MiFi:
 
@@ -43,20 +47,20 @@ ls /dev/ttyUSB*
 If the console displays `ttyUSB0`, `ttyUSB1`, `ttyUSB2`, `ttyUSB3` and/or `ttyUSB4` (as figure shown below), that means GL-MiFi identified the module and we can then configure the MiFi.
 
 Check if the device is supported in QMI mode: `ls /dev/cdc-wdm0`
- 
+
 
 For Quectel EC20, and UC20, the port should be used as:
 
-* `/dev/ttyUSB0`	DM
-* `/dev/ttyUSB1`	GPS NMEA message output
-* `/dev/ttyUSB2`	AT commands
-* `/dev/ttyUSB3`	PPP connection or AT commands
-* `wwan0` (QMI mode)	USB network adapter
+* `/dev/ttyUSB0` DM
+* `/dev/ttyUSB1`GPS NMEA message output
+* `/dev/ttyUSB2`AT commands
+* `/dev/ttyUSB3`PPP connection or AT commands
+* `wwan0` (QMI mode)USB network adapter
 
 For Huawei ME909s-821, the data port is `/dev/ttyUSB0`
 
 | Name              | Data Port    | AT Command Port |
-|-------------------|--------------|-----------------|
+| ----------------- | ------------ | --------------- |
 | Quectel EC20      | /dev/ttyUSB3 | /dev/ttyUSB2    |
 | Quectel UC20      | /dev/ttyUSB3 | /dev/ttyUSB2    |
 | Huawei ME909s-821 | /dev/ttyUSB0 |                 |
@@ -75,13 +79,17 @@ If you want to connect to the Internet using 3G/4G,
 1. Click "Internet" area
 2. Click "New connections" 
 3. Click "3G" tab
-4. First, choose region and then choose service provider. The UI will fill the gray field automatically.
+4. First, choose region and then choose service provider. The UI will fill the gray field automatically. This is not a must. As long as you fill the correct settings below, it should works without problem.
 5. Please choose the correct device. Consult the above sections for details.
-6. Please choose correct service type, UMTS or EVDO
+6. Please choose correct service type if you set up for 3G:, UMTS or EVDO, the value will be ignored for 4G
 7. If the gray field contains wrong information, e.g. wrong apn, please edit the field and report to us.
 8. Click "Submit" button
 
 ![MiFi setup](src/mifi_connection.jpg)
+
+For US Verizon settings, you can choose `internet` or `Ne01.vzwstatic` as the APN.
+
+![Verizon setup](src/verizon_apn.jpg)
 
 In Internet status windows it will show the status of 3G/4G connection.
 
@@ -357,7 +365,7 @@ For some complicated reasons:
 * No network.
 * Data interface (ttyUSBx) configured incorrectly.
 * 
-When this happens:
+  When this happens:
 1. Check connection
 2. Connect antennas
 3. Correct network settings

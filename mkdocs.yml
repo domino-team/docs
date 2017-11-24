@@ -51,9 +51,10 @@ pages:
 - 'Mini routers' :
   - 'Quick Start' : 'mini/index.md'
   - 'Internet Settings, MAC clone, DNS' : 'mini/internet.md'
+  - 'Repeater Manager' : 'mini/repeater_manager.md'
+  - '3G/4G modem and smartphone tethering' : 'mini/3g4g.md'
   - 'LAN IP' : 'mini/lan.md'
   - 'Wifi Settings (AP)': 'mini/wifi.md'
-  - 'Repeater Manager' : 'mini/repeater_manager.md'
   - 'Firmware upgrading' : 'mini/firmware.md'
   - 'GL-AR300M' : 'mini/ar300m.md'
   - 'GL-MiFi' : 'mini/mifi.md'
