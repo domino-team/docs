@@ -94,7 +94,7 @@ Here is [detailed instructions](src/relayd.pdf) of how to do it.
 
 ## 3G/4G Modem and phone tethering
 
-Please refer to [guide for modem and tethering](/docs/mini/3g4g)
+Please refer to [guide for modem and tethering](3g4g)
 
 
 
