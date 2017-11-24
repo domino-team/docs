@@ -96,6 +96,7 @@ Here is [detailed instructions](src/relayd.pdf) of how to do it.
 
 
 
+
 ## Clone MAC
 
 Clone MAC is used especially in hotels, hotspot etc when the server checks your mac address. For example, if you got your smartphone registered on the network, you can clone your smartphone's mac address to the router so that the router can connect.
