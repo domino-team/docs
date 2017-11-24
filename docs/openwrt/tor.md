@@ -1,3 +1,4 @@
+
 Using Tor in OpenWrt and GLi Routers
 ===================================
 
@@ -10,6 +11,23 @@ Free Tor firmware for all
 ##Versions and supported devices
 
 We have several version of Tor firmware and here is the summary. 
+
+### Version 2.264:
+
+We have upgrade Tor firmware for the following models to v2.264 on 2017-11-24.
+
+`AR150, AR300M, AR300M Nand, MT300N, MT300A, MT300N-V2 `
+
+Now Tor firmware is generally by imagebuilder and you will be able to install from standard GLi software repositories using opkg. The source code is on [github](https://github.com/gl-inet/openwrt-files) now.
+
+To modify and compile the Tor firmware by yourself, please refer to the following imagebuilders.
+
+* [imagebuilder for AR150, AR300M, MiFi, 6416](https://github.com/gl-inet/imagebuilder-cc-ar71xx) based on OpenWrt CC 1505
+* [imagebuilder for AR300M Nand](https://github.com/gl-inet/imagebuilder-cc-ar71xx-nand) based on OpenWrt CC 1505
+* [imagebuilder for MT300N, MT300A](https://github.com/gl-inet/imagebuilder-cc-ramips) based on OpenWrt CC 1505
+* [imagebuilder for MT300N-V2](https://github.com/gl-inet/imagebuilder-lede-ramips) based on LEDE 17.01.4
+
+
 
 ###Version 1.4:
 Only support `GL-AR150`, `GL-AR300M`, `GL-MT300N`, `GL-MT300A`, which has a `switch button` controlling whether you traffice should go through Tor or not.
@@ -33,23 +51,24 @@ Find your device name and then "tor" folder. Download the newest firmware.
 
 You need to refer to [https://www.gl-inet.com/docs/mini/firmware/](https://www.gl-inet.com/docs/mini/firmware/) for instructions to flash the firmware to the router. 
 
-| Model 	| Tor firmware path 	| Newest Version 	| Note 	|
-|-------------	|----------------------------------------------------------------------------------------	|----------------	|--------------------------------------------------------------	|
-| GL.iNet6416 	| [http://www.gl-inet.com/firmware/6416/tor/](http://www.gl-inet.com/firmware/6416/tor/) 	| 1.3 	|  	|
-| AR150 	| [http://www.gl-inet.com/firmware/ar150/tor/](http://www.gl-inet.com/firmware/ar150/tor/) 	| 1.4 	|  	|
-| AR300M 	| [http://www.gl-inet.com/firmware/ar300m/nand/tor/](http://www.gl-inet.com/firmware/ar300m/nand/tor) 	| 1.4 	| .rar is for web upgrade .img is for uboot upgrade 	|
-| AR300M-Nor 	| [http://www.gl-inet.com/firmware/ar300m/tor/](http://www.gl-inet.com/firmware/ar300m/tor/) 	| 1.4 	|  	|
-| MT300N 	| [http://www.gl-inet.com/firmware/mt300n/tor/](http://www.gl-inet.com/firmware/mt300n/tor/) 	| 1.4 	|  	|
-| MT300A 	| [http://www.gl-inet.com/firmware/mt300a/tor/](http://www.gl-inet.com/firmware/mt300a/tor/) 	| 1.4 	|  	|
-| GL-MiFi 	| [http://www.gl-inet.com/firmware/ar150/tor/](http://www.gl-inet.com/firmware/ar150/tor/) 	| 1.3 	| MiFi don't have a Tor firmware itself. Use AR150 1.3 instead 	|
-| GL-AR300 	| [http://www.gl-inet.com/firmware/ar300/tor/](http://www.gl-inet.com/firmware/ar300/tor/) 	| 1.3 	|  	|
-| GL-MT750 	| Not supported yet 	|  	|  	|
+| Model       | Tor firmware path                        | Newest Version | Note                                     |
+| ----------- | ---------------------------------------- | -------------- | ---------------------------------------- |
+| GL.iNet6416 | [http://www.gl-inet.com/firmware/6416/tor/](http://www.gl-inet.com/firmware/6416/tor/) | 1.3            |                                          |
+| AR150       | [http://www.gl-inet.com/firmware/ar150/tor/](http://www.gl-inet.com/firmware/ar150/tor/) | 2.264          |                                          |
+| AR300M      | [http://www.gl-inet.com/firmware/ar300m/nand/tor/](http://www.gl-inet.com/firmware/ar300m/nand/tor) | 2.264          | .rar is for web upgrade .img is for uboot upgrade |
+| AR300M-Nor  | [http://www.gl-inet.com/firmware/ar300m/tor/](http://www.gl-inet.com/firmware/ar300m/tor/) | 2.264          |                                          |
+| MT300N      | [http://www.gl-inet.com/firmware/mt300n/tor/](http://www.gl-inet.com/firmware/mt300n/tor/) | 2.264          |                                          |
+| MT300A      | [http://www.gl-inet.com/firmware/mt300a/tor/](http://www.gl-inet.com/firmware/mt300a/tor/) | 2.264          |                                          |
+| GL-MiFi     | [http://www.gl-inet.com/firmware/ar150/tor/](http://www.gl-inet.com/firmware/ar150/tor/) | 1.3            | MiFi don't have a Tor firmware itself. Use AR150 1.3 instead |
+| GL-AR300    | [http://www.gl-inet.com/firmware/ar300/tor/](http://www.gl-inet.com/firmware/ar300/tor/) | 1.3            |                                          |
+| GL-MT750    | Not supported yet                        |                |                                          |
+| AR750       | Not supported yet                        |                |                                          |
 
 ##Using the firmware UI
 
 After you flash the firmware to your device, when it reboots you need to set up the device at `http://192.168.8.1`. 
 
-If you need to connect via WiFi, the default wifi password is `goodlife`.
+`If` you need to connect via WiFi, the default wifi password is `goodlife`.
 
 !!! NOTE 
 
@@ -130,8 +149,9 @@ Reset button and switch is assigned special functions.
 
 ###Reset
 
-1. When you press down the reset button, the middle LED will start to flash, once per second. After 3 seconds, it will flash quicker, twice per second. Now release your finger your network will reset, including disable repeater, set lanip back to 192.168.8.1 and enable dhcp. **Use this function if your repeater cannot connect which causes your wifi down**
-2. When you keep holding the reset button for 8 seconds, the middle LED will start to flash even quicker, 4 times per seconds. Release your finger now, your firmware will revert to factory status and reboot.
+1. When you press down the reset button, the middle LED will start to flash once per second. Release your finger if the LED just flashed once (1 seconds), the Tor will try to change a new Exit node.
+2. If you keep the button pressed for 3 seconds, it will flash quicker, twice per second. Now release your finger your network will reset, including disable repeater, set lanip back to 192.168.8.1 and enable dhcp. **Use this function if your repeater cannot connect which causes your wifi down**
+3. When you keep holding the reset button for 8 seconds, the middle LED will start to flash even quicker, 4 times per seconds. Release your finger now, your firmware will revert to factory status and reboot.
 
 ###Switch
 
