@@ -58,6 +58,8 @@ You can also disable "auto-connect" for a choose station.
 
 ## Get through the Portal Page
 
+**This function is added from firmware v2.263. ** 
+
 When you use in a hotel or public café, it is very common that the wifi doesn't have a password but they will have a Captive Portal (authentication) page so that you agree to the terms. 
 
 Generally this page will still pop up when you use the router as WISP. But some portal page cannot pop up because of DNS problems. The browser will tell you that the DNS cannot be resolved. When this happen you need to disable `DNS Rebind Protection` so that you can access the portal page. Find DNS settings in Internet status page, and uncheck `Rebind Protection`, then click `Apply`. After several seconds the router will apply the settings and you can go through to the portal page. 
