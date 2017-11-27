@@ -8,6 +8,8 @@ Available documentations
 
 [Mini Router Internet Setup](/mini/internet)
 
+[Mini Router 3G/4G modem setup](/mini/3g4g)
+
 [Mini Router LAN IP](/mini/lan)
 
 [Mini Router WiFi Settings](/mini/wifi)
@@ -23,6 +25,10 @@ Available documentations
 [GL-MiFi](/mini/mifi)
 
 [Using **OpenVPN** on Mini routers](/openwrt/openvpn)
+
+[Using **Tor** on Mini routers](/openwrt/tor)
+
+[Using **EasyTether** on Mini routers](/openwrt/tether)
 
 [Working with UART & serial](/diy/serial)
 

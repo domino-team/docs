@@ -1,6 +1,8 @@
 # Using OpenVPN in GLi routers
 
-This docs only related to OpenVPN client.
+This docs only related to OpenVPN client, not server. 
+
+Keyword: OpenVpn, OpenWrt, WiFi routers, Wireless routers
 
 ---
 
