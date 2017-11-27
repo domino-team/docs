@@ -13,6 +13,8 @@ So we developer a daemon program "repeater manager" to make sure your ap is usab
 3. If none of the saved stations can be connected, the router will just disable sta mode to make sure your AP is ON
 4. You can turn on/off the "auto-scan and connect" function in Internet status page. But if no sta can be connected, it will still disable your sta so that your AP is ON.
 
+![Connections](src/wisp1.png)
+
 ## Set up repeater for the first time
 
 To set up repeate for the first time, just click "Internet" area in Settings page and build a new connection using "New connection" button.
@@ -24,7 +26,7 @@ Choose Repeater Tab, the router will search for available stations automatically
 There are two modes for repeater.
 
 * WISP: stands for Wireless Internet Service Provider. Use this mode if you want the router have its own sub-network. Generally this is the case for public Wi-Fi hotspot.
-* WDS: stands for Wireless Distribution System. Use this if you are extending your own network and want every devices works in the same sub-network. Make sure your main router also enabled WDS.
+* WDS: stands for Wireless Distribution System. Use this if you are extending your own network and want every devices works in the same sub-network. Make sure your main router also enabled WDS. **WDS may only work with GL.iNet (OpenWrt) routers as WDS implementation**
 
 Click "Submit" and wait a while to let the router connected as repeater.
 
@@ -53,6 +55,16 @@ The current connection will be **bold**.
 You can delete or choose which station to connect. If you choose to connect a station but it fails, the "auto reconnection" daemon may connect you to another network.
 
 You can also disable "auto-connect" for a choose station.
+
+## Get through the Portal Page
+
+When you use in a hotel or public café, it is very common that the wifi doesn't have a password but they will have a Captive Portal (authentication) page so that you agree to the terms. 
+
+Generally this page will still pop up when you use the router as WISP. But some portal page cannot pop up because of DNS problems. The browser will tell you that the DNS cannot be resolved. When this happen you need to disable `DNS Rebind Protection` so that you can access the portal page. Find DNS settings in Internet status page, and uncheck `Rebind Protection`, then click `Apply`. After several seconds the router will apply the settings and you can go through to the portal page. 
+
+You may need to reconnect the WISP repeater in order to let the setting take effect.
+
+![Connections](src/dns_rebind.jpg)
 
 
 ## FAQ

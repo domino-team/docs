@@ -46,7 +46,13 @@ Fill your `username` and `password` then click `Submit`.
 
 ## Repeater (WISP)
 
-Note: **Please check the [Repeater Manager function](../mini/repeater_manager.md)**
+
+
+Note: **Please check the [Repeater Manager function](../mini/repeater_manager.md) for more details**
+
+Mote: **If you use in public Café or hotel, and there is a portal page, you may need to disable `DNS rebind protection`. Please refer to  [Repeater Manager function](../mini/repeater_manager.md) ** 
+
+
 
 Using GLi mini routers, you don't need to have an Ethernet cable to surf the Internet, you can user it as repeater. The most common one is WISP (Wireless Internet Service Provider).
 
@@ -68,11 +74,11 @@ First Click `Repeater` tab in `Internet Settings`, the router will search for th
 
 ## Repeater Bridge (WDS)
 
-In other circumstances, you want to connect to your own router which you trust. You don't need a separate network, you can use Repeater Bridge mode. The most common one is called `WDS`. To use this mode, **your main router has to support WDS**. Consult your main router's manual to check if it has this options.
+In other circumstances, you want to connect to your own router which you trust. You don't need a separate network, you can use Repeater Bridge mode. The most common one is called `WDS`. To use this mode, **your main router has to support WDS. As WDS has different implementation, you'd better use the same GL.iNet router**. Consult your main router's manual to check if it has this options.
 
 In WDS mode, the mini router only boost your main router's signal area, not creating a seprate network. There is no firewall between the mini router and the main router.
 
-**OpenVPN client function of the mini router will not work in bridge mode**
+**OpenVPN client function of the mini router will not work in bridge mode**.
 
 ![Connections](src/wds.png)
 
