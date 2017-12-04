@@ -13,6 +13,8 @@ To use the Tor firmware:
 1. Download the correct firmware for your router
 2. Flash it to the router according to http://www.gl-inet.com/docs/mini/firmware/ DO NOT reserve settings
 
+If you brick your router after flashing the wrong firmware or wrong way, please use uboot failsafe to debrick the router. 
+
 ##Versions and supported devices
 
 We have several version of Tor firmware and here is the summary. 
