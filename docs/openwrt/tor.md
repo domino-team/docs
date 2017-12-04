@@ -8,6 +8,11 @@ Free Tor firmware for all
 
 **This Tor firmware is totally free and no warranty.** Refer to the forum for help!
 
+To use the Tor firmware:
+
+1. Download the correct firmware for your router
+2. Flash it to the router according to http://www.gl-inet.com/docs/mini/firmware/ DO NOT reserve settings
+
 ##Versions and supported devices
 
 We have several version of Tor firmware and here is the summary. 
