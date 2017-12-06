@@ -167,11 +167,11 @@ The username and password for openvpn connection is different from your control 
 
 We have checked a number of public vpn service providers and tested the compatibilities. What you need to do is purchase a subscription from them and download the ovpn files.
 
-Here is a list of compatible services (v2.20).
+Here is a list of compatible services (v2.26).
 
 __Note: For service issues, please contact the service provider directly.__
 
-1. TorGuard, [https://torguard.net]<https://torguard.net/aff.php?aff=3040>
+1. TorGuard, https://torguard.net/aff.php?aff=3040
 2. Astrill, https://www.astrill.com
 3. FinchVPN, https://www.finchvpn.com/
 4. Free Vpn Software, http://freevpnsoftware.net/
