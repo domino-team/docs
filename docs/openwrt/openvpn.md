@@ -171,7 +171,7 @@ Here is a list of compatible services (v2.20).
 
 __Note: For service issues, please contact the service provider directly.__
 
-1. TorGuard, [torguard.net](https://torguard.net/aff.php?aff=3040)
+1. TorGuard, [https://torguard.net]<https://torguard.net/aff.php?aff=3040>
 2. Astrill, https://www.astrill.com
 3. FinchVPN, https://www.finchvpn.com/
 4. Free Vpn Software, http://freevpnsoftware.net/
@@ -191,5 +191,9 @@ __Note: For service issues, please contact the service provider directly.__
 18. ExpressVPN, https://www.expressvpn.com/
 19. Airvpn, https://airvpn.org/
 20. CactusVpn, https://www.cactusvpn.com/
+21. Keepsolid,   <https://www.keepsolid.com>
+22. IPVanish, https://www.ipvanish.com
+23. SaferVPN, https://www.safervpn.com
+24. IVACY, https://www.ivacy.com 
 
 # Discussions
