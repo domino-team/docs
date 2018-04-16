@@ -24,19 +24,19 @@ https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 ##### 2.1.2 Install PuTTY for windows step by step
 
-![52216437600](images\1522164376006.jpg)
+![52216437600](images/1522164376006.jpg)
 
 
 
-![52216450379](images\PuTTY Install-2.png)
+![52216450379](images/PuTTY Install-2.png)
 
 
 
-![52216454338](images\PuTTY Install-3.png)
+![52216454338](images/PuTTY Install-3.png)
 
 
 
-![52216458386](images\PuTTY Install-4.png)
+![52216458386](images/PuTTY Install-4.png)
 
 
 
@@ -44,31 +44,31 @@ https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 Click **PuTTY** in Start Menu 
 
-![52216484291](images\1522164842915.png)
+![52216484291](images/1522164842915.png)
 
 
 
 You will see the following Configuration Window: 
 
-![52216510388](images\Setup PuTTY-1.png)
+![52216510388](images/Setup PuTTY-1.png)
 
 **Input** Host Name (or IP address) "**192.168.8.1**", Keep Port as default "**22**", select connection type: "**SSH**",
 
 **Input** "**your session**" in saved sessions, click **<u>S</u>ave** at right side.
 
-![52216521565](images\Setup PuTTY-2.png) 
+![52216521565](images/Setup PuTTY-2.png) 
 
 **Click "<u>O</u>pen"** at the bottom
 
-![52216531483](images\Setup PuTTY-3.png)
+![52216531483](images/Setup PuTTY-3.png)
 
 A security alert will pop-up, click "**Yes**". 
 
-![52219965352](images\SSH in-root.png)
+![52219965352](images/SSH in-root.png)
 
 login as：**root**
 
-![52216538050](images\SSH in-1.png)
+![52216538050](images/SSH in-1.png)
 
 ​	
 
@@ -76,7 +76,7 @@ login as：**root**
 
 
 
-![52219922225](images\SSH in-2.png)
+![52219922225](images/SSH in-2.png)
 
 When you see above picture, that means you are now ssh login the router, 
 
@@ -84,11 +84,11 @@ this picture shows we login the router (GL-AR750 Model) as root user.
 
 #### 2.2 Ubuntu User:
 
-![buntu Logi](images\Ubuntu Login.png)
+![buntu Logi](images/Ubuntu Login.png)
 
 Click "**Terminal**"
 
-![52220472612](images\SSH Login.png)
+![52220472612](images/SSH Login.png)
 
 Input the following command: 
 
@@ -96,13 +96,13 @@ Input the following command:
 
 when you first login, Host key verification failed may displayed as follow:
 
-![52220528680](images\remove ssh-keygen.png)
+![52220528680](images/remove ssh-keygen.png)
 
 input the red highlight command:
 
 `ssh-keygen -f "/home/username/.ssh/known_hosts" -R "192.168.8.1"`
 
-![52220545833](images\Removed Host keygen.png)
+![52220545833](images/Removed Host keygen.png)
 
 you will see the known_hosts updated. 
 
@@ -110,15 +110,15 @@ retry the ssh login command:
 
 `user name@your computer name:~S SSH root@192.168.8.1` 
 
-![52220556186](images\Ubuntu sshin router-1.png)
+![52220556186](images/Ubuntu sshin router-1.png)
 
 Type "**yes**"
 
-![52220561601](images\Ubuntu sshin router-2.png) 	
+![52220561601](images/Ubuntu sshin router-2.png) 	
 
 Input the router password: ***goodlife*** (default password, you can set this password when you first connect to your router)
 
-![52220589633](images\1522205896331.png)
+![52220589633](images/1522205896331.png)
 
 Final, you login the router when the above message displayed. 
 
@@ -130,7 +130,7 @@ Input the following command to edit the configuration file "**shadowsocks-server
 
 `root@GL-AR750:~# vi /etc/shadowsocks-sever.json` 
 
-![52223877786](images\1522238777867.png)
+![52223877786](images/1522238777867.png)
 
 
 
@@ -143,7 +143,7 @@ switch to edit mode by click "Insert" key, then you can change parameter in the 
 
 when you finish all above modification, you can click "***Esc***" to exit edit mode, then click "***:***", input `wq` to ***write*** the modification into the configuration files and ***quit***. 
 
-![52222196458](images\ssh wq.png) 
+![52222196458](images/ssh wq.png) 
 
 Type `exit` to quit the **Terminal** or **PuTTY**. 
 
@@ -151,7 +151,7 @@ Type `exit` to quit the **Terminal** or **PuTTY**.
 
 Type `vi /etc/init.d/ss-server` in the command line
 
-![52224765700](images\ss-server config.png)
+![52224765700](images/ss-server config.png)
 
 When you open ss-server configure file, you can see the following configuration
 
@@ -163,7 +163,7 @@ Click "**insert**" switch to edit mode, remove the "*****" before "/usr/bin/ss-s
 
 Input `/etc/init.d/ss-server start` , then the ss-serer services start on your router. 
 
-![52302947938](images\1523029479389.png)
+![52302947938](images/1523029479389.png)
 
 After you start ss-server, the above information will display. 
 
@@ -171,30 +171,30 @@ After you start ss-server, the above information will display.
 
 ##### 3.4.1 Login web management page - advanced settings.
 
-![52291532196](images\1522915321961.png) 
+![52291532196](images/1522915321961.png) 
 
-![52222434301](images\Advance Root Login.png)
+![52222434301](images/Advance Root Login.png)
 
 A window will pop-up warning you to separately login as a root user into advanced setting. 
 
 Click "***OK***"
 
-![52222445742](images\1522224457420.png) 
+![52222445742](images/1522224457420.png) 
 Login with your password as a root user
 
-![52222450124](images\1522224501240.png)  
+![52222450124](images/1522224501240.png)  
 
 Advance Setting Page Review 
 
 ##### 3.4.2 Enable Port Forwarding in Firewall Setup
 
-![52291523169](images\1522915231698.png) 
+![52291523169](images/1522915231698.png) 
 
 Select "**Firewall**" in Network Pull-down Menu.
 
 
 
-![52291540915](images\1522915409158.png) 
+![52291540915](images/1522915409158.png) 
 
 
 
@@ -218,23 +218,23 @@ Then click "**add**",
 
 
 
-![52291562679](images\1522915626797.png) 
+![52291562679](images/1522915626797.png) 
 
 A saved Port Forwarding item with **Enable** ticked will displayed 
 
-![52291589794](images\1522915897942.png) 
+![52291589794](images/1522915897942.png) 
 
 Click "**Save & Apply**" to apply the port forwarding in this router.
 
 ##### 3.4.3 Open Port on Router
 
-![52291627764](images\1522916277644.png) 
+![52291627764](images/1522916277644.png) 
 
 
 
 Click "**Traffic Rules**" Tab to active external port forwarding in your network. 
 
-![52291649689](images\1522916496892.png) 
+![52291649689](images/1522916496892.png) 
 
 Scroll down to the "Open ports on router" and input information as following: 
 
@@ -294,13 +294,13 @@ You can test or check whether it's workable by open a web browser on your smartp
 
 
 
-![52290505328](images\1522905053283.png) 
+![52290505328](images/1522905053283.png) 
 
 Select "**Shadowsocks**" in the services pull-down menu. 
 
 Click "**Servers Manage**" tab to setup SS-Client for GL-AR750 Router
 
-![52303103540](images\1523031035400.png) 
+![52303103540](images/1523031035400.png) 
 
 Click "**Edit**", fill the following information: 
 
@@ -318,4 +318,4 @@ Click "**Save&Supply**",
 
 
 
-![	52303110376](images\1523031103769.png)
+![	52303110376](images/1523031103769.png)
