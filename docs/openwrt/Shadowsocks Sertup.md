@@ -24,7 +24,7 @@ https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 ##### 2.1.2 Install PuTTY for windows step by step
 
-![52216437600](images\1522164376006.png)
+![52216437600](images\1522164376006.jpg)
 
 
 
