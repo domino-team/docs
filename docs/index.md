@@ -26,6 +26,8 @@ Available documentations
 
 [Using **OpenVPN** on Mini routers](/openwrt/openvpn)
 
+[Shadowsocks(SS) Setup Manual](/openwrt/shadowsocks)
+
 [Using **Tor** on Mini routers](/openwrt/tor)
 
 [Using **EasyTether** on Mini routers](/openwrt/tether)
