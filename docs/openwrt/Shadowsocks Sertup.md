@@ -28,15 +28,15 @@ https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 
 
-![52216450379](images/PuTTY Install-2.png)
+![52216450379](images/PuTTY-Install-2.png)
 
 
 
-![52216454338](images/PuTTY Install-3.png)
+![52216454338](images/PuTTY-Install-3.png)
 
 
 
-![52216458386](images/PuTTY Install-4.png)
+![52216458386](images/PuTTY-Install-4.png)
 
 
 
@@ -50,25 +50,25 @@ Click **PuTTY** in Start Menu
 
 You will see the following Configuration Window: 
 
-![52216510388](images/Setup PuTTY-1.png)
+![52216510388](images/Setup-PuTTY-1.png)
 
 **Input** Host Name (or IP address) "**192.168.8.1**", Keep Port as default "**22**", select connection type: "**SSH**",
 
 **Input** "**your session**" in saved sessions, click **<u>S</u>ave** at right side.
 
-![52216521565](images/Setup PuTTY-2.png) 
+![52216521565](images/Setup-PuTTY-2.png) 
 
 **Click "<u>O</u>pen"** at the bottom
 
-![52216531483](images/Setup PuTTY-3.png)
+![52216531483](images/Setup-PuTTY-3.png)
 
 A security alert will pop-up, click "**Yes**". 
 
-![52219965352](images/SSH in-root.png)
+![52219965352](images/SSH-in-root.png)
 
 login as：**root**
 
-![52216538050](images/SSH in-1.png)
+![52216538050](images/SSH-in-1.png)
 
 ​	
 
@@ -76,7 +76,7 @@ login as：**root**
 
 
 
-![52219922225](images/SSH in-2.png)
+![52219922225](images/SSH-in-2.png)
 
 When you see above picture, that means you are now ssh login the router, 
 
@@ -84,11 +84,11 @@ this picture shows we login the router (GL-AR750 Model) as root user.
 
 #### 2.2 Ubuntu User:
 
-![buntu Logi](images/Ubuntu Login.png)
+![buntu Logi](images/Ubuntu-Login.png)
 
 Click "**Terminal**"
 
-![52220472612](images/SSH Login.png)
+![52220472612](images/SSH-Login.png)
 
 Input the following command: 
 
@@ -96,13 +96,13 @@ Input the following command:
 
 when you first login, Host key verification failed may displayed as follow:
 
-![52220528680](images/remove ssh-keygen.png)
+![52220528680](images/remove-ssh-keygen.png)
 
 input the red highlight command:
 
 `ssh-keygen -f "/home/username/.ssh/known_hosts" -R "192.168.8.1"`
 
-![52220545833](images/Removed Host keygen.png)
+![52220545833](images/Removed-Host-keygen.png)
 
 you will see the known_hosts updated. 
 
@@ -110,11 +110,11 @@ retry the ssh login command:
 
 `user name@your computer name:~S SSH root@192.168.8.1` 
 
-![52220556186](images/Ubuntu sshin router-1.png)
+![52220556186](images/Ubuntu-sshin-router-1.png)
 
 Type "**yes**"
 
-![52220561601](images/Ubuntu sshin router-2.png) 	
+![52220561601](images/Ubuntu-sshin-router-2.png) 	
 
 Input the router password: ***goodlife*** (default password, you can set this password when you first connect to your router)
 
@@ -143,7 +143,7 @@ switch to edit mode by click "Insert" key, then you can change parameter in the 
 
 when you finish all above modification, you can click "***Esc***" to exit edit mode, then click "***:***", input `wq` to ***write*** the modification into the configuration files and ***quit***. 
 
-![52222196458](images/ssh wq.png) 
+![52222196458](images/ssh-wq.png) 
 
 Type `exit` to quit the **Terminal** or **PuTTY**. 
 
@@ -151,11 +151,11 @@ Type `exit` to quit the **Terminal** or **PuTTY**.
 
 Type `vi /etc/init.d/ss-server` in the command line
 
-![52224765700](images/ss-server config.png)
+![52224765700](images/ss-server-config.png)
 
 When you open ss-server configure file, you can see the following configuration
 
-![VI-ss-verver](C:\Users\simon\OneDrive\GLinet\Tech Articles\images\VI-ss-verver.png)
+![VI-ss-verver](images/VI-ss-verver.png)
 
 Click "**insert**" switch to edit mode, remove the "*****" before "/usr/bin/ss-server - C /etc/shadowsocks-server.json -u &", then click "**Esc**", to exit edit mode, and click“**:**”, input `wq` to save and quit the configuration file.
 
@@ -173,7 +173,7 @@ After you start ss-server, the above information will display.
 
 ![52291532196](images/1522915321961.png) 
 
-![52222434301](images/Advance Root Login.png)
+![52222434301](images/Advance-Root-Login.png)
 
 A window will pop-up warning you to separately login as a root user into advanced setting. 
 
