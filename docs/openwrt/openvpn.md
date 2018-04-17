@@ -1,4 +1,4 @@
-#Using OpenVPN in GL.iNet routers
+Using OpenVPN in GL.iNet routers
 
 This docs is only related to OpenVPN client.
 
@@ -25,7 +25,7 @@ Click the OpenVPN icon on the toolbar. It will ask you to upload the configurati
 
 Be careful that some .ovpn files use separated ca, cert, crl files. These files must be zipped together with the .ovpn file before upload.
 
-![Basic UI](D:\Docs\docs\docs\openwrt\src/openvpn/11.jpg)
+![Basic UI](src/openvpn/11.jpg)
 
 
 
@@ -39,13 +39,13 @@ Simply Drap and drop your file to the area indicated so that it will be uploaded
 
 For zip/tar.gz file, the router will unzip the zip/tar.gz file  and check each .ovpn file inside.
 
-![Basic UI](D:\Docs\docs\docs\openwrt\src/openvpn/14.jpg)
+![Basic UI](src/openvpn/14.jpg)
 
 
 
 In some cases, it will ask you to enter your username and password. This usually happen when your configuration file can be downloaded without login your personal account.
 
-![Basic UI](D:\Docs\docs\docs\openwrt\src/openvpn/15.jpg)
+![Basic UI](src/openvpn/15.jpg)
 
 
 
