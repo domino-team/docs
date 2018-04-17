@@ -1,4 +1,4 @@
-Using OpenVPN in GL.iNet routers
+# Using OpenVPN in GL.iNet routers
 
 This docs is only related to OpenVPN client.
 
@@ -17,9 +17,9 @@ This guide assumes that you have set up the router properly.
 
 
 
-##Create an OpenVPN connection
+## Create an OpenVPN connection
 
-###1. Go to OpenVPN page
+### 1. Go to OpenVPN page
 
 Click the OpenVPN icon on the toolbar. It will ask you to upload the configuration files. This file can be a single .ovpn file or a zip/tar.gz file which contains multiple .ovpn files.
 
@@ -29,7 +29,7 @@ Be careful that some .ovpn files use separated ca, cert, crl files. These files 
 
 
 
-###2. Upload your configuration file
+### 2. Upload your configuration file
 
 Simply Drap and drop your file to the area indicated so that it will be uploaded to the router automatically. Next, the router will start to check the file. Refresh the page when you see the file has been successfully uploaded and the .ovpn file has been imported.
 
@@ -49,7 +49,7 @@ In some cases, it will ask you to enter your username and password. This usually
 
 
 
-###3. Connect to the OpenVPN server
+### 3. Connect to the OpenVPN server
 
 After refreshing the page, you will be able to configure the OpenVPN connection.
 
@@ -70,7 +70,7 @@ The router will show the connection progress. Once it is connected, you will be 
 
 
 
-##Manage ovpn files
+## Manage ovpn files
 
 From firmware `v2.20`, there is a simple ovpn manager where you can check the current list of ovpn files. You can purge all the files and start to use another vpn service.
 
@@ -85,7 +85,7 @@ We would like to add more functions in the ovpn manager, you can send us a wish 
 
 
 
-##How to get the configuration File
+## How to get the configuration File
 
 We have tested different VPN service providers. Therefore, if you don't know how to get the configuration file, you can follow the instruction below according to your service provider. However, you have to contact your service provider for the configuration file if they haven't been listed  below. 
 
@@ -93,7 +93,7 @@ If you use other service providers and have problem of setting up the OpenVPN, p
 
 
 
-###1. AirVPN
+### 1. AirVPN
 
 https://airvpn.org/?referred_by=402389
 
@@ -195,7 +195,7 @@ https://www.expressvpn.com/support/vpn-setup/manual-config-for-linux-with-openvp
 
 ---
 
-###5. FinchVPN 
+### 5. FinchVPN 
 
 https://www.finchvpn.com/
 
@@ -472,7 +472,7 @@ The username and password are listed below the download link.
 
 ---
 
-###21. VPNGate
+### 21. VPNGate
 
 http://www.vpngate.net/en/
 
