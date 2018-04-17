@@ -140,7 +140,7 @@ when you finish all above modification, you can click "***Esc***" to exit edit m
 
  
 
-### 3.2 Edit ss-server configure file
+### 3.2 Edit ss-server init file
 
 Type `vi /etc/init.d/ss-server` in the command line
 
