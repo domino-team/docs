@@ -428,11 +428,11 @@ https://www.safervpn.com/support/articles/214036025-What-are-SaferVPN-s-OpenVPN-
 
 https://torguard.net/
 
-1. If you are using TorGuard, you need to login the control panel and generate the ovpn file from the "Tools" menu. Please select "All", using udp or tcp and select Cipher. Then press `Generate Config` and the zip file will be downloaded automatically.![Generate ovpn](D:\Docs\docs\docs\openwrt\src\torguard.jpg)
+1. If you are using TorGuard, you need to login the control panel and generate the ovpn file from the "Tools" menu. Please select "All", using udp or tcp and select Cipher. Then press `Generate Config` and the zip file will be downloaded automatically.![Generate ovpn](src/torguard.jpg)
 
 
 
-2. The username and password for openvpn connection is different from your control panel login. You can change the service username and password in Security manual. You can generate a random login username and password.![Set password](D:\Docs\docs\docs\openwrt\src\torguard1.jpg)
+2. The username and password for openvpn connection is different from your control panel login. You can change the service username and password in Security manual. You can generate a random login username and password.![Set password](src/torguard1.jpg)
 
 
 ---
@@ -447,7 +447,7 @@ Download directly from: https://pseudio.freshdesk.com/helpdesk/attachments/80058
 
 ---
 
-###19. VPN.AC
+### 19. VPN.AC
 
 https://vpn.ac/aff.php?aff=1424
 
@@ -533,7 +533,7 @@ Start out by logging in to your User Office, press Manage for the VPN Unlimited 
 
 
 
-##VPN Compatibilities
+## VPN Compatibilities
 
 We have checked a number of public vpn service providers and tested the compatibilities. What you need to do is purchase a subscription from them and download the ovpn files.
 
